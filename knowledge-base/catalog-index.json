@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "机械工程百科分类索引",
+    "description": "机械工程百科内容目录结构，按主题分层组织，用于指导内容生成和网站导航",
+    "version": "1.0",
+    "created": "2026-05-18",
+    "status": "initial"
+  },
+  "categories": [
+    {
+      "id": "materials",
+      "name": "工程材料",
+      "nameEn": "Engineering Materials",
+      "priority": "A",
+      "description": "金属材料、非金属材料、复合材料的基础知识、性能与应用",
+      "subcategories": [
+        {"id": "materials-ferrous", "name": "黑色金属", "keywords": ["钢铁", "铸铁", "碳钢", "合金钢", "不锈钢", "工具钢"]},
+        {"id": "materials-nonferrous", "name": "有色金属", "keywords": ["铝合金", "铜合金", "钛合金", "镁合金", "镍基合金"]},
+        {"id": "materials-heat-treatment", "name": "热处理", "keywords": ["退火", "正火", "淬火", "回火", "渗碳", "渗氮", "表面处理"]},
+        {"id": "materials-polymer", "name": "高分子材料", "keywords": ["塑料", "橡胶", "复合材料", "工程塑料"]},
+        {"id": "materials-ceramics", "name": "陶瓷与特种材料", "keywords": ["工程陶瓷", "粉末冶金", "纳米材料", "超硬材料"]},
+        {"id": "materials-properties", "name": "材料性能", "keywords": ["强度", "硬度", "韧性", "疲劳", "蠕变", "耐磨性", "耐蚀性"]},
+        {"id": "materials-testing", "name": "材料测试", "keywords": ["拉伸试验", "冲击试验", "硬度测试", "金相分析", "无损检测"]}
+      ]
+    },
+    {
+      "id": "mechanics",
+      "name": "力学与强度分析",
+      "nameEn": "Mechanics & Strength Analysis",
+      "priority": "A",
+      "description": "理论力学、材料力学、弹性力学、结构分析等基础力学理论",
+      "subcategories": [
+        {"id": "mechanics-theoretical", "name": "理论力学", "keywords": ["静力学", "运动学", "动力学", "受力分析", "平衡"]},
+        {"id": "mechanics-strength", "name": "材料力学", "keywords": ["应力", "应变", "弯曲", "扭转", "稳定性", "组合变形"]},
+        {"id": "mechanics-elasticity", "name": "弹性力学", "keywords": ["平面问题", "空间问题", "接触理论", "热应力"]},
+        {"id": "mechanics-vibration", "name": "机械振动", "keywords": ["自由振动", "受迫振动", "模态分析", "减振", "隔振"]},
+        {"id": "mechanics-fea", "name": "有限元分析", "keywords": ["网格划分", "边界条件", "静力分析", "动力学分析", "非线性"]},
+        {"id": "mechanics-fatigue", "name": "疲劳与断裂", "keywords": ["S-N曲线", "疲劳寿命", "断裂力学", "裂纹扩展", "疲劳设计"]},
+        {"id": "mechanics-tribology", "name": "摩擦学", "keywords": ["摩擦", "磨损", "润滑", "轴承润滑", "表面工程"]}
+      ]
+    },
+    {
+      "id": "design",
+      "name": "机械设计",
+      "nameEn": "Mechanical Design",
+      "priority": "A",
+      "description": "机械零部件设计、机构学、设计方法学",
+      "subcategories": [
+        {"id": "design-connections", "name": "连接件设计", "keywords": ["螺纹连接", "键连接", "销连接", "焊接", "过盈配合"]},
+        {"id": "design-transmission", "name": "传动件设计", "keywords": ["齿轮传动", "蜗杆传动", "带传动", "链传动", "螺旋传动"]},
+        {"id": "design-shafts", "name": "轴系设计", "keywords": ["轴", "轴承", "联轴器", "离合器", "制动器"]},
+        {"id": "design-springs", "name": "弹簧与密封", "keywords": ["弹簧设计", "静密封", "动密封", "垫片", "O型圈"]},
+        {"id": "design-mechanisms", "name": "机构学", "keywords": ["连杆机构", "凸轮机构", "间歇运动机构", "自由度", "运动分析"]},
+        {"id": "design-methodology", "name": "设计方法", "keywords": ["DFMA", "可靠性设计", "优化设计", "公差分析", "逆向工程"]},
+        {"id": "design-jigs", "name": "工装夹具设计", "keywords": ["定位原理", "夹紧机构", "专用夹具", "组合夹具", "自动化夹具"]}
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "制造工艺",
+      "nameEn": "Manufacturing Processes",
+      "priority": "A",
+      "description": "各类材料加工方法、工艺参数、设备与质量控制",
+      "subcategories": [
+        {"id": "manufacturing-casting", "name": "铸造", "keywords": ["砂型铸造", "精密铸造", "压铸", "离心铸造", "铸件缺陷"]},
+        {"id": "manufacturing-forging", "name": "锻造", "keywords": ["自由锻", "模锻", "热模锻压力机", "锻件设计", "锻造缺陷"]},
+        {"id": "manufacturing-welding", "name": "焊接", "keywords": ["电弧焊", "气保焊", "激光焊", "钎焊", "焊接缺陷", "焊接检验"]},
+        {"id": "manufacturing-machining", "name": "切削加工", "keywords": ["车削", "铣削", "钻削", "磨削", "切削参数", "刀具材料"]},
+        {"id": "manufacturing-cnc", "name": "数控加工", "keywords": ["数控编程", "CAM", "加工中心", "多轴加工", "高速切削"]},
+        {"id": "manufacturing-additive", "name": "增材制造", "keywords": ["3D打印", "SLM", "FDM", "SLA", "增材材料"]},
+        {"id": "manufacturing-forming", "name": "成形工艺", "keywords": ["冲压", "拉深", "挤压", "弯曲", "旋压", "轧制"]},
+        {"id": "manufacturing-surface", "name": "表面工程", "keywords": ["电镀", "喷涂", "PVD", "CVD", "激光熔覆", "渗碳渗氮"]}
+      ]
+    },
+    {
+      "id": "thermofluid",
+      "name": "热工与流体",
+      "nameEn": "Thermal & Fluid Engineering",
+      "priority": "B",
+      "description": "工程热力学、流体力学、传热学基础与应用",
+      "subcategories": [
+        {"id": "thermofluid-thermo", "name": "工程热力学", "keywords": ["热力学定律", "工质", "循环", "焓", "熵", "能量守恒"]},
+        {"id": "thermofluid-fluid", "name": "流体力学", "keywords": ["流体静力学", "伯努利方程", "层流", "湍流", "边界层"]},
+        {"id": "thermofluid-heat", "name": "传热学", "keywords": ["导热", "对流换热", "热辐射", "换热器", "热绝缘"]},
+        {"id": "thermofluid-hydraulic", "name": "液压传动", "keywords": ["液压泵", "液压阀", "液压缸", "液压回路", "比例伺服"]},
+        {"id": "thermofluid-pneumatic", "name": "气动技术", "keywords": ["气动元件", "气动回路", "气动比例", "气动马达"]}
+      ]
+    },
+    {
+      "id": "mechatronics",
+      "name": "机械电子与自动化",
+      "nameEn": "Mechatronics & Automation",
+      "priority": "B",
+      "description": "机电一体化、传感器、执行器、控制系统、工业自动化",
+      "subcategories": [
+        {"id": "mechatronics-sensors", "name": "传感器技术", "keywords": ["位移传感器", "力传感器", "温度传感器", "编码器", "陀螺仪"]},
+        {"id": "mechatronics-actuators", "name": "执行器", "keywords": ["伺服电机", "步进电机", "直线电机", "液压执行器", "气缸"]},
+        {"id": "mechatronics-control", "name": "控制系统", "keywords": ["PID控制", "PLC", "运动控制", "力控制", "自适应控制"]},
+        {"id": "mechatronics-robot", "name": "机器人技术", "keywords": ["工业机器人", "协作机器人", "运动学", "轨迹规划", "抓取"]},
+        {"id": "mechatronics-automation", "name": "工业自动化", "keywords": ["自动化产线", "AGV", "机器视觉", "SCADA", "MES"]},
+        {"id": "mechatronics-embed", "name": "嵌入式系统", "keywords": ["单片机", "实时系统", "电机驱动", "接口协议", "PCB设计"]}
+      ]
+    },
+    {
+      "id": "measurement",
+      "name": "测量与质量控制",
+      "nameEn": "Measurement & Quality Control",
+      "priority": "B",
+      "description": "尺寸测量、几何公差、质量体系、计量校准",
+      "subcategories": [
+        {"id": "measurement-dimension", "name": "尺寸测量", "keywords": ["游标卡尺", "千分尺", "三坐标", "激光测量", "光学测量"]},
+        {"id": "measurement-gdt", "name": "几何公差", "keywords": ["GD&T", "形位公差", "基准", "MMC", "LMC", "检测方法"]},
+        {"id": "measurement-quality", "name": "质量管理", "keywords": ["SPC", "六西格玛", "ISO 9001", "FMEA", "APQP", "PPAP"]},
+        {"id": "measurement-ndt", "name": "无损检测", "keywords": ["超声波检测", "射线检测", "磁粉检测", "渗透检测", "涡流检测"]},
+        {"id": "measurement-calibration", "name": "计量校准", "keywords": ["量值溯源", "检定", "校准", "不确定度", "标准器"]}
+      ]
+    },
+    {
+      "id": "powermachinery",
+      "name": "动力机械与能源",
+      "nameEn": "Power Machinery & Energy",
+      "priority": "B",
+      "description": "发动机、涡轮机、泵、压缩机、能源设备",
+      "subcategories": [
+        {"id": "powermachinery-engine", "name": "内燃机", "keywords": ["汽油机", "柴油机", "燃烧过程", "排放控制", "涡轮增压"]},
+        {"id": "powermachinery-turbine", "name": "涡轮机械", "keywords": ["汽轮机", "燃气轮机", "压缩机", "风机", "膨胀机"]},
+        {"id": "powermachinery-pump", "name": "泵与阀门", "keywords": ["离心泵", "容积泵", "轴流泵", "控制阀", "安全阀"]},
+        {"id": "powermachinery-energy", "name": "能源设备", "keywords": ["锅炉", "热交换器", "制冷系统", "热电联产", "可再生能源"]}
+      ]
+    },
+    {
+      "id": "cad",
+      "name": "机械制图与CAD",
+      "nameEn": "Mechanical Drawing & CAD",
+      "priority": "B",
+      "description": "工程制图标准、CAD软件应用、建模方法",
+      "subcategories": [
+        {"id": "cad-drawing", "name": "工程制图", "keywords": ["投影法", "剖视图", "尺寸标注", "装配图", "零件图", "图框标准"]},
+        {"id": "cad-3d", "name": "三维建模", "keywords": ["实体建模", "曲面建模", "参数化设计", "装配约束", "工程图生成"]},
+        {"id": "cad-software", "name": "CAD软件", "keywords": ["SolidWorks", "AutoCAD", "CATIA", "NX", "Creo", "Inventor"]},
+        {"id": "cad-cae", "name": "CAE仿真", "keywords": ["结构仿真", "流体仿真", "热仿真", "多物理场", "拓扑优化"]}
+      ]
+    },
+    {
+      "id": "standards",
+      "name": "标准与规范",
+      "nameEn": "Standards & Specifications",
+      "priority": "C",
+      "description": "国内外机械工程标准、安全规范、行业法规",
+      "subcategories": [
+        {"id": "standards-gb", "name": "中国标准", "keywords": ["GB标准", "JB标准", "行业标准", "国军标", "企业标准"]},
+        {"id": "standards-iso", "name": "国际标准", "keywords": ["ISO标准", "IEC标准", "ISO机械安全", "ISO公差标准"]},
+        {"id": "standards-ansi", "name": "美标", "keywords": ["ASTM", "ASME", "SAE", "ANSI", "AWS"]},
+        {"id": "standards-din", "name": "德标/欧标", "keywords": ["DIN", "EN", "欧盟机械指令", "CE认证", "ATEX"]},
+        {"id": "standards-safety", "name": "安全规范", "keywords": ["机械安全", "防护装置", "风险评估", "人机工程", "职业安全"]}
+      ]
+    },
+    {
+      "id": "industry",
+      "name": "行业应用",
+      "nameEn": "Industry Applications",
+      "priority": "C",
+      "description": "各行业机械工程应用案例与专业知识",
+      "subcategories": [
+        {"id": "industry-automotive", "name": "汽车制造", "keywords": ["车身工艺", "动力总成", "装配线", "轻量化", "新能源汽车"]},
+        {"id": "industry-aerospace", "name": "航空航天", "keywords": ["航空发动机", "结构设计", "适航", "复合材料", "精密制造"]},
+        {"id": "industry-heavy", "name": "重型机械", "keywords": ["工程机械", "矿山机械", "起重运输", "冶金设备", "锻压设备"]},
+        {"id": "industry-precision", "name": "精密机械", "keywords": ["精密仪器", "光学机械", "微机电", "半导体设备", "医疗机械"]},
+        {"id": "industry-energy", "name": "能源装备", "keywords": ["石油机械", "化工机械", "核电装备", "风电", "压力容器"]}
+      ]
+    }
+  ]
+}

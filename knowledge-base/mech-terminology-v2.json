@@ -1,0 +1,7214 @@
+{
+  "meta": {
+    "title": "机械工程中英术语对照表V2",
+    "version": "2.0",
+    "created": "2026-05-17",
+    "total_terms": 1199,
+    "seed_terms": 645,
+    "extracted_terms": 554,
+    "data_sources": [
+      "seed_dictionary",
+      "wikipedia",
+      "mit_ocw",
+      "engineering_portals"
+    ]
+  },
+  "terms": [
+    {
+      "en": "3D model",
+      "zh": "三维模型",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "auxiliary view",
+      "zh": "辅助视图",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "baseline dimensioning",
+      "zh": "基准标注",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "datum",
+      "zh": "基准",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "datum feature",
+      "zh": "基准特征",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "detail view",
+      "zh": "局部放大图",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "dimension",
+      "zh": "尺寸",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "exploded view",
+      "zh": "爆炸图",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "feature-based modeling",
+      "zh": "特征建模",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "first angle projection",
+      "zh": "第一角投影",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "isometric view",
+      "zh": "轴测图",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "ordinate dimensioning",
+      "zh": "坐标标注",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "orthographic projection",
+      "zh": "正交投影",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "parametric modeling",
+      "zh": "参数化建模",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "section",
+      "zh": "剖面",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "section line",
+      "zh": "剖切线",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "section view",
+      "zh": "剖视图",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "solid modeling",
+      "zh": "实体建模",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "third angle projection",
+      "zh": "第三角投影",
+      "source": "seed",
+      "category": "制图CAD"
+    },
+    {
+      "en": "2D drawing",
+      "zh": "二维图",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "3D printing",
+      "zh": "3D打印",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "CNC milling",
+      "zh": "数控铣",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "CNC turning",
+      "zh": "数控车",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "EDM",
+      "zh": "电火花加工",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "additive manufacturing",
+      "zh": "增材制造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "blow molding",
+      "zh": "吹塑成型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "broaching",
+      "zh": "拉削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cast iron",
+      "zh": "铸铁",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "casting",
+      "zh": "铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "centerless grinding",
+      "zh": "无心磨削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "centrifugal casting",
+      "zh": "离心铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "chemical machining",
+      "zh": "化学加工",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "chrome plating",
+      "zh": "镀铬",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "coating",
+      "zh": "涂层",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cold rolling",
+      "zh": "冷轧",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "continuous casting",
+      "zh": "连续铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cutting fluid",
+      "zh": "切削液",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cutting speed",
+      "zh": "切削速度",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cutting tool",
+      "zh": "切削刀具",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "cylindrical grinding",
+      "zh": "外圆磨削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "deep drawing",
+      "zh": "深拉深",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "depth of cut",
+      "zh": "切削深度",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "detail drawing",
+      "zh": "零件图",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "die casting",
+      "zh": "压铸",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "direct extrusion",
+      "zh": "正挤压",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "drilling",
+      "zh": "钻孔",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "electroplating",
+      "zh": "电镀",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "extrusion",
+      "zh": "挤压",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "forming",
+      "zh": "成型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "general assembly drawing",
+      "zh": "总装图",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "gravity casting",
+      "zh": "重力铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "grinding",
+      "zh": "磨削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "hot rolling",
+      "zh": "热轧",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "hydroforming",
+      "zh": "液压成型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "indirect extrusion",
+      "zh": "反挤压",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "injection molding",
+      "zh": "注塑成型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "investment casting",
+      "zh": "熔模铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "laser cutting",
+      "zh": "激光切割",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "lost foam casting",
+      "zh": "消失模铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "machining",
+      "zh": "机械加工",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "machining center",
+      "zh": "加工中心",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "milling",
+      "zh": "铣削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "mold",
+      "zh": "铸型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "plasma cutting",
+      "zh": "等离子切割",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "polishing",
+      "zh": "抛光",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "powder coating",
+      "zh": "粉末喷涂",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "roll forging",
+      "zh": "辊锻",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "rolling",
+      "zh": "轧制",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "sand casting",
+      "zh": "砂型铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "sawing",
+      "zh": "锯削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "shell molding",
+      "zh": "壳型铸造",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "surface grinding",
+      "zh": "平面磨削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "surface modeling",
+      "zh": "曲面建模",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "surface roughness",
+      "zh": "表面粗糙度",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "surface treatment",
+      "zh": "表面处理",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "thermoforming",
+      "zh": "热成型",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "tube drawing",
+      "zh": "拉管",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "turning",
+      "zh": "车削",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "ultrasonic machining",
+      "zh": "超声波加工",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "water jet cutting",
+      "zh": "水切割",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "weld",
+      "zh": "焊接",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "wire EDM",
+      "zh": "线切割",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "wire drawing",
+      "zh": "拉丝",
+      "source": "seed",
+      "category": "制造工艺"
+    },
+    {
+      "en": "bending stress",
+      "zh": "弯曲应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "boundary lubrication",
+      "zh": "边界润滑",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "contact stress",
+      "zh": "接触应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "damped vibration",
+      "zh": "阻尼振动",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "dynamics",
+      "zh": "动力学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "elastohydrodynamic lubrication",
+      "zh": "弹流润滑",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "erosion",
+      "zh": "冲蚀",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "finite element",
+      "zh": "有限元",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "finite element analysis",
+      "zh": "有限元分析",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "finite element method",
+      "zh": "有限元法",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "forced vibration",
+      "zh": "受迫振动",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "free vibration",
+      "zh": "自由振动",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "friction",
+      "zh": "摩擦",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "hydrodynamic lubrication",
+      "zh": "流体动压润滑",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "kinematics",
+      "zh": "运动学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "lubrication",
+      "zh": "润滑",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "mechanics of materials",
+      "zh": "材料力学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "modal analysis",
+      "zh": "模态分析",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "natural frequency",
+      "zh": "固有频率",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "normal strain",
+      "zh": "正应变",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "normal stress",
+      "zh": "正应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "plane strain",
+      "zh": "平面应变",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "plane stress",
+      "zh": "平面应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "principal stress",
+      "zh": "主应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "residual stress",
+      "zh": "残余应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "resonance",
+      "zh": "共振",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "shear strain",
+      "zh": "剪应变",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "shear stress",
+      "zh": "剪应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "solid mechanics",
+      "zh": "固体力学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "statics",
+      "zh": "静力学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "strain",
+      "zh": "应变",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "strain energy",
+      "zh": "应变能",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "strain gauge",
+      "zh": "应变片",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "stress",
+      "zh": "应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "stress concentration",
+      "zh": "应力集中",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "stress intensity factor",
+      "zh": "应力强度因子",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "theoretical mechanics",
+      "zh": "理论力学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "thermal stress",
+      "zh": "热应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "tribology",
+      "zh": "摩擦学",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "vibration",
+      "zh": "振动",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "von mises stress",
+      "zh": "冯·米塞斯应力",
+      "source": "seed",
+      "category": "力学强度"
+    },
+    {
+      "en": "abrasive wear",
+      "zh": "磨粒磨损",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "adhesive wear",
+      "zh": "粘着磨损",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "aging treatment",
+      "zh": "时效处理",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "alloy steel",
+      "zh": "合金钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "aluminum",
+      "zh": "铝",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "aluminum alloy",
+      "zh": "铝合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "annealing",
+      "zh": "退火",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "brinell hardness",
+      "zh": "布氏硬度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "bulk modulus",
+      "zh": "体积模量",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "carbon steel",
+      "zh": "碳钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "ceramic",
+      "zh": "陶瓷",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "chromium",
+      "zh": "铬",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "composite",
+      "zh": "复合材料",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "copper",
+      "zh": "铜",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "copper alloy",
+      "zh": "铜合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "corrosion",
+      "zh": "腐蚀",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "corrosion resistance",
+      "zh": "耐腐蚀性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "corrosive wear",
+      "zh": "腐蚀磨损",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "cryogenic treatment",
+      "zh": "深冷处理",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "ductility",
+      "zh": "延展性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "elastic modulus",
+      "zh": "弹性模量",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "elasticity",
+      "zh": "弹性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fatigue",
+      "zh": "疲劳",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fatigue life",
+      "zh": "疲劳寿命",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fatigue loading",
+      "zh": "疲劳载荷",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fatigue strength",
+      "zh": "疲劳强度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fatigue wear",
+      "zh": "疲劳磨损",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fracture",
+      "zh": "断裂",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fracture mechanics",
+      "zh": "断裂力学",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "fracture toughness",
+      "zh": "断裂韧性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "hardness",
+      "zh": "硬度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "hardness test",
+      "zh": "硬度测试",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "heat treatment",
+      "zh": "热处理",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "heat treatment coating",
+      "zh": "热喷涂",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "high speed steel",
+      "zh": "高速钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "impact strength",
+      "zh": "冲击强度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "magnesium",
+      "zh": "镁",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "magnesium alloy",
+      "zh": "镁合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "metal matrix composite",
+      "zh": "金属基复合材料",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "nickel",
+      "zh": "镍",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "nickel alloy",
+      "zh": "镍合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "nickel plating",
+      "zh": "镀镍",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "oxidation",
+      "zh": "氧化",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "plasticity",
+      "zh": "塑性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "polymer",
+      "zh": "聚合物",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "quenching",
+      "zh": "淬火",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "rockwell hardness",
+      "zh": "洛氏硬度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "section modulus",
+      "zh": "截面模量",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "shear modulus",
+      "zh": "剪切模量",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "shear strength",
+      "zh": "抗剪强度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "solution treatment",
+      "zh": "固溶处理",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "stainless steel",
+      "zh": "不锈钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "steel",
+      "zh": "钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "strength of materials",
+      "zh": "材料力学",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "temperature sensor",
+      "zh": "温度传感器",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "tempering",
+      "zh": "回火",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "tensile strength",
+      "zh": "抗拉强度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "titanium",
+      "zh": "钛",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "titanium alloy",
+      "zh": "钛合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "tool steel",
+      "zh": "工具钢",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "toughness",
+      "zh": "韧性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "tungsten",
+      "zh": "钨",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "tungsten carbide",
+      "zh": "碳化钨",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "vickers hardness",
+      "zh": "维氏硬度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "wear",
+      "zh": "磨损",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "wear mechanism",
+      "zh": "磨损机理",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "wear resistance",
+      "zh": "耐磨性",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "yield strength",
+      "zh": "屈服强度",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "young's modulus",
+      "zh": "杨氏模量",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "zinc",
+      "zh": "锌",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "zinc alloy",
+      "zh": "锌合金",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "zinc plating",
+      "zh": "镀锌",
+      "source": "seed",
+      "category": "工程材料"
+    },
+    {
+      "en": "ABS",
+      "zh": "ABS塑料",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "AGV",
+      "zh": "自动导引车",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ANSI",
+      "zh": "美国国家标准",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ASME",
+      "zh": "美国机械工程师协会",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ASTM",
+      "zh": "美国材料与试验协会",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "AWS",
+      "zh": "美国焊接协会",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CAD",
+      "zh": "计算机辅助设计",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CAE",
+      "zh": "计算机辅助工程",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CAPP",
+      "zh": "计算机辅助工艺规划",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CNC",
+      "zh": "数控",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CPK",
+      "zh": "过程能力指数",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CVD",
+      "zh": "化学气相沉积",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "DCS",
+      "zh": "集散控制系统",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "DIN",
+      "zh": "德国标准",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "EBM",
+      "zh": "电子束熔化",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "FDM",
+      "zh": "熔融沉积成型",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "FEA",
+      "zh": "有限元分析",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "GB/T",
+      "zh": "中国推荐性国家标准",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "GD&T",
+      "zh": "几何尺寸与公差",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ISO",
+      "zh": "国际标准化组织",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ISO 14000",
+      "zh": "ISO 14000环境管理体系",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ISO 9000",
+      "zh": "ISO 9000质量管理体系",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "JIS",
+      "zh": "日本工业标准",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "NDT",
+      "zh": "无损检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "PLC",
+      "zh": "可编程逻辑控制器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "PTFE",
+      "zh": "聚四氟乙烯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "PVC",
+      "zh": "聚氯乙烯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "PVD",
+      "zh": "物理气相沉积",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "Pareto chart",
+      "zh": "帕累托图",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "RTD",
+      "zh": "热电阻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "Ra",
+      "zh": "轮廓算术平均偏差",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "Rz",
+      "zh": "微观不平度十点高度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SAE",
+      "zh": "美国汽车工程师协会",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SCADA",
+      "zh": "数据采集与监控系统",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SLA",
+      "zh": "光固化成型",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SLM",
+      "zh": "选择性激光熔化",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SLS",
+      "zh": "选择性激光烧结",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "SPC",
+      "zh": "统计过程控制",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "accelerometer",
+      "zh": "加速度计",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "accumulator",
+      "zh": "蓄能器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "acetal",
+      "zh": "聚甲醛",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "acrylic",
+      "zh": "亚克力",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "addendum",
+      "zh": "齿顶高",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "adhesive bonding",
+      "zh": "粘接",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "alumina",
+      "zh": "氧化铝陶瓷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "angularity",
+      "zh": "倾斜度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "anodizing",
+      "zh": "阳极氧化",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "assembly",
+      "zh": "装配",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "axial loading",
+      "zh": "轴向载荷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "axle",
+      "zh": "车轴",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "bending",
+      "zh": "折弯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "bill of materials",
+      "zh": "材料明细表",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "blanking",
+      "zh": "落料",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "boring",
+      "zh": "镗削",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "boundary layer",
+      "zh": "边界层",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "brass",
+      "zh": "黄铜",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "brayton cycle",
+      "zh": "布雷顿循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "brittleness",
+      "zh": "脆性",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "bronze",
+      "zh": "青铜",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "carbide tool",
+      "zh": "硬质合金刀具",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "carbon fiber",
+      "zh": "碳纤维",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "carbonitriding",
+      "zh": "碳氮共渗",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "carburizing",
+      "zh": "渗碳",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "carnot cycle",
+      "zh": "卡诺循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "clearance",
+      "zh": "顶隙",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "closed die forging",
+      "zh": "模锻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "closed loop",
+      "zh": "闭环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "coated tool",
+      "zh": "涂层刀具",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "cobalt",
+      "zh": "钴",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "coining",
+      "zh": "精压",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "cold forging",
+      "zh": "冷锻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "computer-aided design",
+      "zh": "计算机辅助设计",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "concentricity",
+      "zh": "同轴度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "conduction",
+      "zh": "热传导",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "continuity equation",
+      "zh": "连续性方程",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "convection",
+      "zh": "热对流",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "cooling tower",
+      "zh": "冷却塔",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "core",
+      "zh": "型芯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "crack initiation",
+      "zh": "裂纹萌生",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "crack propagation",
+      "zh": "裂纹扩展",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "creep",
+      "zh": "蠕变",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "cyclic loading",
+      "zh": "循环载荷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "cylindricity",
+      "zh": "圆柱度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "dedendum",
+      "zh": "齿根高",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "degree of freedom",
+      "zh": "自由度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "density",
+      "zh": "密度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "diesel cycle",
+      "zh": "狄塞尔循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "drop forging",
+      "zh": "落锤锻造",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ductile iron",
+      "zh": "球墨铸铁",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "dye penetrant testing",
+      "zh": "渗透检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "dynamic loading",
+      "zh": "动载荷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "eccentric",
+      "zh": "偏心轮",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "eccentric loading",
+      "zh": "偏载",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "eddy current testing",
+      "zh": "涡流检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "element",
+      "zh": "单元",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "end effector",
+      "zh": "末端执行器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "feed rate",
+      "zh": "进给速度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "fiberglass",
+      "zh": "玻璃纤维",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "filter",
+      "zh": "过滤器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "fin",
+      "zh": "翅片",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "fishbone diagram",
+      "zh": "鱼骨图",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "five why",
+      "zh": "5Why分析法",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "flame hardening",
+      "zh": "火焰淬火",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "flatness",
+      "zh": "平面度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "flexible manufacturing",
+      "zh": "柔性制造",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "forging",
+      "zh": "锻造",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "gasket",
+      "zh": "垫片",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "gate",
+      "zh": "内浇道",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "gating system",
+      "zh": "浇注系统",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "geneva mechanism",
+      "zh": "槽轮机构",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "gray iron",
+      "zh": "灰铸铁",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "gyroscope",
+      "zh": "陀螺仪",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "harmonic analysis",
+      "zh": "谐响应分析",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "harmonic drive",
+      "zh": "谐波减速器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "heat flux",
+      "zh": "热流密度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "honing",
+      "zh": "珩磨",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "hot forging",
+      "zh": "热锻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "impact loading",
+      "zh": "冲击载荷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "inconel",
+      "zh": "因科镍合金",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "induction hardening",
+      "zh": "感应淬火",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "internal energy",
+      "zh": "内能",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "involute",
+      "zh": "渐开线",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "kinetics",
+      "zh": "动力学",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "lead",
+      "zh": "铅",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "limit",
+      "zh": "极限尺寸",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "limit switch",
+      "zh": "限位开关",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "load cell",
+      "zh": "测力传感器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "magnetic particle testing",
+      "zh": "磁粉检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "malleability",
+      "zh": "可锻性",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "malleable iron",
+      "zh": "可锻铸铁",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "manganese",
+      "zh": "锰",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "mesh",
+      "zh": "网格",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "mode shape",
+      "zh": "振型",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "module",
+      "zh": "模数",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "molybdenum",
+      "zh": "钼",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "moment of inertia",
+      "zh": "惯性矩",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "navier-stokes equations",
+      "zh": "纳维-斯托克斯方程",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "niobium",
+      "zh": "铌",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "nitriding",
+      "zh": "渗氮",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "node",
+      "zh": "节点",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "non-destructive testing",
+      "zh": "无损检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "normalizing",
+      "zh": "正火",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "nylon",
+      "zh": "尼龙",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "open die forging",
+      "zh": "自由锻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "open loop",
+      "zh": "开环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "oring",
+      "zh": "O形密封圈",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "otto cycle",
+      "zh": "奥托循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "packing",
+      "zh": "填料密封",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "painting",
+      "zh": "喷涂",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "palletizer",
+      "zh": "码垛机",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "parallelism",
+      "zh": "平行度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "part number",
+      "zh": "零件编号",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "passivation",
+      "zh": "钝化处理",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "pattern",
+      "zh": "模样",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "perpendicularity",
+      "zh": "垂直度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "phosphating",
+      "zh": "磷化处理",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "phosphor bronze",
+      "zh": "磷青铜",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "pick and place",
+      "zh": "拾放操作",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "piercing",
+      "zh": "冲孔",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "planing",
+      "zh": "刨削",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "poisson's ratio",
+      "zh": "泊松比",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "polycarbonate",
+      "zh": "聚碳酸酯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "polyethylene",
+      "zh": "聚乙烯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "polypropylene",
+      "zh": "聚丙烯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "polyurethane",
+      "zh": "聚氨酯",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "press forging",
+      "zh": "压力机锻造",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "pressure angle",
+      "zh": "压力角",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "profile",
+      "zh": "轮廓度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "pure bending",
+      "zh": "纯弯曲",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "radiation",
+      "zh": "热辐射",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "radiator",
+      "zh": "散热器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "radiographic testing",
+      "zh": "射线检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "radius of gyration",
+      "zh": "回转半径",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "rankine cycle",
+      "zh": "朗肯循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "reaming",
+      "zh": "铰孔",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "rigid body",
+      "zh": "刚体",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "riser",
+      "zh": "冒口",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "roundness",
+      "zh": "圆度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "runner",
+      "zh": "横浇道",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "runout",
+      "zh": "圆跳动",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "shell and tube",
+      "zh": "管壳式换热器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "silicon",
+      "zh": "硅",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "silicon carbide",
+      "zh": "碳化硅",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "slider-crank",
+      "zh": "曲柄滑块机构",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "slotting",
+      "zh": "开槽",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "solder",
+      "zh": "钎焊",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "specific heat capacity",
+      "zh": "比热容",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "sprocket",
+      "zh": "链轮",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "static loading",
+      "zh": "静载荷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "steam generator",
+      "zh": "蒸汽发生器",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "stirling cycle",
+      "zh": "斯特林循环",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "straightness",
+      "zh": "直线度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "symmetry",
+      "zh": "对称度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "thermal conductivity",
+      "zh": "热导率",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "thermal resistance",
+      "zh": "热阻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "threading",
+      "zh": "车螺纹",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "tin",
+      "zh": "锡",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "title block",
+      "zh": "标题栏",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "traceability",
+      "zh": "可追溯性",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "true position",
+      "zh": "位置度",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "ultrasonic testing",
+      "zh": "超声波检测",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "upset forging",
+      "zh": "镦粗",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "vanadium",
+      "zh": "钒",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "warm forging",
+      "zh": "温锻",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "white iron",
+      "zh": "白口铸铁",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "wireframe",
+      "zh": "线框",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "worm",
+      "zh": "蜗杆",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "zirconia",
+      "zh": "氧化锆陶瓷",
+      "source": "seed",
+      "category": "未分类"
+    },
+    {
+      "en": "CAD/CAM",
+      "zh": "CAD/CAM",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "CAM",
+      "zh": "计算机辅助制造",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "air compressor",
+      "zh": "空气压缩机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "angular contact bearing",
+      "zh": "角接触球轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "ball bearing",
+      "zh": "球轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "ball valve",
+      "zh": "球阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "band brake",
+      "zh": "带式制动器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bearing",
+      "zh": "轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bearing clearance",
+      "zh": "轴承间隙",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bearing preload",
+      "zh": "轴承预紧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bearing steel",
+      "zh": "轴承钢",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "belleville spring",
+      "zh": "碟形弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "belt drive",
+      "zh": "带传动",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bevel gear",
+      "zh": "锥齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "bolt",
+      "zh": "螺栓",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "brake",
+      "zh": "制动器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "butterfly valve",
+      "zh": "蝶阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "cam follower",
+      "zh": "凸轮从动件",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "camshaft",
+      "zh": "凸轮轴",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "centrifugal clutch",
+      "zh": "离心离合器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "centrifugal compressor",
+      "zh": "离心式压缩机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "centrifugal pump",
+      "zh": "离心泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "chain dimensioning",
+      "zh": "链式标注",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "chain drive",
+      "zh": "链传动",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "check valve",
+      "zh": "止回阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "clearance fit",
+      "zh": "间隙配合",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "clutch",
+      "zh": "离合器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "coil spring",
+      "zh": "螺旋弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compressible flow",
+      "zh": "可压缩流",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compression ignition engine",
+      "zh": "压燃式发动机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compression molding",
+      "zh": "模压成型",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compression spring",
+      "zh": "压缩弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compressive strength",
+      "zh": "抗压强度",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "compressor",
+      "zh": "压缩机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "constant force spring",
+      "zh": "恒力弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "control valve",
+      "zh": "调节阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "conveyor belt",
+      "zh": "传送带",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "cotter pin",
+      "zh": "开口销",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "coupling",
+      "zh": "联轴器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "crankshaft",
+      "zh": "曲轴",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "diaphragm pump",
+      "zh": "隔膜泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "dimensional tolerance",
+      "zh": "尺寸公差",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "directional control valve",
+      "zh": "方向控制阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "disc brake",
+      "zh": "盘式制动器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "dowel pin",
+      "zh": "定位销",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "drum brake",
+      "zh": "鼓式制动器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "extension spring",
+      "zh": "拉伸弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "fastener",
+      "zh": "紧固件",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "fit",
+      "zh": "配合",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "flat belt",
+      "zh": "平带",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "flat key",
+      "zh": "平键",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "flexible coupling",
+      "zh": "弹性联轴器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "flow control valve",
+      "zh": "流量控制阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "fluid coupling",
+      "zh": "液力偶合器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "four-bar linkage",
+      "zh": "四杆机构",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "friction clutch",
+      "zh": "摩擦离合器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gate valve",
+      "zh": "闸阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear",
+      "zh": "齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear pump",
+      "zh": "齿轮泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear rack",
+      "zh": "齿条",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear ratio",
+      "zh": "传动比",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear reducer",
+      "zh": "齿轮减速器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "gear train",
+      "zh": "轮系",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "geometric tolerance",
+      "zh": "几何公差",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "globe valve",
+      "zh": "截止阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "helical gear",
+      "zh": "斜齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "hydraulic pump",
+      "zh": "液压泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "hydraulic valve",
+      "zh": "液压阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "hydrostatic bearing",
+      "zh": "静压轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "interference fit",
+      "zh": "过盈配合",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "journal bearing",
+      "zh": "径向滑动轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "key",
+      "zh": "键",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "keyway",
+      "zh": "键槽",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "labyrinth seal",
+      "zh": "迷宫密封",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "lapping",
+      "zh": "研磨",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "leaf spring",
+      "zh": "板弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "linkage",
+      "zh": "连杆机构",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "lock nut",
+      "zh": "防松螺母",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "lock washer",
+      "zh": "止动垫圈",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "machine screw",
+      "zh": "机用螺钉",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "magnetic bearing",
+      "zh": "磁悬浮轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "mechanical seal",
+      "zh": "机械密封",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "needle bearing",
+      "zh": "滚针轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "nut",
+      "zh": "螺母",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "oil seal",
+      "zh": "油封",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "overrunning clutch",
+      "zh": "超越离合器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "peristaltic pump",
+      "zh": "蠕动泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "pin",
+      "zh": "销",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "pinion",
+      "zh": "小齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "piston pump",
+      "zh": "柱塞泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "plain bearing",
+      "zh": "滑动轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "planetary gear",
+      "zh": "行星齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "pressure relief valve",
+      "zh": "溢流阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "pump",
+      "zh": "泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "ratchet",
+      "zh": "棘轮机构",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "reciprocating compressor",
+      "zh": "往复式压缩机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "relief valve",
+      "zh": "安全阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "ribbed belt",
+      "zh": "多楔带",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "rigid coupling",
+      "zh": "刚性联轴器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "ring gear",
+      "zh": "齿圈",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "rivet",
+      "zh": "铆钉",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "roller bearing",
+      "zh": "滚子轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "roller chain",
+      "zh": "滚子链",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "screw",
+      "zh": "螺钉",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "screw compressor",
+      "zh": "螺杆压缩机",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "screw pump",
+      "zh": "螺杆泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "seal",
+      "zh": "密封",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "self-aligning bearing",
+      "zh": "调心轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "self-tapping screw",
+      "zh": "自攻螺钉",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "set screw",
+      "zh": "紧定螺钉",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "shaft",
+      "zh": "轴",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "shaft shoulder",
+      "zh": "轴肩",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "shaping",
+      "zh": "插削",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "silent chain",
+      "zh": "无声链",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "solenoid valve",
+      "zh": "电磁阀",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spindle",
+      "zh": "主轴",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spinning",
+      "zh": "旋压",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spline",
+      "zh": "花键",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spring",
+      "zh": "弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spring brake",
+      "zh": "弹簧制动器",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spring steel",
+      "zh": "弹簧钢",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spring washer",
+      "zh": "弹簧垫圈",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "spur gear",
+      "zh": "直齿轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "stamping",
+      "zh": "冲压",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "stud bolt",
+      "zh": "双头螺柱",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "sun gear",
+      "zh": "太阳轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "tapered roller bearing",
+      "zh": "圆锥滚子轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "tapping",
+      "zh": "攻丝",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "thrust bearing",
+      "zh": "推力轴承",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "timing belt",
+      "zh": "同步带",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "tolerance",
+      "zh": "公差",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "torsion",
+      "zh": "扭转",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "torsion spring",
+      "zh": "扭转弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "transition fit",
+      "zh": "过渡配合",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "transmission shaft",
+      "zh": "传动轴",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "v-belt",
+      "zh": "V带",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "valve",
+      "zh": "阀门",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "vane pump",
+      "zh": "叶片泵",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "washer",
+      "zh": "垫圈",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "wave spring",
+      "zh": "波形弹簧",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "wing nut",
+      "zh": "蝶形螺母",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "woodruff key",
+      "zh": "半圆键",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "worm gear",
+      "zh": "蜗杆蜗轮",
+      "source": "seed",
+      "category": "机械设计"
+    },
+    {
+      "en": "AC motor",
+      "zh": "交流电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "CNC control",
+      "zh": "数控系统",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "DC motor",
+      "zh": "直流电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "PID control",
+      "zh": "PID控制",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "RV reducer",
+      "zh": "RV减速器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "actuator",
+      "zh": "执行器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "automation",
+      "zh": "自动化",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "brushless DC motor",
+      "zh": "无刷直流电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "collaborative robot",
+      "zh": "协作机器人",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "control chart",
+      "zh": "控制图",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "control system",
+      "zh": "控制系统",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "conveyor",
+      "zh": "输送机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "electric actuator",
+      "zh": "电动执行器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "encoder",
+      "zh": "编码器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "feedback control",
+      "zh": "反馈控制",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "flow sensor",
+      "zh": "流量传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "gripper",
+      "zh": "夹爪",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "induction motor",
+      "zh": "感应电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "industrial robot",
+      "zh": "工业机器人",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "laser sensor",
+      "zh": "激光传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "linear actuator",
+      "zh": "直线执行器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "linear encoder",
+      "zh": "光栅尺",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "linear motor",
+      "zh": "直线电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "mechatronics",
+      "zh": "机电一体化",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "motion control",
+      "zh": "运动控制",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "motor",
+      "zh": "电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "photoelectric sensor",
+      "zh": "光电传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "planetary reducer",
+      "zh": "行星减速器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "position sensor",
+      "zh": "位置传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "pressure sensor",
+      "zh": "压力传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "proximity sensor",
+      "zh": "接近开关",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "quality control",
+      "zh": "质量控制",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "reducer",
+      "zh": "减速器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "robot",
+      "zh": "机器人",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "robot arm",
+      "zh": "机械臂",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "rotary encoder",
+      "zh": "旋转编码器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "sensor",
+      "zh": "传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "servo control",
+      "zh": "伺服控制",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "servo motor",
+      "zh": "伺服电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "stepper motor",
+      "zh": "步进电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "synchronous motor",
+      "zh": "同步电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "torque motor",
+      "zh": "力矩电机",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "vision sensor",
+      "zh": "视觉传感器",
+      "source": "seed",
+      "category": "机电自动化"
+    },
+    {
+      "en": "ASME standard",
+      "zh": "ASME标准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "ASTM standard",
+      "zh": "ASTM标准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "DIN standard",
+      "zh": "DIN标准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "GB standard",
+      "zh": "中国国家标准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "ISO standard",
+      "zh": "ISO标准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "calibration",
+      "zh": "校准",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "certification",
+      "zh": "认证",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "inspection",
+      "zh": "检验",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "lean manufacturing",
+      "zh": "精益制造",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "quality assurance",
+      "zh": "质量保证",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "sampling inspection",
+      "zh": "抽样检验",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "six sigma",
+      "zh": "六西格玛",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "total quality management",
+      "zh": "全面质量管理",
+      "source": "seed",
+      "category": "标准规范"
+    },
+    {
+      "en": "bernoulli equation",
+      "zh": "伯努利方程",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "boiler",
+      "zh": "锅炉",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "cavitation",
+      "zh": "空化",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "condenser",
+      "zh": "冷凝器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "diffuser",
+      "zh": "扩压器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "dynamic viscosity",
+      "zh": "动力粘度",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "enthalpy",
+      "zh": "焓",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "entropy",
+      "zh": "熵",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "evaporator",
+      "zh": "蒸发器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "fluid dynamics",
+      "zh": "流体动力学",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "fluid mechanics",
+      "zh": "流体力学",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "fluid statics",
+      "zh": "流体静力学",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "four stroke engine",
+      "zh": "四冲程发动机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "gas turbine",
+      "zh": "燃气轮机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "heat exchanger",
+      "zh": "换热器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "heat transfer",
+      "zh": "传热",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulic actuator",
+      "zh": "液压执行器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulic cylinder",
+      "zh": "液压缸",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulic motor",
+      "zh": "液压马达",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulic system",
+      "zh": "液压系统",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulic turbine",
+      "zh": "水轮机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "hydraulics",
+      "zh": "液压",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "internal combustion engine",
+      "zh": "内燃机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "kinematic viscosity",
+      "zh": "运动粘度",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "laminar flow",
+      "zh": "层流",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "nozzle",
+      "zh": "喷嘴",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "plate heat exchanger",
+      "zh": "板式换热器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "pneumatic actuator",
+      "zh": "气动执行器",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "pneumatic cylinder",
+      "zh": "气缸",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "pneumatic system",
+      "zh": "气动系统",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "pneumatics",
+      "zh": "气动",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "reynolds number",
+      "zh": "雷诺数",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "spark ignition engine",
+      "zh": "点燃式发动机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "steam turbine",
+      "zh": "汽轮机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "thermocouple",
+      "zh": "热电偶",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "thermodynamic cycle",
+      "zh": "热力循环",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "thermodynamics",
+      "zh": "热力学",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "turbine",
+      "zh": "涡轮机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "turbulent flow",
+      "zh": "湍流",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "two stroke engine",
+      "zh": "二冲程发动机",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "viscosity",
+      "zh": "粘度",
+      "source": "seed",
+      "category": "热工流体"
+    },
+    {
+      "en": "wind turbine",
+      "zh": "风力发电机",
+      "source": "seed",
+      "category": "热工流体"
+    }
+  ],
+  "extracted_extras": [
+    {
+      "en": "AISC 13th Edition Structural Shapes Properties Viewer",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制图CAD"
+    },
+    {
+      "en": "Dimensional analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制图CAD"
+    },
+    {
+      "en": "Dimensional metrology",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制图CAD"
+    },
+    {
+      "en": "Modeling",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "制图CAD"
+    },
+    {
+      "en": "Adaptive machine",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "American Machinists' Handbook",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Area Moment of Inertia with Definitions, Formulas & Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Beam Deflection Calculator and Beam Stress Formulas and Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Blown film extrusion",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Cutting force (machining)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Deep hole drilling measurement technique",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Draw resonance",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Embedment",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Formability",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Formula SAE",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Friction - Coefficients for Common Materials and Surfaces",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Gun drill",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Hole drilling method",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Information",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Machine element",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Machine industry",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Machinery's Handbook",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Machines",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Material extrusion-based additive manufacturing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Platform screen doors",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Roark's Formulas for Stress and Strain",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Rube Goldberg machine",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Simple machine",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Surface",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Surface integrity",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Thermomechanical cuttings cleaner",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Turbomachinery",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Undercut (manufacturing)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Undercut (turning)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Visual Math Formula Creator and Editor",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制造工艺"
+    },
+    {
+      "en": "eFunda: Engineering Formulas",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "制造工艺"
+    },
+    {
+      "en": "Contact mechanics",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Fillet (mechanics)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Flat Plates Stress, Deflection Equations and Calculators",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "力学强度"
+    },
+    {
+      "en": "Freedom and constraint topologies",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Friction loss",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Frictional contact mechanics",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Hydrodynamics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "力学强度"
+    },
+    {
+      "en": "Kinematic determinacy",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Mechanics",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "力学强度"
+    },
+    {
+      "en": "Mechanics of Materials: Stress",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "力学强度"
+    },
+    {
+      "en": "Nanomechanics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "力学强度"
+    },
+    {
+      "en": "Permissible stress design",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Strain hardening exponent",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Stress-Strain Curve Ramberg-Osgood Equations and Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "力学强度"
+    },
+    {
+      "en": "Vibration isolation",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "Vibratory stress relief",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "力学强度"
+    },
+    {
+      "en": "American Wide Flange Steel Beams (W-Beams) - Dimensions and Properties in Imperi",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "Burnishing (metal)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Cryogenic engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Metal hose",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Metallurgical failure analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Metalworking",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Photoelasticity",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Sheet metal forming simulation",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Standard Steel and Aluminum Beams",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "Thermo-mechanical fatigue",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "工程材料"
+    },
+    {
+      "en": "Young’s Modulus of Elasticity – Values for Common Materials",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "eFunda: General Information on Aluminum Alloys",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "eFunda: General Information on Steels",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "eFunda: Introduction to Composite Materials",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "工程材料"
+    },
+    {
+      "en": "Acoustical",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Acoustics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Advanced",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Agitator (device)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Air flow bench",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Air handler",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Air preheater",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Airflow",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Alarm management",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Algebra",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Allan David Stephen Barr",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Alper Erturk",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Amorphous",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Analysis",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Anti-sweatshop movement",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Applications",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Archaeology",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Architecture",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Ardalan Vahidi",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Armais Arutunoff",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ashitava Ghosal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ashlie Martini",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Atomistic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Autofrettage",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Automaton clock",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Axial fan design",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Backdrive",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Baja SAE",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ball detent",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Based",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Bating (leather)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Beale number",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Beam Loads - Support Force Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Becoming",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Behavior",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Bellcrank",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Biomaterials",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Biomedical",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Bleachfield",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Block and bleed manifold",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Bogdan Baltazar",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Bond graph",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Branislav Hadzima",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Break-in (mechanical run-in)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Brinelling",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Built-up gun",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Bullwheel",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Bushing (isolator)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Byung Man Kwak",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "C. Mauli Agrawal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "COMOS",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Calculus",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Calvin Blignault",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Carlos Fernández-Pello",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Catherine Mohr",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Cellular",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Centrifugal pendulum absorber",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Certificate of analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Chamber pressure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Chandrashekhar S. Jog",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Chassis dynamometer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Chemistry",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Chilled water",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Chiller",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Circle grid analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Circulating water plant",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Cloakmaker",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Cold-cranking simulator",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Complexity",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Compound lever",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Computation",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Computational",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Computer",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Constant air volume",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Continuous",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Contract manufacturer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Critical speed",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Crumpling",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Crushing plant",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "D'Alembert–Euler condition",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "D-value (transport)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Damper (flow)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dave Carden",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "David Erickson (academic)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Decision",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Density, Specific Weight, and Specific Gravity – Definitions & Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Desalination",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Design",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Design for manufacturability",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Design manufacture service",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Design-to-cost",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Designing",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Development",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Devices",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Dexel",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dick Volz Award",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Differential",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Digital",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Directed assembly of micro- and nano-structures",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Discrete",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Discrete manufacturing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Downstream (manufacturing)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Drucker Medal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dry mortar production line",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dunkerley's method",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Duty cycle",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dynamic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Dynamic manufacturing network",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Dynamometer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "ERF damper",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Economic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Economics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Edward Jełowicki",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Electronic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Elegant degradation",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Elias C. Aifantis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Elio Morillo",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Envelope (motion)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Environmental",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Equation of state",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Equations",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Eringen Medal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Estimation",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "European Hyperloop Week",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Evolution",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Expansion joint",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Experience",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Exploration",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Factory overhead",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Fan coil unit",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Feedwater heater",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Feller buncher",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Fill and finish",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Final assembly schedule",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Final product",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Finished goods",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Finite",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Finn Haldorsen",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Flatness (manufacturing)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Flexible manufacturing system",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Flexure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Float (liquid level)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Fordism",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Fuel homogenizer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Fundamentals",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Galling",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Generalised beam theory",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ghost Gunner",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Gladys Ngetich",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Guillermo Rein",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Gustav Niemann",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hanadi Salem",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hassan Nagib",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Heating, ventilation, and air conditioning",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Heisler chart",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hemorheology",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hetem Ramadani",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ho-Young Kim",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Homemade firearm",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hoop gun",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Horacio Ahuett Garza",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hot Rodders of Tomorrow",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Human",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Human Powered Vehicle Challenge",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hydrogen fuel cell power plant",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hydrogen turboexpander-generator",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hyperloop pod competition",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Hütte",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ian Brackenbury",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Identification",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Idler-wheel",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Improvised firearm",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Indexing (motion)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Industries",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Instrument",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Integrated manufacturing database",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Interchangeable parts",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Intermittent water supply",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "International Birdman",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "International Organization of Legal Metrology",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Introduction",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Iron hand (prosthesis)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Issues",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "J. Michael McCarthy",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Jack Brouwer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Jane MacMaster",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Jeong Whan Yoon",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Jib (crane)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Job shop",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "John Scott Lillie",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Joining technology",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Juan C. Simo",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Junker test",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Kambiz Vafai",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Karen Lozano",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Karl Ritter von Ghega",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Katja Hölttä-Otto",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Kit-of-parts",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Kludge",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Knock-down kit",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Koiter Medal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Kristina Shea",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Kyoungchul Kong",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "LCD manufacturing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Laboratory",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Large",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Leak-down tester",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Learning",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Lee Kunwoo",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Leonid N. Kartsev",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Lightening holes",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Linear",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Linear Thermal Expansion Coefficients of Materials",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "List of Human Powered Vehicle Challenge results",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Ljungström air preheater",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Load path analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Longeron",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "MEMS",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Magnetic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Maintenance",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Making",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Maneuvering",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Manufacture of the International Space Station",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Manufacturing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Manufacturing cost",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Manufacturing process management",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Manufacturing readiness level",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Marine",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Marudai",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mass transfer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Material",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Material Properties",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Materials",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Materials management",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mathematicall Magick",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mathematics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Mating connection",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Measurements",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical advantage device",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical joint",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical load",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical singularity",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mechanical, electrical, and plumbing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Micro",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Mohamed Arkab",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mohsen Asle Zaeem",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Monozukuri",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "MotoStudent",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Multi-function structure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Mārtiņš Rubenis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Naval",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Nazanin Bassiri-Gharb",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "New manufacturing economy",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Numerical",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Ocean",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Oceanographic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Oceanography",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Open manufacturing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Operations management",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Optical",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Optimal",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Organic",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Orifice plate",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Original equipment manufacturer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Origins",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Parallel force system",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Parts book",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Paths",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Peace",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Periodic Table",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Phase shift torque measurement",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Phenomena",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Photovoltaics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Physics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Piezoelectric microelectromechanical systems",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Piston motion equations",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Poisson's Ratio – Definition, Values for Materials, and Applications",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Poly-clip System",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Power",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Practice",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Pressure exchanger",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Principles",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Proactive maintenance",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Process",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Process integration",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Processing",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Product",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Project",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Properties",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Properties of Common Solid Materials",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Propulsion",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Purification",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Railworthiness",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Range of motion",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Reciprocating motion",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Recuperator",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Red Bull Flugtag",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Refrigerant",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Register (air and heating)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Reinaldo Dalcin",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Repair kit",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Richard William Bailey",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Roadworthiness",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Robert G. Wilhelm",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Romeo V. Turcan",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Rotary feeder",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Rudolph L. Hanau",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Run-around coil",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Run-out",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "SAE Aerodesign",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Sacrificial part",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Salinee Tavaranan",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Savvy",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Scale",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Scholar",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Science",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Scientists",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Scott Samuelsen",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Scott X. Mao",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Selection",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Self-adaptive mechanisms",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Self-propulsion",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Sesan Peter Ayodeji",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Sieving coefficient",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Sight glass",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Signal",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Simulation",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Single Degree-of-Freedom Systems",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Skelp",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Slip joint",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Soft Foot",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Solid",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Solids",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Soteris Kalogirou",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "South-pointing chariot",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Special",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "State",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Steam rupture",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Stephen A. Akinlabi",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Stick–slip phenomenon",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Structural",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Structural integrity and failure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Structural load",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Structure",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Superlubricity",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Swivel",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "System",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Systems",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Tail lift",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Takedown gun",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "The Boring Company",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Theories",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Thermal Conductivity of Common Materials -  Solids, Liquids and Gases",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Third medium contact method",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Timeline of jet power",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Timing light",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Timken OK Load",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Timoshenko Medal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Tip clearance",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Tommy Gate",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Tools",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Topics",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Torque density",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Total indicator reading",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Transfer",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Transport",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Transportation",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Treadle",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Turboexpander",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Turhan Nejat Veziroğlu",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Underwater",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Vahid Motevalli",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Variable air volume",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Variations",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Vehicles",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Velocity triangle",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Victor Vâlcovici",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Water",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "未分类"
+    },
+    {
+      "en": "Water cascade analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Water chiller",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Wavhudi Lidzhegu",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "West number",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Whitworth Society",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "William Prager Medal",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Willow Run",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Work (physics)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Yip-Wah Chung",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Zdravko Krivokapić",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "Zissis Samaras",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "未分类"
+    },
+    {
+      "en": "eFunda: Classical Plate Equation",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "未分类"
+    },
+    {
+      "en": "Affinity Laws for Pumps: Principles, Formulas & Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Airshaft",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Andy Fitzgerald",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Bearing Engineering and Knowledge Application Menu",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Bearing pressure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Bearing surface",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Bolt circle",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Bolted joint",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Cam plastometer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Comminution",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Compression (physics)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Constrained-layer damping",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Damping matrix",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Dimensional Tolerance Stack-Up  and Analysis Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Eddy current brake",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Edmund key",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Electromagnetic brake",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Electromagnetic clutch",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Electromagnetic clutches and brakes",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Engineering fit",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Fastener, Bolt and Screw Design, Torque and Force Calculations",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Form-fit connection",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Gear Design Equations and Formula | Circular Pitches and Equivalent Diametral Pi",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Gears: Introduction",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Helical Compression Spring Design Equations and Calculator",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Hydrogen pinch",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Lian-Ping Wang",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Limits and fits",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Magnetic particle clutch",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Mechanical Design Guidelines for Bearings",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Mechanical Design Guidelines for Springs",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "机械设计"
+    },
+    {
+      "en": "Nutation (engineering)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Ortman key",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Particle damping",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Pinch analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Screw theory",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Shaft (mechanical engineering)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Shaft alignment",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Shear pin",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Spherical roller bearing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Spherical roller thrust bearing",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Tolerance analysis",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Torsional instability",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机械设计"
+    },
+    {
+      "en": "Control",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "机电自动化"
+    },
+    {
+      "en": "Factory automation infrastructure",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机电自动化"
+    },
+    {
+      "en": "Industrial control system",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机电自动化"
+    },
+    {
+      "en": "Robot Award",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机电自动化"
+    },
+    {
+      "en": "Sensors",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "机电自动化"
+    },
+    {
+      "en": "Tesla Automation",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "机电自动化"
+    },
+    {
+      "en": "eFunda: Design Standards",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "标准规范"
+    },
+    {
+      "en": "Backlash (engineering)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Boss (engineering)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "British Engineering Excellence Awards",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Concurrent engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Control engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Duality (mechanical engineering)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Dynamic, Absolute, and Kinematic Viscosity – Definitions & Conversions",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "热工流体"
+    },
+    {
+      "en": "Engineering",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "热工流体"
+    },
+    {
+      "en": "Engineering Equation Solver",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Engineering bill of materials",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Engineering design process",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Engineers",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "热工流体"
+    },
+    {
+      "en": "Euler-Bernoulli Beam Equation",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "热工流体"
+    },
+    {
+      "en": "Euler–Bernoulli beam theory",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Fluid power",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Fluids",
+      "zh": "",
+      "source": "mit_ocw",
+      "category": "热工流体"
+    },
+    {
+      "en": "Glossary of mechanical engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Hiroshi Tada (engineer)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "History of mechanical engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "History of the jet engine",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Index of mechanical engineering articles",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Industrial and production engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Introduction to the Principles of Heat Transfer",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "热工流体"
+    },
+    {
+      "en": "List of automotive engineering software",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "List of mechanical engineering awards",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "List of mechanical engineering software",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "List of mechanical engineers",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Maintenance engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Manufacturing engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Marks' Standard Handbook for Mechanical Engineers",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Mechanical Engineering Heritage (Japan)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Mechanical engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Mechanical engineering technology",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Multiphase heat transfer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Near-field radiative heat transfer",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Pneumatic tool",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Power engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Precision engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Reynolds equation",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Reynolds transport theorem",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Richard Jenkins (engineer)",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Statistical associating fluid theory",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Thermal engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Thermomechanical generator",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Vacuum engineering",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "Wells turbine",
+      "zh": "",
+      "source": "wikipedia",
+      "category": "热工流体"
+    },
+    {
+      "en": "eFunda: Engineering Materials",
+      "zh": "",
+      "source": "engineering_portal",
+      "category": "热工流体"
+    }
+  ]
+}

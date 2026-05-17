@@ -1,0 +1,61 @@
+baseURL = "https://windwu333.github.io/jixie-baike/"
+locale = "zh-CN"
+title = "机械师大百科"
+theme = "PaperMod"
+defaultContentLanguage = "zh"
+
+# Content directory pointing to our articles
+contentDir = "content/website"
+
+# Pagination
+paginate = 10
+
+enableEmoji = true
+hasCJKLanguage = true
+
+[params]
+  env = "production"
+  description = "机械工程百科全书 — Mechanical Engineering Encyclopedia"
+  keywords = ["机械工程", "机械设计", "制造工艺", "材料科学", "力学", "热工流体", "机电自动化"]
+
+  # PaperMod theme config
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  TocOpen = true
+
+  # Home page
+  homeInfoParams = { Title = "机械师大百科", Content = "系统化的机械工程知识平台，涵盖机械设计、制造工艺、工程材料、力学强度、热工流体、机电自动化等领域。" }
+
+  # Social
+  social = false
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 30
+
+# Baidu Analytics
+[services]
+  [services.baiduAnalytics]
+    id = "UA-XXXXXXXX-X"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

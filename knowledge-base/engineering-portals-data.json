@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "采集时间": "2026-05-17 13:29:22",
+    "总站点数": 3,
+    "成功站点数": 3,
+    "总页面数": 41,
+    "数据来源": [
+      "Engineers Edge - https://www.engineersedge.com/",
+      "eFunda - https://www.efunda.com/",
+      "Engineering ToolBox - https://www.engineeringtoolbox.com/"
+    ]
+  },
+  "sites": [
+    {
+      "name": "Engineers Edge",
+      "url": "https://www.engineersedge.com/",
+      "pages": [
+        {
+          "title": "Beam Deflection Calculator and Beam Stress Formulas and Calculator",
+          "url": "https://www.engineersedge.com/beam_calc_menu.shtml",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Beam Deflection Calculator and Beam Stress Formulas and Calculator Membership Services Beam Deflecti"
+        },
+        {
+          "title": "Helical Compression Spring Design Equations and Calculator",
+          "url": "https://www.engineersedge.com/spring_comp_calc.htm",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Spring rate can be measured by taking the difference in force at 80% maximum deflection and 20% mini"
+        },
+        {
+          "title": "Gear Design Equations and Formula | Circular Pitches and Equivalent Diametral Pitches Table",
+          "url": "https://www.engineersedge.com/gear_formula.htm",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Spur Gear design formula for geometry, pitch, tooth clearance and critical functional data. Circular"
+        },
+        {
+          "title": "Flat Plates Stress, Deflection Equations and Calculators",
+          "url": "https://www.engineersedge.com/flat_plates_equations_calculators.htm",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Flat Plates Stress, Deflection Equations and Calculators Membership Services Flat Plates Stress, Def"
+        },
+        {
+          "title": "Fastener, Bolt and Screw Design, Torque and Force Calculations",
+          "url": "https://www.engineersedge.com/fastener_thread_menu.shtml",
+          "category": "标准件",
+          "data_type": "standards",
+          "content_summary": "Design resources for design screws and bolts for the proper torque, stress, strain, preload and othe"
+        },
+        {
+          "title": "Bearing Engineering and Knowledge Application Menu",
+          "url": "https://www.engineersedge.com/bearing_menu.shtml",
+          "category": "标准件",
+          "data_type": "standards",
+          "content_summary": "Bearing Engineering and Knowledge Application Menu Membership Services Scientific Calculator Popup B"
+        },
+        {
+          "title": "Stress-Strain Curve Ramberg-Osgood Equations and Calculator",
+          "url": "https://www.engineersedge.com/calculators/stressstrain_curve_15438.htm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Stress-Strain Calculator and Plotted Curve Approximation using Ramberg-Osgood Equation"
+        },
+        {
+          "title": "Dimensional Tolerance Stack-Up  and Analysis Calculator",
+          "url": "https://www.engineersedge.com/calculators/dimensional_tolerance_stackup__16631.htm",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "This Tolerance stack-up application utilizes a methodology for calculating a tolerance stack-up anal"
+        },
+        {
+          "title": "AISC 13th Edition Structural Shapes Properties Viewer",
+          "url": "https://www.engineersedge.com/materials/aisc_structural_shapes/aisc_structural_shapes_viewer.htm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "AISC structural shapes properties viewer, w-flange, s-flange,wt, st, mt shpaes, double angles, recta"
+        },
+        {
+          "title": "Visual Math Formula Creator and Editor",
+          "url": "https://www.engineersedge.com/math/visual_math_formula_16146.htm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Visual Math Formula Creator and Editor Membership Services Scientific Calculator Popup Related Resou"
+        }
+      ]
+    },
+    {
+      "name": "eFunda",
+      "url": "https://www.efunda.com/",
+      "pages": [
+        {
+          "title": "eFunda: Engineering Formulas",
+          "url": "https://www.efunda.com/formulae/index.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Index page for formulas, containing Fluids, Heat Transfer, Vibrations, Beams, and Finances sub-secti"
+        },
+        {
+          "title": "Mechanics of Materials: Stress",
+          "url": "https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/stress.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Introduction to stress, its definition and derivation, and equations of equilibrium."
+        },
+        {
+          "title": "Euler-Bernoulli Beam Equation",
+          "url": "https://www.efunda.com/formulae/solid_mechanics/beams/index.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Euler-Bernoulli Beam Equation and its derivation."
+        },
+        {
+          "title": "eFunda: Classical Plate Equation",
+          "url": "https://www.efunda.com/formulae/solid_mechanics/plates/index.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Classical plate equation, its derivation and associated assumptions."
+        },
+        {
+          "title": "Single Degree-of-Freedom Systems",
+          "url": "https://www.efunda.com/formulae/vibrations/index.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Introduction to SDOF systems; equation of motion."
+        },
+        {
+          "title": "Introduction to the Principles of Heat Transfer",
+          "url": "https://www.efunda.com/formulae/heat_transfer/index.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "Basics of heat transfer theories including conduction, convection, and radiation."
+        },
+        {
+          "title": "eFunda: Introduction to Composite Materials",
+          "url": "https://www.efunda.com/formulae/solid_mechanics/composites/comp_intro.cfm",
+          "category": "工程公式",
+          "data_type": "formulas",
+          "content_summary": "An overview of composite materials, their common categories and basic benefits."
+        },
+        {
+          "title": "eFunda: Engineering Materials",
+          "url": "https://www.efunda.com/materials/index.cfm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Home page for properties of materials such as elements, alloys, polymers, and piezo ceramics."
+        },
+        {
+          "title": "Properties of Common Solid Materials",
+          "url": "https://www.efunda.com/materials/common_matl/common_matl.cfm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Properties of Common Solid Materials"
+        },
+        {
+          "title": "eFunda: General Information on Steels",
+          "url": "https://www.efunda.com/materials/alloys/alloy_home/steels.cfm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "General information for steels and their classifications."
+        },
+        {
+          "title": "eFunda: General Information on Aluminum Alloys",
+          "url": "https://www.efunda.com/materials/alloys/aluminum/aluminum.cfm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "General information for aluminum alloys and their characteristics."
+        },
+        {
+          "title": "eFunda: Design Standards",
+          "url": "https://www.efunda.com/designstandards/index.cfm",
+          "category": "设计标准",
+          "data_type": "standards",
+          "content_summary": "Design standards homepage. Links to all design guidelines or tables in the categories of springs, be"
+        },
+        {
+          "title": "Mechanical Design Guidelines for Springs",
+          "url": "https://www.efunda.com/designstandards/springs/spring_introduction.cfm",
+          "category": "设计标准",
+          "data_type": "formulas",
+          "content_summary": "Introduction to various types of springs and the history of springs."
+        },
+        {
+          "title": "Mechanical Design Guidelines for Bearings",
+          "url": "https://www.efunda.com/designstandards/bearings/bearings_introduction.cfm",
+          "category": "设计标准",
+          "data_type": "standards",
+          "content_summary": "Introduction to bearings which are needed whenever one part of a machine slides against another. An "
+        },
+        {
+          "title": "Gears: Introduction",
+          "url": "https://www.efunda.com/designstandards/gears/gears_introduction.cfm",
+          "category": "设计标准",
+          "data_type": "formulas",
+          "content_summary": "Brief introduction to gears with some illustrations."
+        },
+        {
+          "title": "Standard Steel and Aluminum Beams",
+          "url": "https://www.efunda.com/designstandards/beams/IbeamIndex.cfm",
+          "category": "设计标准",
+          "data_type": "standards",
+          "content_summary": "Database of geometric properties of standard and beams with common cross sections."
+        },
+        {
+          "title": "Periodic Table",
+          "url": "https://www.efunda.com/materials/elements/periodic_table.cfm",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Interactive periodic table with hyperlinks to pages with material properties of each element."
+        }
+      ]
+    },
+    {
+      "name": "Engineering ToolBox",
+      "url": "https://www.engineeringtoolbox.com/",
+      "pages": [
+        {
+          "title": "Material Properties",
+          "url": "https://www.engineeringtoolbox.com/material-properties-t_24.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Properties of gases, fluids and solids. Densities, specific heats, viscosities and more."
+        },
+        {
+          "title": "Fluid Mechanics",
+          "url": "https://www.engineeringtoolbox.com/fluid-mechanics-t_21.html",
+          "category": "流体力学",
+          "data_type": "formulas",
+          "content_summary": "The study of fluids - liquids and gases. Involving velocity, pressure, density and temperature as fu"
+        },
+        {
+          "title": "Mechanics",
+          "url": "https://www.engineeringtoolbox.com/mechanics-t_52.html",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "The relationships between forces, acceleration, displacement, vectors, motion, momentum, energy of o"
+        },
+        {
+          "title": "Density, Specific Weight, and Specific Gravity – Definitions & Calculator",
+          "url": "https://www.engineeringtoolbox.com/density-specific-weight-gravity-d_290.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "The difference between density, specific weight, and specific gravity. Including formulas, definitio"
+        },
+        {
+          "title": "Dynamic, Absolute, and Kinematic Viscosity – Definitions & Conversions",
+          "url": "https://www.engineeringtoolbox.com/dynamic-absolute-kinematic-viscosity-d_412.html",
+          "category": "流体力学",
+          "data_type": "materials",
+          "content_summary": "The differences between dynamic, absolute, and kinematic viscosity - a fluids resistance to flow - w"
+        },
+        {
+          "title": "Thermal Conductivity of Common Materials -  Solids, Liquids and Gases",
+          "url": "https://www.engineeringtoolbox.com/thermal-conductivity-d_429.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Thermal conductivity of various common materials, including metals, gases, and building materials. E"
+        },
+        {
+          "title": "Young’s Modulus of Elasticity – Values for Common Materials",
+          "url": "https://www.engineeringtoolbox.com/young-modulus-d_417.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Young’s Modulus (Elastic Modulus) of various materials, including metals, plastics, and composites. "
+        },
+        {
+          "title": "Poisson's Ratio – Definition, Values for Materials, and Applications",
+          "url": "https://www.engineeringtoolbox.com/poissons-ratio-d_1224.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Poisson's Ratio – Definition, Values for Materials, and Applications Engineering ToolBox - Resources"
+        },
+        {
+          "title": "Linear Thermal Expansion Coefficients of Materials",
+          "url": "https://www.engineeringtoolbox.com/linear-expansion-coefficients-d_95.html",
+          "category": "材料数据",
+          "data_type": "materials",
+          "content_summary": "Linear thermal expansion coefficients of common materials, including metals, plastics, and composite"
+        },
+        {
+          "title": "Friction - Coefficients for Common Materials and Surfaces",
+          "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+          "category": "机械设计",
+          "data_type": "materials",
+          "content_summary": "Find friction coefficients for various material combinations, including static and kinetic friction "
+        },
+        {
+          "title": "Area Moment of Inertia with Definitions, Formulas & Calculator",
+          "url": "https://www.engineeringtoolbox.com/area-moment-inertia-d_1328.html",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Explore the area moment of inertia (second moment of area) with detailed formulas, calculation tools"
+        },
+        {
+          "title": "American Wide Flange Steel Beams (W-Beams) - Dimensions and Properties in Imperial Units",
+          "url": "https://www.engineeringtoolbox.com/american-wide-flange-steel-beams-d_1319.html",
+          "category": "材料数据",
+          "data_type": "standards",
+          "content_summary": "Dimensions, weight, section properties, and essential data of American wide flange steel beams (W-be"
+        },
+        {
+          "title": "Beam Loads - Support Force Calculator",
+          "url": "https://www.engineeringtoolbox.com/beams-support-forces-d_1311.html",
+          "category": "机械设计",
+          "data_type": "formulas",
+          "content_summary": "Calculate beam load and supporting forces."
+        },
+        {
+          "title": "Affinity Laws for Pumps: Principles, Formulas & Calculator",
+          "url": "https://www.engineeringtoolbox.com/affinity-laws-d_408.html",
+          "category": "流体力学",
+          "data_type": "formulas",
+          "content_summary": "Turbo machines affinity laws can be used to calculate volume capacity, head or power consumption in "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "title": "GB/ISO机械工程标准对照表",
+    "version": "1.0",
+    "created": "2026-05-18",
+    "total": 50,
+    "categories": [
+      "机械制图", "公差配合", "螺纹/紧固件", "焊接", "材料",
+      "热处理", "齿轮", "轴承", "弹簧", "液压气动", "表面处理"
+    ],
+    "description": "中国国家标准(GB/GB/T)与国际标准(ISO/IEC)在机械工程核心领域的对照关系。每条记录标注标准编号、中英文名称、领域分类及应用说明。"
+  },
+  "standards": [
+    {
+      "id": "GB/T 14689-2008",
+      "id_iso": "ISO 5457:1999",
+      "name_cn": "技术制图 图纸幅面和格式",
+      "name_en": "Technical product documentation — Sizes and layout of drawing sheets",
+      "category": "机械制图",
+      "note": "A0-A4图纸幅面尺寸及图框格式"
+    },
+    {
+      "id": "GB/T 14690-1993",
+      "id_iso": "ISO 5455:1979",
+      "name_cn": "技术制图 比例",
+      "name_en": "Technical drawings — Scales",
+      "category": "机械制图",
+      "note": "常用比例系列：原值、放大、缩小比例"
+    },
+    {
+      "id": "GB/T 14691-1993",
+      "id_iso": "ISO 3098-1:2015",
+      "name_cn": "技术制图 字体",
+      "name_en": "Technical product documentation — Lettering — Part 1: General requirements",
+      "category": "机械制图",
+      "note": "汉字、字母和数字的书写规范"
+    },
+    {
+      "id": "GB/T 17450-1998",
+      "id_iso": "ISO 128-20:1996",
+      "name_cn": "技术制图 图线",
+      "name_en": "Technical drawings — Lines — Basic conventions",
+      "category": "机械制图",
+      "note": "图线类型(粗实线/细实线/虚线等)、宽度系列"
+    },
+    {
+      "id": "GB/T 4458.1-2002",
+      "id_iso": "ISO 128-30:2001",
+      "name_cn": "机械制图 图样画法 视图",
+      "name_en": "Technical drawings — Basic conventions for views",
+      "category": "机械制图",
+      "note": "基本视图配置、向视图、局部视图、斜视图"
+    },
+    {
+      "id": "GB/T 1800.1-2020",
+      "id_iso": "ISO 286-1:2010",
+      "name_cn": "产品几何技术规范(GPS) 极限与配合 第1部分：公差、偏差和配合的基础",
+      "name_en": "GPS — ISO code system for tolerances on linear sizes — Part 1: Basis of tolerances, deviations and fits",
+      "category": "公差配合",
+      "note": "公差带代号、偏差数值、配合类型(H/js/k等)基础"
+    },
+    {
+      "id": "GB/T 1800.2-2020",
+      "id_iso": "ISO 286-2:2010",
+      "name_cn": "产品几何技术规范(GPS) 极限与配合 第2部分：标准公差等级和孔、轴极限偏差表",
+      "name_en": "GPS — ISO code system for tolerances on linear sizes — Part 2: Tables of standard tolerance grades and limit deviations",
+      "category": "公差配合",
+      "note": "IT01-IT18各级公差数值表及极限偏差表"
+    },
+    {
+      "id": "GB/T 1804-2000",
+      "id_iso": "ISO 2768-1:1989",
+      "name_cn": "一般公差 未注公差的线性和角度尺寸的公差",
+      "name_en": "General tolerances — Part 1: Tolerances for linear and angular dimensions without individual tolerance indications",
+      "category": "公差配合",
+      "note": "未注公差尺寸的f/m/c/v四级精度"
+    },
+    {
+      "id": "GB/T 1184-1996",
+      "id_iso": "ISO 2768-2:1989",
+      "name_cn": "形状和位置公差 未注公差值",
+      "name_en": "Geometrical tolerancing — Tolerances of form, orientation, location and run-out — General tolerances",
+      "category": "公差配合",
+      "note": "未注形位公差的H/K/L三级"
+    },
+    {
+      "id": "GB/T 1182-2018",
+      "id_iso": "ISO 1101:2017",
+      "name_cn": "产品几何技术规范(GPS) 几何公差 形状、方向、位置和跳动公差标注",
+      "name_en": "GPS — Geometrical tolerancing — Tolerances of form, orientation, location and run-out",
+      "category": "公差配合",
+      "note": "几何公差符号、标注框格和基准标注方法"
+    },
+    {
+      "id": "GB/T 3505-2009",
+      "id_iso": "ISO 4287:1997",
+      "name_cn": "产品几何技术规范(GPS) 表面结构 轮廓法 术语、定义及表面结构参数",
+      "name_en": "GPS — Surface texture — Profile method — Terms, definitions and surface texture parameters",
+      "category": "公差配合",
+      "note": "Ra/Rz/Rsm等表面粗糙度参数定义"
+    },
+    {
+      "id": "GB/T 192-2003",
+      "id_iso": "ISO 68-1:1998",
+      "name_cn": "普通螺纹 基本牙型",
+      "name_en": "ISO general purpose screw threads — Basic profile",
+      "category": "螺纹/紧固件",
+      "note": "公制螺纹基本牙型及尺寸关系"
+    },
+    {
+      "id": "GB/T 193-2003",
+      "id_iso": "ISO 261:1998",
+      "name_cn": "普通螺纹 直径与螺距系列",
+      "name_en": "ISO general purpose metric screw threads — General plan",
+      "category": "螺纹/紧固件",
+      "note": "公制螺纹公称直径和螺距系列表"
+    },
+    {
+      "id": "GB/T 197-2003",
+      "id_iso": "ISO 965-1:1998",
+      "name_cn": "普通螺纹 公差",
+      "name_en": "ISO general purpose metric screw threads — Tolerances — Part 1: Principles and basic data",
+      "category": "螺纹/紧固件",
+      "note": "螺纹公差带及旋合长度(S/N/L)选择"
+    },
+    {
+      "id": "GB/T 5780-2016",
+      "id_iso": "ISO 4016:2011",
+      "name_cn": "六角头螺栓 C级",
+      "name_en": "Hexagon head bolts — Product grade C",
+      "category": "螺纹/紧固件",
+      "note": "粗制六角头螺栓，中等精度"
+    },
+    {
+      "id": "GB/T 6170-2015",
+      "id_iso": "ISO 4032:2012",
+      "name_cn": "1型六角螺母",
+      "name_en": "Hexagon regular nuts (style 1)",
+      "category": "螺纹/紧固件",
+      "note": "标准六角螺母，1型"
+    },
+    {
+      "id": "GB/T 70.1-2008",
+      "id_iso": "ISO 4762:2004",
+      "name_cn": "内六角圆柱头螺钉",
+      "name_en": "Hexagon socket head cap screws",
+      "category": "螺纹/紧固件",
+      "note": "内六角螺钉，高强度"
+    },
+    {
+      "id": "GB/T 5185-2005",
+      "id_iso": "ISO 4063:2023",
+      "name_cn": "焊接及相关工艺方法代号",
+      "name_en": "Welding and allied processes — Nomenclature of processes and reference numbers",
+      "category": "焊接",
+      "note": "焊接方法数字代号体系(111/135/141等)"
+    },
+    {
+      "id": "GB/T 985.1-2008",
+      "id_iso": "ISO 9692-1:2013",
+      "name_cn": "气焊、焊条电弧焊、气体保护焊和高能束焊的推荐坡口",
+      "name_en": "Welding — Recommendations for joint preparation — Part 1: Manual metal-arc welding, gas-shielded arc welding, laser-beam welding",
+      "category": "焊接",
+      "note": "焊接坡口形式(I/V/U/X型等)和尺寸"
+    },
+    {
+      "id": "GB/T 11345-2013",
+      "id_iso": "ISO 17640:2018",
+      "name_cn": "焊缝无损检测 超声检测 技术、检测等级和评定",
+      "name_en": "Non-destructive testing of welds — Ultrasonic testing — Techniques, testing levels, and assessment",
+      "category": "焊接",
+      "note": "焊缝超声检测方法及A/B/C三级检测等级"
+    },
+    {
+      "id": "GB/T 3323.1-2019",
+      "id_iso": "ISO 17636-1:2022",
+      "name_cn": "焊缝无损检测 射线检测 第1部分：X射线和伽马射线技术",
+      "name_en": "Non-destructive testing of welds — Radiographic testing — Part 1: X- and gamma-ray techniques with film",
+      "category": "焊接",
+      "note": "焊缝X射线和伽马射线照相检测"
+    },
+    {
+      "id": "GB/T 8110-2020",
+      "id_iso": "ISO 14341:2020",
+      "name_cn": "熔化极气体保护电弧焊用非合金钢及细晶粒钢实心焊丝",
+      "name_en": "Wire electrodes for gas metal arc welding of non-alloy and fine-grain steels",
+      "category": "焊接",
+      "note": "实心焊丝型号分类和化学成分要求"
+    },
+    {
+      "id": "GB/T 700-2006",
+      "id_iso": "ISO 630-1:2011",
+      "name_cn": "碳素结构钢",
+      "name_en": "Structural steels — Part 1: General technical delivery conditions for hot-rolled products",
+      "category": "材料",
+      "note": "Q195/Q215/Q235/Q275钢牌号和力学性能"
+    },
+    {
+      "id": "GB/T 1591-2018",
+      "id_iso": "ISO 630-3:2015",
+      "name_cn": "低合金高强度结构钢",
+      "name_en": "Structural steels — Part 3: High-yield-strength structural steels",
+      "category": "材料",
+      "note": "Q355/Q390/Q420/Q460低合金钢牌号"
+    },
+    {
+      "id": "GB/T 699-2015",
+      "id_iso": "ISO 683-1:2016",
+      "name_cn": "优质碳素结构钢",
+      "name_en": "Heat-treatable steels, alloy steels and free-cutting steels — Part 1: Non-alloy steels",
+      "category": "材料",
+      "note": "08F/10/15/45/65Mn等优质碳素钢"
+    },
+    {
+      "id": "GB/T 3077-2015",
+      "id_iso": "ISO 683-2:2016",
+      "name_cn": "合金结构钢",
+      "name_en": "Heat-treatable steels, alloy steels and free-cutting steels — Part 2: Alloy steels",
+      "category": "材料",
+      "note": "40Cr/20CrMnTi/35CrMo等合金钢"
+    },
+    {
+      "id": "GB/T 231.1-2018",
+      "id_iso": "ISO 6506-1:2014",
+      "name_cn": "金属材料 布氏硬度试验 第1部分：试验方法",
+      "name_en": "Metallic materials — Brinell hardness test — Part 1: Test method",
+      "category": "材料",
+      "note": "布氏硬度(HBW)试验原理、压头和步骤"
+    },
+    {
+      "id": "GB/T 9450-2005",
+      "id_iso": "ISO 2639:2002",
+      "name_cn": "钢件渗碳淬火有效硬化层深度的测定和校核",
+      "name_en": "Steels — Determination and verification of the effective depth of carburized and hardened cases",
+      "category": "热处理",
+      "note": "渗碳硬化层深度(CHD)测量方法"
+    },
+    {
+      "id": "GB/T 5617-2005",
+      "id_iso": "ISO 3754:1976",
+      "name_cn": "钢的感应淬火有效硬化层深度的测定",
+      "name_en": "Steels — Determination of effective depth of hardening after flame or induction hardening",
+      "category": "热处理",
+      "note": "感应淬火有效硬化层(NHD)测量"
+    },
+    {
+      "id": "GB/T 7232-2023",
+      "id_iso": "ISO 4885:2018",
+      "name_cn": "金属热处理术语",
+      "name_en": "Heat treatment of ferrous products — Vocabulary",
+      "category": "热处理",
+      "note": "退火/正火/淬火/回火/渗碳/渗氮等术语"
+    },
+    {
+      "id": "GB/T 1356-2001",
+      "id_iso": "ISO 53:1998",
+      "name_cn": "通用机械和重型机械用圆柱齿轮 标准基本齿条齿廓",
+      "name_en": "Cylindrical gears — Standard basic rack tooth profile",
+      "category": "齿轮",
+      "note": "渐开线圆柱齿轮基本齿廓参数(20度压力角)"
+    },
+    {
+      "id": "GB/T 10095.1-2008",
+      "id_iso": "ISO 1328-1:2013",
+      "name_cn": "圆柱齿轮 精度制 第1部分：轮齿同侧齿面偏差的定义和允许值",
+      "name_en": "Cylindrical gears — ISO system of flank tolerance classification — Part 1: Definitions and allowable values",
+      "category": "齿轮",
+      "note": "齿轮精度等级0-12级及Fp/Fα/Fβ偏差"
+    },
+    {
+      "id": "GB/T 10095.2-2008",
+      "id_iso": "ISO 1328-2:2013",
+      "name_cn": "圆柱齿轮 精度制 第2部分：径向综合偏差与径向跳动的定义和允许值",
+      "name_en": "Cylindrical gears — ISO system of flank tolerance classification — Part 2: Definitions and allowable values",
+      "category": "齿轮",
+      "note": "径向综合偏差(Fi\")和径向跳动(Fr)"
+    },
+    {
+      "id": "GB/T 3478.1-2008",
+      "id_iso": "ISO 4156-1:2005",
+      "name_cn": "圆柱直齿渐开线花键 模数 基本齿廓 公差",
+      "name_en": "Straight cylindrical involute splines — Metric module, side fit — Part 1: Generalities",
+      "category": "齿轮",
+      "note": "渐开线花键模数系列和齿廓参数"
+    },
+    {
+      "id": "GB/T 3480-1997",
+      "id_iso": "ISO 6336-1:2019",
+      "name_cn": "渐开线圆柱齿轮 承载能力计算方法",
+      "name_en": "Calculation of load capacity of spur and helical gears — Part 1: Basic principles",
+      "category": "齿轮",
+      "note": "齿轮接触强度和弯曲强度计算方法"
+    },
+    {
+      "id": "GB/T 307.1-2016",
+      "id_iso": "ISO 492:2014",
+      "name_cn": "滚动轴承 向心轴承 公差",
+      "name_en": "Rolling bearings — Radial bearings — Geometrical product specifications (GPS)",
+      "category": "轴承",
+      "note": "P0/P6/P5/P4/P2各级轴承公差"
+    },
+    {
+      "id": "GB/T 276-2013",
+      "id_iso": "ISO 15:2011",
+      "name_cn": "滚动轴承 深沟球轴承 外形尺寸",
+      "name_en": "Rolling bearings — Radial bearings — Boundary dimensions, general plan",
+      "category": "轴承",
+      "note": "60000系列深沟球轴承外形尺寸"
+    },
+    {
+      "id": "GB/T 283-2007",
+      "id_iso": "ISO 15:2011",
+      "name_cn": "滚动轴承 圆柱滚子轴承 外形尺寸",
+      "name_en": "Rolling bearings — Radial bearings — Boundary dimensions",
+      "category": "轴承",
+      "note": "N/NU/NJ系列圆柱滚子轴承"
+    },
+    {
+      "id": "GB/T 297-2015",
+      "id_iso": "ISO 355:2019",
+      "name_cn": "滚动轴承 圆锥滚子轴承 外形尺寸",
+      "name_en": "Rolling bearings — Tapered roller bearings — Boundary dimensions",
+      "category": "轴承",
+      "note": "30000系列圆锥滚子轴承尺寸"
+    },
+    {
+      "id": "GB/T 292-2007",
+      "id_iso": "ISO 12044:2014",
+      "name_cn": "滚动轴承 角接触球轴承 外形尺寸",
+      "name_en": "Rolling bearings — Angular contact ball bearings — Boundary dimensions",
+      "category": "轴承",
+      "note": "70000系列角接触球轴承"
+    },
+    {
+      "id": "GB/T 1239.2-2009",
+      "id_iso": "ISO 10243:2019",
+      "name_cn": "冷卷圆柱螺旋弹簧技术条件 第2部分：压缩弹簧",
+      "name_en": "Helical compression springs made of round wire — Technical conditions",
+      "category": "弹簧",
+      "note": "冷卷压缩弹簧技术要求"
+    },
+    {
+      "id": "GB/T 2088-2009",
+      "id_iso": "ISO 11903:2007",
+      "name_cn": "冷卷圆柱螺旋拉伸弹簧技术条件",
+      "name_en": "Cylindrical helical springs — Technical specifications for extension springs",
+      "category": "弹簧",
+      "note": "冷卷拉伸弹簧技术要求"
+    },
+    {
+      "id": "GB/T 23934-2015",
+      "id_iso": "N/A",
+      "name_cn": "热卷圆柱螺旋压缩弹簧技术条件",
+      "name_en": "Hot coiled helical compression springs — Technical specifications",
+      "category": "弹簧",
+      "note": "热卷压缩弹簧(大型弹簧)技术要求"
+    },
+    {
+      "id": "GB/T 786.1-2021",
+      "id_iso": "ISO 1219-1:2012",
+      "name_cn": "流体传动系统及元件 图形符号和回路图 第1部分：图形符号",
+      "name_en": "Fluid power systems and components — Graphical symbols and circuit diagrams — Part 1: Graphical symbols",
+      "category": "液压气动",
+      "note": "液压泵/阀/缸/马达等图形符号"
+    },
+    {
+      "id": "GB/T 2879-2005",
+      "id_iso": "ISO 5597:2010",
+      "name_cn": "液压缸活塞和活塞杆动密封装置 往复运动的密封圈沟槽 尺寸和公差",
+      "name_en": "Hydraulic cylinders — Reciprocating seals — Grooves for housings",
+      "category": "液压气动",
+      "note": "液压缸密封沟槽尺寸和公差"
+    },
+    {
+      "id": "GB/T 2346-2003",
+      "id_iso": "ISO 2944:2000",
+      "name_cn": "流体传动系统及元件 公称压力系列",
+      "name_en": "Fluid power systems and components — Rated pressures",
+      "category": "液压气动",
+      "note": "液压气动公称压力等级系列"
+    },
+    {
+      "id": "GB/T 14043-2005",
+      "id_iso": "ISO 4401:2005",
+      "name_cn": "液压传动 阀 安装面",
+      "name_en": "Hydraulic fluid power — Valves — Mounting surfaces",
+      "category": "液压气动",
+      "note": "液压阀安装面尺寸和油口标注"
+    },
+    {
+      "id": "GB/T 2353-2005",
+      "id_iso": "ISO 3019-2:2001",
+      "name_cn": "液压泵及马达 安装法兰和轴伸的尺寸系列及标注代号",
+      "name_en": "Hydraulic fluid power — Positive displacement pumps and motors — Dimensions of mounting flanges and shaft ends",
+      "category": "液压气动",
+      "note": "液压泵和马达法兰安装尺寸"
+    },
+    {
+      "id": "GB/T 8923.1-2011",
+      "id_iso": "ISO 8501-1:2007",
+      "name_cn": "涂覆涂料前钢材表面处理 表面清洁度的目视评定 第1部分",
+      "name_en": "Preparation of steel substrates before application of paints — Visual assessment of surface cleanliness",
+      "category": "表面处理",
+      "note": "Sa/Sa2/Sa2.5/Sa3除锈等级评定"
+    },
+    {
+      "id": "GB/T 9799-2011",
+      "id_iso": "ISO 2081:2018",
+      "name_cn": "金属和其他无机覆盖层 钢铁上锌电镀层",
+      "name_en": "Metallic and other inorganic coatings — Electroplated coatings of zinc on iron or steel",
+      "category": "表面处理",
+      "note": "镀锌层厚度系列和技术要求"
+    }
+  ]
+}
