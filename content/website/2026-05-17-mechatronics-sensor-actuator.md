@@ -5,7 +5,7 @@ draft: false
 categories: ["机电自动化"]
 tags: ["机电一体化", "传感器", "执行器", "自动化"]
 keywords: ["传感器", "执行器", "电机", "PLC", "机器人"]
-description: "机电一体化（Mechatronics）融合了机械、电子、控制和计算机技术。传感器和执行器是机电系统的\"感官\"和\"肌肉\"，本文概述其原理和应用。"
+description: "机电一体化（Mechatronics）融合了机械、电子、控制和计算机技术。传感器和执行器是机电系统的"感官"和"肌肉"，本文概述其原理和应用。"
 aliases: ["/p/mechatronics-sensor-actuator"]
 ---
 
