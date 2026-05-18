@@ -1,0 +1,21 @@
+{{- $page := . }}
+{{- with .Params.categories }}
+{{- $cat := index . 0 }}
+{{- $allPages := (index site.Taxonomies.categories ($cat | urlize)).Pages | append slice }}
+{{- $allPages = sort $allPages "Title" }}
+{{- $count := len $allPages }}
+{{- if gt $count 1 }}
+<details class="navbox">
+  <summary class="navbox-title">
+    <strong>{{ $cat }}</strong> 分类导航（共 {{ $count }} 篇）
+  </summary>
+  <div class="navbox-body">
+    <ul class="navbox-list">
+      {{- range $allPages }}
+      <li><a href="{{ .RelPermalink }}" class="navbox-link">{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</details>
+{{- end }}
+{{- end }}

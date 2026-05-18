@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>机械师大百科 · 项目成果看板 v2.0</title>
+<style>
+:root {
+  --bg: #0b0d14;
+  --surface: #141720;
+  --surface2: #1c2030;
+  --surface3: #242840;
+  --border: #2a2f45;
+  --text: #e0e4f0;
+  --text2: #8a8fa8;
+  --text3: #5a5f78;
+  --accent: #5b8af5;
+  --accent2: #7c5cfc;
+  --green: #3ecf8e;
+  --green-bg: rgba(62,207,142,0.1);
+  --orange: #f5a623;
+  --red: #f56565;
+  --purple: #a78bfa;
+  --cyan: #2dd4bf;
+  --pink: #f472b6;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.6
+}
+/* Header */
+.header{
+  background:linear-gradient(135deg,#141720 0%,#1c2030 40%,#2a1f40 100%);
+  border-bottom:1px solid var(--border);
+  padding:40px 32px 32px;text-align:center
+}
+.header h1{
+  font-size:2rem;font-weight:700;
+  background:linear-gradient(135deg,#5b8af5,#a78bfa,#f472b6);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
+}
+.header .subtitle{color:var(--text2);margin-top:6px;font-size:.95rem}
+.header .meta-bar{
+  display:flex;justify-content:center;gap:20px;margin-top:16px;flex-wrap:wrap
+}
+.header .meta-item{display:flex;align-items:center;gap:6px;color:var(--text3);font-size:.82rem}
+.header .meta-item .dot{width:8px;height:8px;border-radius:50%}
+.container{max-width:1200px;margin:0 auto;padding:28px 20px}
+
+/* Section */
+.section-title{
+  display:flex;align-items:center;gap:10px;
+  margin:36px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--border)
+}
+.section-title h2{font-size:1.2rem;font-weight:600}
+.section-title .badge{
+  background:var(--surface2);color:var(--text2);font-size:.72rem;
+  padding:2px 10px;border-radius:20px;border:1px solid var(--border)
+}
+.section-desc{color:var(--text3);font-size:.85rem;margin-bottom:16px}
+
+/* Dashboard Cards */
+.stats-row{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  gap:10px;margin-bottom:20px
+}
+.stat-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:14px;text-align:center
+}
+.stat-card .num{font-size:1.6rem;font-weight:700;color:var(--accent);line-height:1.2}
+.stat-card .label{color:var(--text3);font-size:.75rem;margin-top:2px}
+
+/* ====== PIPELINE FLOW ====== */
+.pipeline{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:24px;margin-bottom:20px;overflow-x:auto
+}
+.pipeline-svg{width:100%;min-width:800px;display:block}
+.phase-box{transition:opacity .3s}
+.phase-box:hover{opacity:.8}
+.phase-box.completed{opacity:1}
+.phase-box.running{opacity:1}
+.phase-box.pending{opacity:.5}
+
+/* Progress Bar */
+.progress-section{margin-bottom:20px}
+.progress-bar-bg{
+  background:var(--surface2);border-radius:20px;height:8px;overflow:hidden;
+  border:1px solid var(--border)
+}
+.progress-bar-fill{
+  height:100%;border-radius:20px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  transition:width .5s ease
+}
+.progress-label{
+  display:flex;justify-content:space-between;font-size:.8rem;color:var(--text2);margin-bottom:4px
+}
+
+/* ====== TASK TABLE ====== */
+.task-table-wrap{overflow-x:auto;overflow-y:visible;margin-bottom:16px}
+.task-table{table-layout:fixed;width:100%;border-collapse:separate;border-spacing:0;font-size:.82rem;min-width:860px}
+.task-table th{
+  background:var(--surface);color:var(--text2);font-weight:500;
+  padding:8px 12px;text-align:left;border-bottom:2px solid var(--border);
+  font-size:.72rem;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0
+}
+.task-table td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:middle;overflow-wrap:break-word;word-break:break-word}
+.task-table tr:hover td{background:rgba(91,138,245,.03)}
+.task-table .phase-col{font-weight:600;font-size:.72rem;width:70px}
+.ph-m1{color:var(--cyan)}
+.ph-m2{color:var(--accent)}
+.ph-m3{color:var(--purple)}
+.ph-m4{color:var(--pink)}
+.ph-m5{color:var(--orange)}
+.ph-before{color:var(--text3)}
+
+/* Status badges */
+.s-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:2px 8px;border-radius:10px;font-size:.72rem;font-weight:600;white-space:nowrap
+}
+.s-done{background:var(--green-bg);border:1px solid rgba(62,207,142,.3);color:var(--green)}
+.s-running{background:rgba(91,138,245,.1);border:1px solid rgba(91,138,245,.3);color:#60a5fa}
+.s-ready{background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.2);color:#a78bfa}
+.s-blocked{background:rgba(245,101,101,.1);border:1px solid rgba(245,101,101,.3);color:#f56565}
+.s-done-5{background:rgba(62,207,142,.08);border:1px solid rgba(62,207,142,.15);color:var(--green)}
+
+.task-id{color:var(--text3);font-size:.7rem}
+.dep-arrow{color:var(--text3);font-size:.7rem;display:block}
+.dep-chain{display:inline;font-size:.74rem;color:var(--text3);line-height:1.7}
+.dep-chain .arrow{color:var(--border);margin:0 2px}
+.task-deliverable{font-size:.78rem;color:var(--text2);overflow-wrap:break-word;word-break:break-word}
+.task-deliverable a{color:var(--accent);text-decoration:none}
+.task-deliverable a:hover{text-decoration:underline}
+
+/* Legend */
+.legend{
+  display:flex;gap:14px;margin:10px 0 16px;flex-wrap:wrap;font-size:.78rem
+}
+.legend-item{display:flex;align-items:center;gap:5px;color:var(--text2)}
+.legend-dot{width:10px;height:10px;border-radius:3px}
+
+/* Sources Table (compact) */
+.table-wrap{overflow-x:auto}
+.sources-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.82rem;min-width:600px}
+.sources-table th{
+  background:var(--surface);color:var(--text2);font-weight:500;
+  padding:8px 12px;text-align:left;border-bottom:2px solid var(--border);font-size:.72rem;
+  text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0
+}
+.sources-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.sources-table tr:hover td{background:rgba(91,138,245,.03)}
+.source-name{font-weight:600;color:var(--text);display:block}
+.source-url{font-size:.72rem;color:var(--accent);text-decoration:none;word-break:break-all}
+.source-url:hover{text-decoration:underline}
+.qlabel{
+  font-size:.7rem;padding:1px 7px;border-radius:10px;display:inline-block;
+  background:var(--surface2);border:1px solid var(--border);color:var(--text2)
+}
+.qlabel-A{background:rgba(91,138,245,.12);border-color:rgba(91,138,245,.3);color:#60a5fa}
+.qlabel-B{background:rgba(52,211,153,.12);border-color:rgba(52,211,153,.3);color:#34d399}
+.qlabel-C{background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.3);color:#fbbf24}
+.access-free{color:var(--green)}
+.access-sub{color:#f87171}
+.access-freemium{color:#fbbf24}
+.access-mixed{color:#c084fc}
+.strengths{display:flex;flex-wrap:wrap;gap:3px}
+.strength-tag{
+  font-size:.7rem;padding:1px 6px;border-radius:8px;
+  background:var(--surface2);color:var(--text2)
+}
+.scrapable-yes{color:var(--green);font-weight:600}
+.scrapable-no{color:var(--red);font-weight:600}
+
+/* Bento grid for categories */
+.bento-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:12px
+}
+.bento-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:16px;transition:border-color .2s,transform .2s;cursor:default
+}
+.bento-card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.bento-card .ctitle{font-size:1rem;font-weight:600;margin-bottom:4px}
+.bento-card .cdesc{font-size:.8rem;color:var(--text2);line-height:1.5;margin-bottom:8px}
+.bento-card .ctag{
+  font-size:.68rem;padding:1px 8px;border-radius:8px;font-weight:600;display:inline-block;margin-bottom:6px
+}
+.ctag-A{background:rgba(91,138,245,.12);color:#60a5fa}
+.ctag-B{background:rgba(52,211,153,.12);color:#34d399}
+.ctag-C{background:rgba(251,191,36,.12);color:#fbbf24}
+.sub-tags{display:flex;flex-wrap:wrap;gap:4px}
+.sub-tag{
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text2);padding:2px 8px;border-radius:5px;font-size:.74rem
+}
+
+/* Dependency indicator */
+/* dep-chain defined near task-table */
+
+/* Footer note */
+.footer-note{
+  margin-top:24px;padding:14px;background:var(--surface);
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.82rem
+}
+.footer-note code{
+  font-size:.75rem;background:var(--surface2);padding:3px 8px;border-radius:5px;color:var(--text2)
+}
+.footer-note .hl{color:var(--accent)}
+
+@media(max-width:640px){
+  .header{padding:28px 16px 24px}
+  .header h1{font-size:1.4rem}
+  .stats-row{grid-template-columns:repeat(3,1fr)}
+  .container{padding:16px 10px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>机械师大百科 · 项目成果看板</h1>
+  <p class="subtitle">双平台（网站 + 微信公众号）机械工程百科知识体系建设 · 全任务依赖跟踪</p>
+  <div class="meta-bar">
+    <span class="meta-item"><span class="dot" style="background:var(--green)"></span> v2.1</span>
+    <span class="meta-item"><span class="dot" style="background:var(--accent)"></span> 2026-05-18</span>
+    <span class="meta-item"><span class="dot" style="background:var(--orange)"></span> 实时看板同步</span>
+    <span class="meta-item"><span class="dot" style="background:var(--purple)"></span> 51 个任务</span>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- Stats -->
+<div class="stats-row" id="statsRow"></div>
+
+<!-- Progress -->
+<div class="progress-section" id="progressSection"></div>
+
+<!-- ====== PIPELINE FLOW ====== -->
+<div class="section-title"><h2>⛓️ 任务管线流</h2><span class="badge">依赖关系图</span></div>
+<p class="section-desc">任务按阶段排列，箭头表示前置依赖。已完成任务高亮，进行中闪烁，待开始半透明。</p>
+<div class="pipeline" id="pipelineContainer"></div>
+
+<!-- ====== TASK TABLE ====== -->
+<div class="section-title"><h2>📋 全任务进度表</h2><span class="badge">51 项 · 看板同步</span></div>
+<p class="section-desc">所有任务按阶段分组，状态从 Hermes Kanban 实时同步。灰色 = 待开始 / 亮色 = 进行中 / 绿 = 已完成</p>
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot" style="background:var(--green)"></span> 已完成</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#60a5fa"></span> 进行中</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#a78bfa"></span> 就绪</span>
+  <span class="legend-item"><span class="legend-dot" style="background:var(--red)"></span> 阻塞</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#2a2f45"></span> —→ 依赖</span>
+</div>
+
+<div class="task-table-wrap">
+<table class="task-table">
+  <thead>
+    <tr>
+      <th style="width:70px">阶段</th>
+      <th>任务</th>
+      <th style="width:80px">状态</th>
+      <th style="width:90px">前置依赖</th>
+      <th>交付物 / 备注</th>
+    </tr>
+  </thead>
+  <tbody id="taskBody"></tbody>
+</table>
+</div>
+
+<!-- ====== CATEGORY INDEX ====== -->
+<div class="section-title"><h2>📂 机械百科分类索引</h2><span class="badge">11 分类 · 54 子类</span></div>
+<p class="section-desc">知识体系按 A(核心)/B(扩展)/C(补充) 三级优先级组织</p>
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot" style="background:#60a5fa"></span> A — 核心（优先生成）</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#34d399"></span> B — 扩展</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span> C — 补充</span>
+</div>
+<div class="bento-grid" id="catGrid"></div>
+
+<!-- ====== DATA SOURCES ====== -->
+<div class="section-title" style="margin-top:32px"><h2>🌐 海外数据来源</h2><span class="badge">25 站点</span></div>
+<p class="section-desc">免费可采集站点高亮显示</p>
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot" style="background:var(--green)"></span> 免费可采集</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span> 部分免费</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#f87171"></span> 付费订阅</span>
+</div>
+<div class="table-wrap">
+<table class="sources-table">
+  <thead>
+    <tr>
+      <th style="width:20%">站点</th>
+      <th style="width:6%">质量</th>
+      <th style="width:6%">获取</th>
+      <th style="width:6%">采集</th>
+      <th style="width:32%">核心优势</th>
+      <th style="width:30%">备注</th>
+    </tr>
+  </thead>
+  <tbody id="srcBody"></tbody>
+</table>
+</div>
+
+<!-- Footer -->
+<div class="footer-note">
+  <span>📌 更新方法：编辑本 HTML 的</span>
+  <code>TASK_DATA</code>
+  <span>数组，修改 status/交付物 后刷新。v2.1 · 2026-05-18</span>
+  <span class="hl">| GitHub Pages: windwu333.github.io/jixie-baike/</span>
+</div>
+
+<div style="height:40px"></div>
+</div>
+
+<script>
+// ====== TASK DATA (51 items) ======
+// Phase legend: M1=基建, M2=AI管线, M3=内容起步, M4=扩张, M5=变现, BEFORE=前期采集
+const TASK_DATA = [
+  // ─── Before Phase — 前期采集与索引 ───
+  {phase:"BEFORE", label:"前期", id:"t_35e6c04e", title:"建立机械百科索引目录", status:"done", deps:"", deliverable:"knowledge-base/catalog-index.json — 11大类×54子类"},
+  {phase:"BEFORE", label:"前期", id:"t_940e39de", title:"整理海外数据来源站", status:"done", deps:"t_35e6c04e", deliverable:"knowledge-base/overseas-sources.json — 25站点"},
+  {phase:"BEFORE", label:"前期", id:"t_cd62ca18", title:"Wikipedia 工程词条批量采集", status:"done", deps:"t_940e39de", deliverable:"knowledge-base/wikipedia-pages.json — 400英文词条"},
+  {phase:"BEFORE", label:"前期", id:"t_4f3120a5", title:"MIT OCW 课程材料采集", status:"done", deps:"t_940e39de", deliverable:"knowledge-base/mit-ocw-courses.json — 74门ME课程"},
+  {phase:"BEFORE", label:"前期", id:"t_49654bfe", title:"工程门户公式/数据采集", status:"done", deps:"t_940e39de", deliverable:"knowledge-base/engineering-portals-data.json — 3站点41页"},
+  {phase:"BEFORE", label:"前期", id:"t_680a9abd", title:"英文机械资料翻译管线搭建", status:"done", deps:"t_cd62ca18,t_4f3120a5,t_49654bfe", deliverable:"scripts/generate-content.py + expand-terminology.py"},
+  {phase:"BEFORE", label:"前期", id:"t_3cb403e8", title:"中文百科内容生成（首批10篇）", status:"done", deps:"t_680a9abd", deliverable:"content/ — 10篇网站版+公众号版草稿"},
+
+  // ─── M1: Week 1 基建 (T1-T15) ───
+  {phase:"M1", label:"基建", id:"t_b87bade9", title:"[T1] 更新INDEX.md索引", status:"done", deps:"", deliverable:"knowledge-base/INDEX.md — 11文件索引，8 JSON + 4 MD"},
+  {phase:"M1", label:"基建", id:"t_aa31d0d0", title:"[T2] 最终验证结晶管线完整性", status:"done", deps:"t_b87bade9", deliverable:"全部 JSON 合法，12 文件完整"},
+  {phase:"M1", label:"基建", id:"t_5e638c60", title:"[T3] 创建COS Bucket", status:"running", deps:"", deliverable:"COS bucket"},
+  {phase:"M1", label:"基建", id:"t_9c924ba3", title:"[T4] 配置COS静态网站托管", status:"ready", deps:"t_5e638c60", deliverable:"静态网站域名"},
+  {phase:"M1", label:"基建", id:"t_96e2908e", title:"[T5] 提交ICP备案申请", status:"running", deps:"", deliverable:"备案号"},
+  {phase:"M1", label:"基建", id:"t_e28df0a8", title:"[T6] 创建GitHub仓库+配置Actions", status:"done", deps:"t_b87bade9,t_aa31d0d0", deliverable:"github.com/windwu333/jixie-baike — Hugo deploy workflow ✅"},
+  {phase:"M1", label:"基建", id:"t_0272ad0d", title:"[T7] 初始化Hugo项目+GitHub Actions", status:"done", deps:"t_e28df0a8", deliverable:"Hugo v0.161.1 + PaperMod 主题 + hugo.toml + GitHub Actions 自动部署"},
+  {phase:"M1", label:"基建", id:"t_cfc0e772", title:"[T8] 配置CDN+HTTPS+缓存", status:"ready", deps:"t_9c924ba3", deliverable:"CDN加速配置"},
+  {phase:"M1", label:"基建", id:"t_461a555e", title:"[T9] 配置百度资源平台", status:"ready", deps:"t_9c924ba3", deliverable:"百度站长配置"},
+  {phase:"M1", label:"基建", id:"t_2a8ecc5c", title:"[T10] 配置百度快速收录API", status:"ready", deps:"t_461a555e", deliverable:"收录API"},
+  {phase:"M1", label:"基建", id:"t_a0eba5da", title:"[T11] 建设GB/ISO标准对照表（前50组）", status:"done", deps:"t_35e6c04e", deliverable:"knowledge-base/gb-iso-standards.json — 50组标准对照"},
+  {phase:"M1", label:"基建", id:"t_bf67048b", title:"[T12] 写第一篇百科词条验证全流程", status:"done", deps:"t_0272ad0d", deliverable:"10篇百科词条已发布 | hugo server 本地验证通过 | GitHub Pages 已部署"},
+  {phase:"M1", label:"基建", id:"t_5484cab7", title:"[T13] 注册微信公众号", status:"running", deps:"", deliverable:"公众号ID"},
+  {phase:"M1", label:"基建", id:"t_9f898251", title:"[T14] 注册企业微信", status:"ready", deps:"t_5484cab7", deliverable:"企微ID"},
+  {phase:"M1", label:"基建", id:"t_2300a17e", title:"[T15] 公众号基础配置完成", status:"ready", deps:"t_5484cab7", deliverable:"公众号配置完成"},
+
+  // ─── M2: Week 2-3 AI管线 (T16-T25) ───
+  {phase:"M2", label:"AI管线", id:"t_8eec00a4", title:"[T16] 完成GB/ISO标准对照表（300组）", status:"ready", deps:"t_a0eba5da", deliverable:"300组对照"},
+  {phase:"M2", label:"AI管线", id:"t_422573dc", title:"[T17] 建立5000+条中文机械术语表", status:"ready", deps:"t_cd62ca18", deliverable:"5000+术语"},
+  {phase:"M2", label:"AI管线", id:"t_177bc95d", title:"[T18] 建立单位换算字典", status:"ready", deps:"", deliverable:"换算字典"},
+  {phase:"M2", label:"AI管线", id:"t_06e7e94f", title:"[T19] 搭建AI内容管线V1", status:"ready", deps:"t_8eec00a4,t_422573dc,t_177bc95d", deliverable:"AI管线V1"},
+  {phase:"M2", label:"AI管线", id:"t_539f9e75", title:"[T20] 写AI提示词模板", status:"ready", deps:"t_06e7e94f", deliverable:"提示词模板"},
+  {phase:"M2", label:"AI管线", id:"t_2f4c54e7", title:"[T21] 部署Hugo主题+页面模板", status:"ready", deps:"t_0272ad0d", deliverable:"Hugo主题"},
+  {phase:"M2", label:"AI管线", id:"t_37c94938", title:"[T22] Schema+sitemap+robots", status:"ready", deps:"t_2f4c54e7", deliverable:"SEO配置"},
+  {phase:"M2", label:"AI管线", id:"t_23", title:"[T23] 百度统计接入", status:"ready", deps:"t_37c94938", deliverable:"统计接入"},
+  {phase:"M2", label:"AI管线", id:"t_24", title:"[T24] MD→公众号格式转换脚本", status:"done", deps:"", deliverable:"scripts/hugo2wechat.py — Hugo Markdown → 微信格式转换器"},
+  {phase:"M2", label:"AI管线", id:"t_25", title:"[T25] 企微资料包准备", status:"ready", deps:"t_9f898251", deliverable:"资料包"},
+
+  // ─── M3: Week 5-8 内容起步 (T26-T31) ───
+  {phase:"M3", label:"内容起步", id:"t_7931dd19", title:"[T26] AI管线V1运行：日更5-7条", status:"ready", deps:"t_06e7e94f,t_539f9e75", deliverable:"日更内容"},
+  {phase:"M3", label:"内容起步", id:"t_8a73e3c6", title:"[T27] 公众号启动推送", status:"ready", deps:"t_2300a17e,t_24", deliverable:"首篇推送"},
+  {phase:"M3", label:"内容起步", id:"t_2aa1b989", title:"[T28] 前200条+公众号前50篇审核", status:"ready", deps:"t_7931dd19,t_8a73e3c6", deliverable:"审核记录"},
+  {phase:"M3", label:"内容起步", id:"t_103989c0", title:"[T29] Hub-and-Spoke结构搭建", status:"ready", deps:"t_7931dd19", deliverable:"主题簇"},
+  {phase:"M3", label:"内容起步", id:"t_30", title:"[T30] 知乎账号启动", status:"ready", deps:"t_7931dd19", deliverable:"知乎内容"},
+  {phase:"M3", label:"内容起步", id:"t_31", title:"[T31] 企微私域回复SOP", status:"ready", deps:"t_25", deliverable:"SOP文档"},
+
+  // ─── M4: Week 9-24 扩张 (T32-T37) ───
+  {phase:"M4", label:"扩张", id:"t_c85d5048", title:"[T32] 覆盖扩展到铸造/热处理/机加工/焊接", status:"ready", deps:"t_2aa1b989", deliverable:"扩类内容"},
+  {phase:"M4", label:"扩张", id:"t_33", title:"[T33] 加入对比词和采购词内容", status:"ready", deps:"t_c85d5048", deliverable:"SEO内容"},
+  {phase:"M4", label:"扩张", id:"t_34", title:"[T34] 外链建设", status:"ready", deps:"t_33", deliverable:"外链列表"},
+  {phase:"M4", label:"扩张", id:"t_35", title:"[T35] 每周质量审计", status:"ready", deps:"t_c85d5048", deliverable:"审计报告"},
+  {phase:"M4", label:"扩张", id:"t_36", title:"[T36] 企微标签系统搭建", status:"ready", deps:"t_31", deliverable:"标签体系"},
+  {phase:"M4", label:"扩张", id:"t_37", title:"[T37] 公众号粉丝破200策略", status:"ready", deps:"t_8a73e3c6", deliverable:"增长策略"},
+
+  // ─── M5: Week 25-36 变现 (T38-T41) ───
+  {phase:"M5", label:"变现", id:"t_f73f4ea9", title:"[T38] 公众号流量主申请", status:"ready", deps:"t_37", deliverable:"500粉门槛"},
+  {phase:"M5", label:"变现", id:"t_39", title:"[T39] 付费PDF资料包上架", status:"ready", deps:"t_36", deliverable:"付费产品"},
+  {phase:"M5", label:"变现", id:"t_40", title:"[T40] 百度排名+搜一搜审计", status:"ready", deps:"t_34,t_35", deliverable:"排名报告"},
+  {phase:"M5", label:"变现", id:"t_41", title:"[T41] CPS供应商初次接触", status:"ready", deps:"t_38,t_39", deliverable:"供应商清单"},
+
+  // ─── M6: Phase 3 (T42-T44) ───
+  {phase:"M6", label:"Phase3", id:"t_42", title:"[T42] 年度SEO+公众号全面审计", status:"ready", deps:"t_40", deliverable:"年度审计"},
+  {phase:"M6", label:"Phase3", id:"t_43", title:"[T43] 私域1v1精准推送试点", status:"ready", deps:"t_36,t_41", deliverable:"推送数据"},
+  {phase:"M6", label:"Phase3", id:"t_44", title:"[T44] 全年复盘+Phase3启动决策", status:"ready", deps:"t_42,t_43", deliverable:"复盘报告"},
+];
+
+const CATEGORIES = [
+  {name:"工程材料", en:"Engineering Materials", pri:"A", desc:"金属/非金属/复合材料的基础知识和性能",
+   subs:["黑色金属","有色金属","热处理","高分子材料","陶瓷与特种材料","材料性能","材料测试"]},
+  {name:"力学与强度分析", en:"Mechanics & Strength Analysis", pri:"A", desc:"理论力学、材料力学、弹性力学、结构分析",
+   subs:["理论力学","材料力学","弹性力学","机械振动","有限元分析","疲劳与断裂","摩擦学"]},
+  {name:"机械设计", en:"Mechanical Design", pri:"A", desc:"机械零部件设计、机构学、设计方法学",
+   subs:["连接件设计","传动件设计","轴系设计","弹簧与密封","机构学","设计方法","工装夹具设计"]},
+  {name:"制造工艺", en:"Manufacturing Processes", pri:"A", desc:"各类材料加工方法、工艺参数与质量控制",
+   subs:["铸造","锻造","焊接","切削加工","数控加工","增材制造","成形工艺","表面工程"]},
+  {name:"热工与流体", en:"Thermal & Fluid Engineering", pri:"B", desc:"工程热力学、流体力学、传热学基础与应用",
+   subs:["工程热力学","流体力学","传热学","液压传动","气动技术"]},
+  {name:"机械电子与自动化", en:"Mechatronics & Automation", pri:"B", desc:"机电一体化、传感器、执行器、控制系统",
+   subs:["传感器技术","执行器","控制系统","机器人技术","工业自动化","嵌入式系统"]},
+  {name:"测量与质量控制", en:"Measurement & QC", pri:"B", desc:"尺寸测量、几何公差、质量体系、计量校准",
+   subs:["尺寸测量","几何公差","质量管理","无损检测","计量校准"]},
+  {name:"动力机械与能源", en:"Power Machinery & Energy", pri:"B", desc:"发动机、涡轮机、泵、压缩机、能源设备",
+   subs:["内燃机","涡轮机械","泵与阀门","能源设备"]},
+  {name:"机械制图与CAD", en:"Mechanical Drawing & CAD", pri:"B", desc:"工程制图标准、CAD软件应用、建模方法",
+   subs:["工程制图","三维建模","CAD软件","CAE仿真"]},
+  {name:"标准与规范", en:"Standards & Specs", pri:"C", desc:"国内外机械工程标准、安全规范、行业法规",
+   subs:["中国标准","国际标准","美标","德标/欧标","安全规范"]},
+  {name:"行业应用", en:"Industry Applications", pri:"C", desc:"各行业机械工程应用案例与专业知识",
+   subs:["汽车制造","航空航天","重型机械","精密机械","能源装备"]},
+];
+
+const SOURCES = [
+  {n:"Knovel",u:"https://app.knovel.com/",q:"A",a:"sub",s:"no",st:["材料性能数据","工程计算工具","交互式图表","专业手册全文"],nt:"需机构订阅"},
+  {n:"AccessEngineering",u:"https://www.accessengineeringlibrary.com/",q:"A",a:"sub",s:"no",st:["经典工程教材","视频教程","案例研究"],nt:"需机构订阅"},
+  {n:"ASME Digital Collection",u:"https://asmedigitalcollection.asme.org/",q:"A",a:"sub",s:"no",st:["ASME标准全文","前沿论文","技术评审"],nt:"部分公开摘要可用"},
+  {n:"Engineering Village",u:"https://www.engineeringvillage.com/",q:"A",a:"sub",s:"no",st:["全球工程文献索引","行业分类体系"],nt:"文献检索和引用验证"},
+  {n:"IEEE Xplore",u:"https://ieeexplore.ieee.org/",q:"A",a:"sub",s:"no",st:["机电控制","机器人","传感器"],nt:"部分OA"},
+  {n:"SAE Mobilus",u:"https://saemobilus.sae.org/",q:"A",a:"sub",s:"no",st:["汽车工程标准","航空航天"],nt:"非常有价值"},
+  {n:"CRC ENGnetBASE",u:"https://www.routledge.com/ENGnetBASE/",q:"A",a:"sub",s:"no",st:["工程师手册全集","Roark公式"],nt:"权威参考"},
+  {n:"ASM Handbooks Online",u:"https://www.asminternational.org/asm-handbooks/",q:"A",a:"sub",s:"no",st:["材料性能","热处理","失效分析"],nt:"热处理核心参考"},
+  {n:"ASTM Compass",u:"https://compass.astm.org/",q:"A",a:"sub",s:"no",st:["材料测试标准","机械性能标准"],nt:"摘要可参考"},
+  {n:"ESDU",u:"https://www.esdu.com/",q:"A",a:"sub",s:"no",st:["设计方法和公式","机械结构数据"],nt:"数据非常可靠"},
+  {n:"arXiv (ME)",u:"https://arxiv.org/",q:"B",a:"free",s:"yes",st:["免费全文","前沿研究"],nt:"偏学术前沿"},
+  {n:"MIT OpenCourseWare",u:"https://ocw.mit.edu/courses/mechanical-engineering/",q:"A",a:"free",s:"yes",st:["完整课件","习题解答","实验指南"],nt:"CC协议可引用"},
+  {n:"NASA NTRS",u:"https://ntrs.nasa.gov/",q:"A",a:"free",s:"yes",st:["航空航天报告","材料/结构/热"],nt:"偏航空航天"},
+  {n:"NIST Engineering",u:"https://www.nist.gov/engineering",q:"A",a:"free",s:"yes",st:["标准参考数据","计量标准","材料数据库"],nt:"权威可靠"},
+  {n:"Engineers Edge",u:"https://www.engineersedge.com/",q:"B",a:"free",s:"yes",st:["设计公式/计算器","标准件数据","GD&T"],nt:"快速查阅"},
+  {n:"Machine Design",u:"https://www.machinedesign.com/",q:"B",a:"free",s:"yes",st:["行业技术文章","应用案例"],nt:"行业趋势"},
+  {n:"Britannica Engineering",u:"https://www.britannica.com/engineering",q:"B",a:"freemium",s:"yes",st:["通俗解释","概念定义清晰"],nt:"基础概念"},
+  {n:"ExplainThatStuff!",u:"https://www.explainthatstuff.com/engineering.html",q:"C",a:"free",s:"yes",st:["通俗易懂","工程原理科普"],nt:"入门参考"},
+  {n:"HowStuffWorks Eng",u:"https://www.howstuffworks.com/engineering.htm",q:"C",a:"free",s:"yes",st:["生活化类比","科普写作"],nt:"通俗化表达"},
+  {n:"eFunda",u:"https://www.efunda.com/",q:"B",a:"freemium",s:"yes",st:["工程公式汇总","材料数据库","在线计算器"],nt:"适合批量采集"},
+  {n:"Engineering ToolBox",u:"https://www.engineeringtoolbox.com/",q:"B",a:"freemium",s:"yes",st:["热力学数据","流体数据","材料属性表"],nt:"内容丰富"},
+  {n:"Design News",u:"https://www.designnews.com/",q:"C",a:"free",s:"yes",st:["行业资讯","新产品介绍"],nt:"动态跟踪"},
+  {n:"Wikipedia Engineering",u:"https://en.wikipedia.org/wiki/Portal:Engineering",q:"B",a:"free",s:"yes",st:["覆盖面广","引用链完整","CC协议"],nt:"框架和参考文献"},
+  {n:"IOP Science",u:"https://iopscience.iop.org/",q:"B",a:"mixed",s:"no",st:["OA论文"],nt:"部分OA"},
+  {n:"IntechOpen Engineering",u:"https://www.intechopen.com/subjects/engineering",q:"C",a:"free",s:"yes",st:["完整图书章节","CC协议"],nt:"需筛选"}
+];
+
+// ====== RENDER FUNCTIONS ======
+const PHASE_NAMES = {BEFORE:"前期采集",M1:"基建",M2:"AI管线",M3:"内容起步",M4:"扩张",M5:"变现",M6:"Phase3"};
+const PHASE_COLORS = {BEFORE:"#5a5f78",M1:"#2dd4bf",M2:"#5b8af5",M3:"#a78bfa",M4:"#f472b6",M5:"#f5a623",M6:"#f56565"};
+
+function renderStats() {
+  const total = TASK_DATA.length;
+  const done = TASK_DATA.filter(t=>t.status==='done').length;
+  const running = TASK_DATA.filter(t=>t.status==='running').length;
+  const ready = TASK_DATA.filter(t=>t.status==='ready').length;
+  const dataSources = SOURCES.filter(s=>s.s==='yes').length;
+  document.getElementById('statsRow').innerHTML = `
+    <div class="stat-card"><div class="num">${total}</div><div class="label">总任务数</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--green)">${done}</div><div class="label">已完成</div></div>
+    <div class="stat-card"><div class="num" style="color:#60a5fa">${running}</div><div class="label">进行中</div></div>
+    <div class="stat-card"><div class="num" style="color:#a78bfa">${ready}</div><div class="label">待执行</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--accent)">${dataSources}</div><div class="label">免费数据源</div></div>
+  `;
+  const pct = Math.round(done/total*100);
+  document.getElementById('progressSection').innerHTML = `
+    <div class="progress-label"><span>总体进度</span><span>${done}/${total} (${pct}%)</span></div>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+  `;
+}
+
+// Expanded phase state for pipeline SVG
+let expandedPhases = {};
+
+function togglePhase(p) {
+  expandedPhases[p] = !expandedPhases[p];
+  renderPipeline();
+}
+
+function renderPipeline() {
+  const phases = ["BEFORE","M1","M2","M3","M4","M5","M6"];
+  const phaseTasks = {};
+  phases.forEach(p=>phaseTasks[p]=TASK_DATA.filter(t=>t.phase===p));
+
+  // Calculate needed SVG height: base + phases with most tasks
+  const maxTotal = Math.max(...phases.map(p => (phaseTasks[p]||[]).length));
+  const svgH = 120 + Math.min(maxTotal, 18) * 23;
+
+  let html = `<svg class="pipeline-svg" viewBox="0 0 950 ${svgH}" xmlns="http://www.w3.org/2000/svg">`;
+  const W = 125;
+  const GAP = 10;
+  const START_X = 12;
+  const Y_TOP = 16;
+  const BOX_H = 70;
+  const TASK_Y = Y_TOP + BOX_H + 24;
+  const TASK_H = 20;
+  const TASK_GAP = 3;
+
+  phases.forEach((p, i) => {
+    const x = START_X + i * (W + GAP);
+    const tasks = phaseTasks[p] || [];
+    const done = tasks.filter(t=>t.status==='done').length;
+    const running = tasks.filter(t=>t.status==='running').length;
+    const total = tasks.length;
+    const pct = total > 0 ? Math.round(done/total*100) : 0;
+    const color = PHASE_COLORS[p];
+    const phaseState = done === total && total > 0 ? 'completed' : (running > 0 ? 'running' : 'pending');
+    const isExpanded = !!expandedPhases[p];
+    const maxShow = isExpanded ? total : Math.min(total, 10);
+
+    // Phase box
+    html += `<rect x="${x}" y="${Y_TOP}" width="${W}" height="${BOX_H}" rx="10" fill="rgba(42,47,69,0.5)" stroke="${color}" stroke-width="1.5" stroke-dasharray="${phaseState==='pending'?'4,3':'none'}" opacity="${phaseState==='pending'?'.6':'1'}" class="phase-box ${phaseState}"/>`;
+    html += `<text x="${x+W/2}" y="${Y_TOP+28}" text-anchor="middle" fill="${color}" font-size="12" font-weight="bold">${PHASE_NAMES[p]}</text>`;
+    html += `<text x="${x+W/2}" y="${Y_TOP+46}" text-anchor="middle" fill="#8a8fa8" font-size="10">${done}/${total} 完成</text>`;
+    html += `<rect x="${x+15}" y="${Y_TOP+56}" width="${W-30}" height="4" rx="2" fill="#1c2030"/>`;
+    html += `<rect x="${x+15}" y="${Y_TOP+56}" width="${Math.max(2,(W-30)*pct/100)}" height="4" rx="2" fill="${color}"/>`;
+
+    // Dependency arrow between phases
+    if (i > 0) {
+      const prevX = START_X + (i-1) * (W + GAP);
+      html += `<line x1="${prevX+W+2}" y1="${Y_TOP+BOX_H/2}" x2="${x-2}" y2="${Y_TOP+BOX_H/2}" stroke="#2a2f45" stroke-width="1.5" marker-end="url(#arrowWhite)"/>`;
+    }
+
+    // Task indicators below each phase
+    for (let j = 0; j < maxShow; j++) {
+      const t = tasks[j];
+      const tx = x + 4;
+      const ty = TASK_Y + j * (TASK_H + TASK_GAP);
+      const tw = W - 8;
+      const tc = t.status === 'done' ? '#3ecf8e' : t.status === 'running' ? '#60a5fa' : '#5a5f78';
+      html += `<rect x="${tx}" y="${ty}" width="${tw}" height="${TASK_H}" rx="4" fill="${tc}" opacity="${t.status==='ready'?'.3':'.15'}"/>`;
+      let label = t.title.length > 9 ? t.title.substring(0,9)+'…' : t.title;
+      html += `<text x="${tx+tw/2}" y="${ty+TASK_H-6}" text-anchor="middle" fill="${t.status==='done'?'#3ecf8e':'#8a8fa8'}" font-size="6.5">${label}</text>`;
+    }
+
+    // Click to expand / collapse
+    if (total > 10) {
+      const moreY = TASK_Y + maxShow * (TASK_H + TASK_GAP) + 4;
+      if (!isExpanded) {
+        html += `<a onclick="togglePhase('${p}')" style="cursor:pointer">
+          <rect x="${x+20}" y="${moreY-2}" width="${W-40}" height="16" rx="8" fill="#3b82f6" opacity="0.15"/>
+          <text x="${x+W/2}" y="${moreY+11}" text-anchor="middle" fill="#60a5fa" font-size="8" font-weight="bold" style="cursor:pointer;text-decoration:underline">+${total-10} 展开</text>
+        </a>`;
+      } else {
+        html += `<a onclick="togglePhase('${p}')" style="cursor:pointer">
+          <rect x="${x+25}" y="${moreY-2}" width="${W-50}" height="16" rx="8" fill="#8a8fa8" opacity="0.1"/>
+          <text x="${x+W/2}" y="${moreY+11}" text-anchor="middle" fill="#8a8fa8" font-size="8" font-weight="bold" style="cursor:pointer">▲ 收起</text>
+        </a>`;
+      }
+    }
+  });
+
+  // Arrow marker
+  html += `<defs><marker id="arrowWhite" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#2a2f45"/></marker></defs>`;
+
+  html += `</svg>`;
+  document.getElementById('pipelineContainer').innerHTML = html;
+}
+
+function renderTasks() {
+  const phases = ["BEFORE","M1","M2","M3","M4","M5","M6"];
+  const phaseTasks = {};
+  phases.forEach(p=>phaseTasks[p]=TASK_DATA.filter(t=>t.phase===p));
+
+  const statusHTML = {
+    'done':'<span class="s-badge s-done">✅ 完成</span>',
+    'running':'<span class="s-badge s-running">🔄 进行中</span>',
+    'ready':'<span class="s-badge s-ready">▶ 就绪</span>',
+    'blocked':'<span class="s-badge s-blocked">⛔ 阻塞</span>'
+  };
+
+  let html = '';
+  phases.forEach(p => {
+    const tasks = phaseTasks[p] || [];
+    if (!tasks.length) return;
+    const color = PHASE_COLORS[p];
+    tasks.forEach((t, idx) => {
+      const firstInPhase = idx === 0;
+      html += `<tr>
+        <td class="phase-col" style="color:${color}">${firstInPhase ? PHASE_NAMES[p] : ''}</td>
+        <td>
+          <span>${t.title}</span>
+          <span class="task-id">${t.id}</span>
+        </td>
+        <td>${statusHTML[t.status] || statusHTML.ready}</td>
+        <td>
+          ${t.deps ? `<span class="dep-chain">${t.deps.split(',').map(d => TASK_DATA.find(tx=>tx.id===d)).filter(Boolean).map(tx => `<span class="arrow">→</span> ${tx.title.substring(0,14)}…`).join(' ')}</span>` : '<span style="color:var(--text3);font-size:.7rem">—</span>'}
+        </td>
+        <td class="task-deliverable">${t.deliverable || ''}</td>
+      </tr>`;
+    });
+  });
+  document.getElementById('taskBody').innerHTML = html;
+}
+
+function renderCategories() {
+  const grid = document.getElementById('catGrid');
+  grid.innerHTML = CATEGORIES.map(c => `
+    <div class="bento-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div class="ctitle">${c.name}</div>
+        <span class="ctag ctag-${c.pri}">${c.pri}</span>
+      </div>
+      <span style="font-size:.72rem;color:var(--text3)">${c.en}</span>
+      <div class="cdesc">${c.desc}</div>
+      <div class="sub-tags">${c.subs.map(s=>`<span class="sub-tag">${s}</span>`).join('')}</div>
+    </div>
+  `).join('');
+}
+
+function renderSources() {
+  const tbody = document.getElementById('srcBody');
+  const ql = {'A':'qlabel-A','B':'qlabel-B','C':'qlabel-C'};
+  const al = {'free':'<span class="access-free">免费</span>','freemium':'<span class="access-freemium">部分免费</span>','sub':'<span class="access-sub">付费</span>','mixed':'<span class="access-mixed">混合</span>'};
+  tbody.innerHTML = SOURCES.map(s => `
+    <tr>
+      <td>
+        <span class="source-name">${s.n}</span>
+        <a class="source-url" href="${s.u}" target="_blank">${s.u.replace(/^https?:\/\//,'')}</a>
+      </td>
+      <td><span class="qlabel ${ql[s.q]}">${s.q}</span></td>
+      <td>${al[s.a]||s.a}</td>
+      <td><span class="scrapable-${s.s}">${s.s==='yes'?'✅ 是':'❌ 否'}</span></td>
+      <td><div class="strengths">${s.st.map(t=>`<span class="strength-tag">${t}</span>`).join('')}</div></td>
+      <td style="color:var(--text3);font-size:.78rem">${s.nt}</td>
+    </tr>
+  `).join('');
+}
+
+renderStats();
+renderPipeline();
+renderTasks();
+renderCategories();
+renderSources();
+</script>
+</body>
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>机械师大百科 · 项目成果看板</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d28;
+  --surface2: #232738;
+  --border: #2d3248;
+  --text: #e4e6f0;
+  --text2: #9498ad;
+  --text3: #636880;
+  --accent: #5b8af5;
+  --accent2: #7c5cfc;
+  --green: #3ecf8e;
+  --orange: #f5a623;
+  --red: #f56565;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --pink: #f472b6;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+  padding: 0;
+}
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1a1d28 0%, #232738 50%, #2d1f45 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 48px 32px 40px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #5b8af5, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header .subtitle {
+  color: var(--text2);
+  margin-top: 8px;
+  font-size: 1rem;
+}
+.header .meta-bar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.header .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text3);
+  font-size: 0.85rem;
+}
+.header .meta-item .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+/* Section */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0 4px;
+}
+.section-title h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.section-title .badge {
+  background: var(--surface2);
+  color: var(--text2);
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+.section-desc {
+  color: var(--text3);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+/* Priority Filter */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+.bento-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: border-color .2s, transform .2s;
+  cursor: default;
+}
+.bento-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.bento-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.bento-card .card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.bento-card .card-en {
+  font-size: 0.8rem;
+  color: var(--text3);
+  margin-top: 0px;
+}
+.bento-card .card-desc {
+  font-size: 0.85rem;
+  color: var(--text2);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.bento-card .priority-tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.priority-A { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.priority-B { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+.priority-C { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+.sub-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.sub-tag {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.sub-tag .kw-count {
+  color: var(--text3);
+  font-size: 0.65rem;
+}
+/* Sources Table */
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.85rem;
+}
+thead th {
+  background: var(--surface);
+  color: var(--text2);
+  font-weight: 500;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  position: sticky;
+  top: 0;
+}
+tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tbody tr:hover td { background: var(--surface); }
+.source-name {
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+}
+.source-url {
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+.source-url:hover { text-decoration: underline; }
+.source-type {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+}
+.quality-A {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+.quality-B {
+  background: rgba(52, 211, 153, 0.12);
+  border-color: rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+.quality-C {
+  background: rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+}
+.access-free {
+  background: rgba(52, 211, 153, 0.12);
+  border-color: rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+.access-freemium {
+  background: rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+}
+.access-subscription {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+.access-mixed {
+  background: rgba(168, 85, 247, 0.12);
+  border-color: rgba(168, 85, 247, 0.3);
+  color: #c084fc;
+}
+.strengths { display: flex; flex-wrap: wrap; gap: 4px; }
+.strength-tag {
+  font-size: 0.72rem;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--surface2);
+  color: var(--text2);
+}
+.scrapable-yes {
+  color: var(--green);
+  font-weight: 600;
+}
+.scrapable-no {
+  color: var(--red);
+  font-weight: 600;
+}
+.notes-cell { color: var(--text3); font-size: 0.8rem; }
+/* Collection Targets */
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.target-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+.target-card .t-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.target-card .t-method {
+  color: var(--text3);
+  font-size: 0.78rem;
+  margin-bottom: 6px;
+}
+.target-card .t-desc {
+  color: var(--text2);
+  font-size: 0.82rem;
+}
+.target-card .t-priority {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+/* Progress Tracker */
+.tracker {
+  margin-top: 20px;
+}
+.tracker-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.tracker-table th {
+  background: var(--surface);
+  color: var(--text2);
+  font-weight: 500;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.8rem;
+}
+.tracker-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.status-done {
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+.status-running {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+.status-pending {
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+}
+.task-id { color: var(--text3); font-size: 0.75rem; }
+/* Legend */
+.legend {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text2);
+}
+.legend-dot {
+  width: 10px; height: 10px; border-radius: 3px;
+}
+/* Summary stats */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: center;
+}
+.stat-card .num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+.stat-card .label {
+  color: var(--text3);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+/* Responsive */
+@media (max-width: 640px) {
+  .header { padding: 32px 16px 28px; }
+  .header h1 { font-size: 1.5rem; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .container { padding: 20px 12px; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+/* Tag specific */
+.category-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.category-link:hover { text-decoration: underline; }
+.no-match {
+  text-align: center;
+  padding: 40px;
+  color: var(--text3);
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>机械师大百科 · 项目成果看板</h1>
+  <p class="subtitle">双平台（网站 + 微信公众号）机械工程百科知识体系建设项目</p>
+  <div class="meta-bar">
+    <span class="meta-item"><span class="dot" style="background:var(--green)"></span> 版本 1.0</span>
+    <span class="meta-item"><span class="dot" style="background:var(--accent)"></span> 2026-05-18</span>
+    <span class="meta-item"><span class="dot" style="background:var(--orange)"></span> 持续更新中</span>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- Stats -->
+<div class="stats-row">
+  <div class="stat-card"><div class="num">10</div><div class="label">一级分类</div></div>
+  <div class="stat-card"><div class="num">54</div><div class="label">二级子分类</div></div>
+  <div class="stat-card"><div class="num">25</div><div class="label">数据来源网站</div></div>
+  <div class="stat-card"><div class="num">5</div><div class="label">优先采集目标</div></div>
+  <div class="stat-card"><div class="num">2</div><div class="label">已完成任务</div></div>
+</div>
+
+<!-- ========== SECTION 1: CATEGORY INDEX ========== -->
+<div class="section-title">
+  <h2>📂 机械百科分类索引</h2>
+  <span class="badge">10 分类 / 54 子分类</span>
+</div>
+<p class="section-desc">知识体系按 A(核心) / B(扩展) / C(补充) 三级优先级组织，指导内容生成顺序</p>
+
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot" style="background:#60a5fa"></span> A - 核心内容（优先生成）</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#34d399"></span> B - 扩展内容</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span> C - 补充内容</span>
+</div>
+
+<div class="filter-bar" id="filterBar">
+  <button class="filter-btn active" data-filter="all">全部显示</button>
+  <button class="filter-btn" data-filter="A">A - 核心</button>
+  <button class="filter-btn" data-filter="B">B - 扩展</button>
+  <button class="filter-btn" data-filter="C">C - 补充</button>
+</div>
+
+<div class="bento-grid" id="bentoGrid"></div>
+
+<!-- ========== SECTION 2: DATA SOURCES ========== -->
+<div class="section-title" style="margin-top:56px">
+  <h2>🌐 海外数据来源渠道</h2>
+  <span class="badge">25 站点</span>
+</div>
+<p class="section-desc">机械工程领域可参考的海外百科知识类网站、数据库和专业平台</p>
+
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot" style="background:#60a5fa"></span> 免费 · 可采集</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span> 部分免费</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#f87171"></span> 付费订阅</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#c084fc"></span> 混合获取</span>
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th style="width:22%">站点名称</th>
+      <th style="width:8%">质量</th>
+      <th style="width:8%">获取</th>
+      <th style="width:8%">可采集</th>
+      <th style="width:30%">核心优势</th>
+      <th style="width:24%">备注</th>
+    </tr>
+  </thead>
+  <tbody id="sourceTableBody"></tbody>
+</table>
+</div>
+
+<!-- ========== SECTION 2B: COLLECTION TARGETS ========== -->
+<div class="section-title" style="margin-top:44px">
+  <h2>🎯 优先采集目标</h2>
+  <span class="badge">5 项</span>
+</div>
+<p class="section-desc">按优先级排列的免费数据源采集任务</p>
+
+<div class="target-grid" id="targetGrid"></div>
+
+<!-- ========== SECTION 3: PROGRESS TRACKER ========== -->
+<div class="section-title" style="margin-top:56px">
+  <h2>📋 项目进度追踪</h2>
+  <span class="badge">持续更新</span>
+</div>
+<p class="section-desc">每完成一个任务，在这里更新状态。✅ 已完成 · 🔄 进行中 · ⏳ 待开始</p>
+
+<div class="tracker">
+<table class="tracker-table">
+  <thead>
+    <tr>
+      <th style="width:18%">任务阶段</th>
+      <th style="width:30%">任务内容</th>
+      <th style="width:10%">状态</th>
+      <th style="width:12%">完成日期</th>
+      <th style="width:30%">交付物 / 备注</th>
+    </tr>
+  </thead>
+  <tbody id="progressBody">
+    <!-- Phase 1: Foundation -->
+    <tr>
+      <td style="font-weight:600;color:var(--accent);font-size:0.8rem">Phase 1 基建</td>
+      <td>建立机械百科索引目录结构</td>
+      <td><span class="status-badge status-done">✅ 已完成</span></td>
+      <td style="color:var(--text2)">2026-05-18</td>
+      <td style="font-size:0.82rem;color:var(--text2)">
+        <code>knowledge-base/catalog-index.json</code> — 10大类 × 54子类
+        <br><span style="color:var(--text3)">详见本页「分类索引」</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--accent);font-size:0.8rem">Phase 1 基建</td>
+      <td>整理海外数据来源站</td>
+      <td><span class="status-badge status-done">✅ 已完成</span></td>
+      <td style="color:var(--text2)">2026-05-18</td>
+      <td style="font-size:0.82rem;color:var(--text2)">
+        <code>knowledge-base/overseas-sources.json</code> — 25站点 + 5采集目标
+        <br><span style="color:var(--text3)">详见本页「数据来源」和「采集目标」</span>
+      </td>
+    </tr>
+    <!-- Phase 2 placeholders -->
+    <tr>
+      <td style="font-weight:600;color:var(--text3);font-size:0.8rem">Phase 2 采集</td>
+      <td>Wikipedia 工程词条批量采集</td>
+      <td><span class="status-badge status-pending">⏳ 待开始</span></td>
+      <td style="color:var(--text3)">—</td>
+      <td style="font-size:0.82rem;color:var(--text3)">待用 MediaWiki API 提取机械工程相关词条</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--text3);font-size:0.8rem">Phase 2 采集</td>
+      <td>MIT OCW 课程材料采集</td>
+      <td><span class="status-badge status-pending">⏳ 待开始</span></td>
+      <td style="color:var(--text3)">—</td>
+      <td style="font-size:0.82rem;color:var(--text3)">待采集机械工程课程讲义作为参考</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--text3);font-size:0.8rem">Phase 2 采集</td>
+      <td>工程门户公式/数据采集</td>
+      <td><span class="status-badge status-pending">⏳ 待开始</span></td>
+      <td style="color:var(--text3)">—</td>
+      <td style="font-size:0.82rem;color:var(--text3)">Engineers Edge / eFunda / Engineering ToolBox</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--text3);font-size:0.8rem">Phase 3 翻译</td>
+      <td>英文机械资料翻译管线搭建</td>
+      <td><span class="status-badge status-pending">⏳ 待开始</span></td>
+      <td style="color:var(--text3)">—</td>
+      <td style="font-size:0.82rem;color:var(--text3)">AI翻译流水线，中英术语对照表</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--text3);font-size:0.8rem">Phase 4 写作</td>
+      <td>中文百科内容生成（首批10篇）</td>
+      <td><span class="status-badge status-pending">⏳ 待开始</span></td>
+      <td style="color:var(--text3)">—</td>
+      <td style="font-size:0.82rem;color:var(--text3)">网站版 + 公众号版草稿</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div style="margin-top:16px;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+  <span style="color:var(--text2);font-size:0.85rem">📌 更新方法：</span>
+  <code style="font-size:0.78rem;background:var(--surface2);padding:4px 10px;border-radius:6px;color:var(--text2)">vi 项目成果看板-2026-05-18.html</code>
+  <span style="color:var(--text3);font-size:0.8rem">修改进度表中对应行的状态、日期和备注后保存</span>
+</div>
+
+<div style="height:60px"></div>
+</div>
+
+<script>
+// ========== CATEGORY DATA ==========
+const categories = [
+  {
+    "id": "materials", "name": "工程材料", "nameEn": "Engineering Materials",
+    "priority": "A", "desc": "金属材料、非金属材料、复合材料的基础知识、性能与应用",
+    "subs": ["黑色金属","有色金属","热处理","高分子材料","陶瓷与特种材料","材料性能","材料测试"]
+  },
+  {
+    "id": "mechanics", "name": "力学与强度分析", "nameEn": "Mechanics & Strength Analysis",
+    "priority": "A", "desc": "理论力学、材料力学、弹性力学、结构分析等基础力学理论",
+    "subs": ["理论力学","材料力学","弹性力学","机械振动","有限元分析","疲劳与断裂","摩擦学"]
+  },
+  {
+    "id": "design", "name": "机械设计", "nameEn": "Mechanical Design",
+    "priority": "A", "desc": "机械零部件设计、机构学、设计方法学",
+    "subs": ["连接件设计","传动件设计","轴系设计","弹簧与密封","机构学","设计方法","工装夹具设计"]
+  },
+  {
+    "id": "manufacturing", "name": "制造工艺", "nameEn": "Manufacturing Processes",
+    "priority": "A", "desc": "各类材料加工方法、工艺参数、设备与质量控制",
+    "subs": ["铸造","锻造","焊接","切削加工","数控加工","增材制造","成形工艺","表面工程"]
+  },
+  {
+    "id": "thermofluid", "name": "热工与流体", "nameEn": "Thermal & Fluid Engineering",
+    "priority": "B", "desc": "工程热力学、流体力学、传热学基础与应用",
+    "subs": ["工程热力学","流体力学","传热学","液压传动","气动技术"]
+  },
+  {
+    "id": "mechatronics", "name": "机械电子与自动化", "nameEn": "Mechatronics & Automation",
+    "priority": "B", "desc": "机电一体化、传感器、执行器、控制系统、工业自动化",
+    "subs": ["传感器技术","执行器","控制系统","机器人技术","工业自动化","嵌入式系统"]
+  },
+  {
+    "id": "measurement", "name": "测量与质量控制", "nameEn": "Measurement & Quality Control",
+    "priority": "B", "desc": "尺寸测量、几何公差、质量体系、计量校准",
+    "subs": ["尺寸测量","几何公差","质量管理","无损检测","计量校准"]
+  },
+  {
+    "id": "powermachinery", "name": "动力机械与能源", "nameEn": "Power Machinery & Energy",
+    "priority": "B", "desc": "发动机、涡轮机、泵、压缩机、能源设备",
+    "subs": ["内燃机","涡轮机械","泵与阀门","能源设备"]
+  },
+  {
+    "id": "cad", "name": "机械制图与CAD", "nameEn": "Mechanical Drawing & CAD",
+    "priority": "B", "desc": "工程制图标准、CAD软件应用、建模方法",
+    "subs": ["工程制图","三维建模","CAD软件","CAE仿真"]
+  },
+  {
+    "id": "standards", "name": "标准与规范", "nameEn": "Standards & Specifications",
+    "priority": "C", "desc": "国内外机械工程标准、安全规范、行业法规",
+    "subs": ["中国标准","国际标准","美标","德标/欧标","安全规范"]
+  },
+  {
+    "id": "industry", "name": "行业应用", "nameEn": "Industry Applications",
+    "priority": "C", "desc": "各行业机械工程应用案例与专业知识",
+    "subs": ["汽车制造","航空航天","重型机械","精密机械","能源装备"]
+  }
+];
+
+// ========== SOURCES DATA ==========
+const sources = [
+  {name:"Knovel", url:"https://app.knovel.com/", type:"工程数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["材料性能数据","工程计算工具","交互式图表","专业手册全文"], notes:"需机构订阅，可用于定向采集公开摘要"},
+  {name:"AccessEngineering", url:"https://www.accessengineeringlibrary.com/", type:"工程数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["经典工程教材","视频教程","案例研究","工程计算器"], notes:"需机构订阅"},
+  {name:"ASME Digital Collection", url:"https://asmedigitalcollection.asme.org/", type:"学会数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["ASME标准全文","前沿研究论文","技术评审","压力容器标准"], notes:"标准内容可作为参考资料"},
+  {name:"Engineering Village", url:"https://www.engineeringvillage.com/", type:"文摘数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["全球工程文献索引","Crossref链接","行业分类体系"], notes:"主要用于文献检索和引用验证"},
+  {name:"IEEE Xplore", url:"https://ieeexplore.ieee.org/", type:"学会数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["机电控制论文","机器人技术","传感器/驱动技术","自动化标准"], notes:"部分开放获取内容可用"},
+  {name:"SAE Mobilus", url:"https://saemobilus.sae.org/", type:"学会数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["汽车工程标准","航空航天标准","动力总成论文","材料标准"], notes:"SAE标准非常有价值"},
+  {name:"CRC ENGnetBASE", url:"https://www.routledge.com/ENGnetBASE/", type:"工程数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["工程师手册全集","材料科学数据","标准计算方法","Roark应力应变公式"], notes:"Roark公式是强度计算的权威参考"},
+  {name:"ASM Handbooks Online", url:"https://www.asminternational.org/asm-handbooks/", type:"学会数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["材料性能数据","热处理工艺","失效分析","金相图谱","焊接冶金"], notes:"热处理和材料内容的核心参考"},
+  {name:"ASTM Compass", url:"https://compass.astm.org/", type:"标准组织", quality:"A", access:"subscription", scrapable:"no", strengths:["材料测试标准","机械性能标准","标准制定方法论"], notes:"标准摘要可参考"},
+  {name:"ESDU", url:"https://www.esdu.com/", type:"工程数据库", quality:"A", access:"subscription", scrapable:"no", strengths:["设计方法和公式","工程图表/列线图","机械结构设计数据"], notes:"数据非常可靠"},
+  {name:"arXiv (Mechanical Engineering)", url:"https://arxiv.org/", type:"开放获取", quality:"B", access:"free", scrapable:"yes", strengths:["免费全文","前沿研究","无时滞"], notes:"内容偏学术前沿"},
+  {name:"MIT OpenCourseWare", url:"https://ocw.mit.edu/courses/mechanical-engineering/", type:"开放课程", quality:"A", access:"free", scrapable:"yes", strengths:["完整课件/讲义","习题和解答","实验指南","权威教学内容"], notes:"CC协议可引用"},
+  {name:"NASA NTRS", url:"https://ntrs.nasa.gov/", type:"政府库", quality:"A", access:"free", scrapable:"yes", strengths:["航空航天工程报告","材料/结构/热技术","大量公开全文"], notes:"偏航空航天方向"},
+  {name:"NIST Engineering", url:"https://www.nist.gov/engineering", type:"政府库", quality:"A", access:"free", scrapable:"yes", strengths:["标准参考数据","计量标准","工程计算工具","材料数据库"], notes:"标准参考数据权威可靠"},
+  {name:"Engineers Edge", url:"https://www.engineersedge.com/", type:"工程门户", quality:"B", access:"free", scrapable:"yes", strengths:["设计公式/计算器","标准件数据","材料性能数据","GD&T参考"], notes:"适合快速查阅公式和数据"},
+  {name:"Machine Design", url:"https://www.machinedesign.com/", type:"行业杂志", quality:"B", access:"free", scrapable:"yes", strengths:["行业技术文章","新产品资讯","应用案例","设计指南"], notes:"适合跟踪行业趋势"},
+  {name:"Britannica Engineering", url:"https://www.britannica.com/engineering", type:"综合百科", quality:"B", access:"freemium", scrapable:"yes", strengths:["通俗解释","配图丰富","概念定义清晰"], notes:"适合基础概念类参考"},
+  {name:"ExplainThatStuff!", url:"https://www.explainthatstuff.com/engineering.html", type:"科普教育", quality:"C", access:"free", scrapable:"yes", strengths:["通俗易懂","插图丰富","工程原理科普"], notes:"适合入门级参考风格"},
+  {name:"HowStuffWorks Engineering", url:"https://www.howstuffworks.com/engineering.htm", type:"科普教育", quality:"C", access:"free", scrapable:"yes", strengths:["生活化类比","图文并茂","科普写作手法"], notes:"适合借鉴通俗化表达"},
+  {name:"eFunda", url:"https://www.efunda.com/", type:"工程门户", quality:"B", access:"freemium", scrapable:"yes", strengths:["工程公式汇总","材料数据库","标准件数据","在线计算器"], notes:"公式和材料数据适合批量采集"},
+  {name:"Engineering ToolBox", url:"https://www.engineeringtoolbox.com/", type:"工程门户", quality:"B", access:"freemium", scrapable:"yes", strengths:["热力学数据","流体数据","材料属性表","单位换算"], notes:"数据类内容丰富"},
+  {name:"Design News", url:"https://www.designnews.com/", type:"行业杂志", quality:"C", access:"free", scrapable:"yes", strengths:["行业资讯","新产品介绍","案例分享"], notes:"适合行业动态跟踪"},
+  {name:"Wikipedia Engineering Portal", url:"https://en.wikipedia.org/wiki/Portal:Engineering", type:"综合百科", quality:"B", access:"free", scrapable:"yes", strengths:["覆盖面广","引用链完整","多语言对照","CC协议"], notes:"百科初步框架和参考文献来源"},
+  {name:"IOP Science (Engineering)", url:"https://iopscience.iop.org/", type:"出版社库", quality:"B", access:"mixed", scrapable:"no", strengths:["材料/工程类OA论文"], notes:"部分OA文章可直接获取"},
+  {name:"IntechOpen Engineering", url:"https://www.intechopen.com/subjects/engineering", type:"开放出版", quality:"C", access:"free", scrapable:"yes", strengths:["完整图书章节","同行评审","CC协议"], notes:"质量参差不齐需筛选"}
+];
+
+// ========== COLLECTION TARGETS ==========
+const targets = [
+  {name: "Wikipedia 工程词条批量采集", method: "MediaWiki API", priority: "A", desc: "通过MediaWiki API批量获取机械工程相关词条内容", sources: ["Wikipedia Engineering Portal"]},
+  {name: "MIT OCW 课程材料采集", method: "目录爬取 + PDF/HTML解析", priority: "A", desc: "采集MIT机械工程课程讲义作为参考知识", sources: ["MIT OpenCourseWare"]},
+  {name: "NIST 标准参考数据采集", method: "API + 网页爬取", priority: "B", desc: "采集NIST材料属性和工程数据", sources: ["NIST Engineering"]},
+  {name: "工程门户公式/数据采集", method: "结构化爬取", priority: "B", desc: "批量采集机械工程常用公式和材料数据", sources: ["Engineers Edge", "eFunda", "Engineering ToolBox"]},
+  {name: "NASA NTRS 报告采集", method: "API + 全文下载", priority: "C", desc: "采集航空航天工程相关的公开技术报告", sources: ["NASA NTRS"]}
+];
+
+// ========== RENDER ==========
+function renderCategories(filter) {
+  const grid = document.getElementById('bentoGrid');
+  const filtered = filter === 'all' ? categories : categories.filter(c => c.priority === filter);
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="no-match">当前筛选条件下没有匹配的分类</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(c => `
+    <div class="bento-card" data-priority="${c.priority}">
+      <div class="card-header">
+        <div>
+          <div class="card-title">${c.name}</div>
+          <div class="card-en">${c.nameEn}</div>
+        </div>
+        <span class="priority-tag priority-${c.priority}">${c.priority}</span>
+      </div>
+      <div class="card-desc">${c.desc}</div>
+      <div class="sub-list">
+        ${c.subs.map(s => `<span class="sub-tag">${s}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderSources() {
+  const tbody = document.getElementById('sourceTableBody');
+  const accessLabel = {
+    'free': '<span class="access-free">免费</span>',
+    'freemium': '<span class="access-freemium">部分免费</span>',
+    'subscription': '<span class="access-subscription">付费</span>',
+    'mixed': '<span class="access-mixed">混合</span>'
+  };
+  const qualityLabel = {
+    'A': '<span class="source-type quality-A">A</span>',
+    'B': '<span class="source-type quality-B">B</span>',
+    'C': '<span class="source-type quality-C">C</span>'
+  };
+  tbody.innerHTML = sources.map(s => `
+    <tr>
+      <td>
+        <span class="source-name">${s.name}</span>
+        <a class="source-url" href="${s.url}" target="_blank">${s.url.replace(/^https?:\/\//,'')}</a>
+      </td>
+      <td>${qualityLabel[s.quality] || s.quality}</td>
+      <td>${accessLabel[s.access] || s.access}</td>
+      <td><span class="scrapable-${s.scrapable}">${s.scrapable === 'yes' ? '✅ 是' : '❌ 否'}</span></td>
+      <td><div class="strengths">${s.strengths.map(t => `<span class="strength-tag">${t}</span>`).join('')}</div></td>
+      <td class="notes-cell">${s.notes}</td>
+    </tr>
+  `).join('');
+}
+
+function renderTargets() {
+  const grid = document.getElementById('targetGrid');
+  const pClass = {'A':'priority-A', 'B':'priority-B', 'C':'priority-C'};
+  grid.innerHTML = targets.map(t => `
+    <div class="target-card">
+      <span class="t-priority ${pClass[t.priority]}">${t.priority === 'A' ? '🔴 优先' : t.priority === 'B' ? '🟡 标准' : '🟢 补充'}</span>
+      <div class="t-title">${t.name}</div>
+      <div class="t-method">采集方法：${t.method}</div>
+      <div class="t-desc">${t.desc}</div>
+      <div style="margin-top:6px;font-size:0.75rem;color:var(--text3)">来源：${t.sources.join(' / ')}</div>
+    </div>
+  `).join('');
+}
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCategories(btn.dataset.filter);
+  });
+});
+
+renderCategories('all');
+renderSources();
+renderTargets();
+</script>
+</body>
+</html>

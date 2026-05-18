@@ -1,0 +1,60 @@
+传热学概述
+========================================
+
+**传热学**是热工与流体的重要分支，在机械工程领域有着广泛的应用和技术价值。
+
+▎概述
+**传热学**是热工和流体领域的重要组成部分，在机械工程中有着广泛应用价值。本节介绍其核心概念、技术方法和工程应用实践。
+
+▎基本概念
+传热学的核心概念涉及导热。理解基本原理是进行相关工程分析的前提。
+
+▎技术方法
+传热学的主要技术方法包括导热、对流换热、热辐射※、换热器※等方面。合理选择和应用这些方法对解决工程问题至关重要。
+
+▎工程应用
+传热学广泛应用于各类机械设备和工程实践中。工程应用需综合考虑技术、经济和安全性等因素。
+
+▎参考数据
+下表列出与本节相关的权威工程数据:
+
+- **常见流体密度 (kg/m³)**: 水 1000(4°C), 空气 1.225(15°C), 液压油 870-900, 水蒸气 0.6(100°C) (engineering-toolbox)
+- **传热系数参考 (W/m²K)**: 空气自然对流 5-25, 水强制对流 500-5000, 沸腾传热 1000-50000 (engineering-toolbox)
+- **热力学常数**: 气体常数 R=8.314 J/(mol·K), 标准大气压 101.325kPa, 绝对零度 -273.15°C (engineering-toolbox)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 传热学在热工和流体领域具有重要的工程应用价值。
+
+📂 参见
+· 热辐射
+· 管壳式换热器
+· 换热器
+· 板式换热器
+· 导热系数
+
+---
+※数据来源:
+· Engineers Edge: https://www.engineersedge.com/calculators/discharge_rate_from_pressurized_tank_16081.htm
+· Engineers Edge: https://www.engineersedge.com/calculators/pressure_applied_on_liquid_15422.htm
+· Engineering ToolBox: https://www.engineeringtoolbox.com/jis-pipes-tubes-fittings-d_758.html
+· Engineering ToolBox: https://www.engineeringtoolbox.com/ice-thermal-properties-d_576.html
+· eFunda: https://www.efunda.com/designstandards/sensors/flowmeters/flowmeter_intro.cfm
+· eFunda: https://www.efunda.com/designstandards/sensors/lvdt/lvdt_intro.cfm
+· 热辐射 — radiation是机械工程领域的重要概念
+  来源: seed
+· 管壳式换热器 — 壳体and管是机械工程领域的重要概念
+  来源: seed
+· 换热器 — 热交换器是机械工程领域的重要概念
+  来源: seed
+· 板式换热器 — 板热交换器是机械工程领域的重要概念
+  来源: seed
+· 导热系数 — Thermal Conductivity Conversions Calculator
+Heat Transfer Table of Content
+Conversions Factors for Thermal Conductivity Unit
+In physics, thermal conductivity, is the property of a material's ability t
+  来源: engineers-edge
+· 导热系数 — Engineering ToolBox - Resources, Tools and Basic Information for Engineering and Design of Technical Applications!
+  来源: engineering-toolbox
+
+---
+📌 这是机械师大百科系列内容，欢迎关注获取更多机械工程知识。

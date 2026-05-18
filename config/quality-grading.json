@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {"id": "Draft", "label": "草稿", "color": "#c1121f", "description": "仅基本定义，1-2段，不足独立成条目"},
+    {"id": "Start", "label": "初稿", "color": "#e76f51", "description": "初步发展，有基本信息但明显不完整"},
+    {"id": "C", "label": "C级", "color": "#f4a261", "description": "内容可观但缺重要信息或结构不足"},
+    {"id": "B", "label": "B级", "color": "#e9c46a", "description": "基本完整，结构合理，引用充分"},
+    {"id": "GA", "label": "优良", "color": "#2a9d8f", "description": "独立评审通过：结构清晰、引用可靠、覆盖全面"},
+    {"id": "FA", "label": "特色", "color": "#14866d", "description": "全维度审查通过，最佳内容"}
+  ],
+  "criteria": {
+    "Draft": {"min_paragraphs": 1, "min_refs": 0, "has_definition": false},
+    "Start": {"min_paragraphs": 2, "min_refs": 1, "has_definition": true},
+    "C": {"min_paragraphs": 4, "min_refs": 2, "has_definition": true, "has_sections": true},
+    "B": {"min_paragraphs": 6, "min_refs": 3, "has_definition": true, "has_sections": true, "min_sections": 3},
+    "GA": {"min_paragraphs": 8, "min_refs": 5, "has_definition": true, "has_sections": true, "min_sections": 4, "cites_standards": true},
+    "FA": {"min_paragraphs": 12, "min_refs": 8, "has_definition": true, "has_sections": true, "min_sections": 5, "cites_standards": true, "cites_data": true}
+  },
+  "auto_assignment": {
+    "primary": {"default": "B", "weight": 2},
+    "subtopic_long": {"default": "C", "weight": 1},
+    "subtopic_medium": {"default": "Start", "weight": 0},
+    "subtopic_short": {"default": "Draft", "weight": -1}
+  }
+}

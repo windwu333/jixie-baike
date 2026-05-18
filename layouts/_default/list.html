@@ -1,0 +1,198 @@
+{{- define "main" }}
+{{- if .Title }}
+<header class="page-header">
+  <nav class="breadcrumbs" role="navigation" aria-label="面包屑导航">
+    <a href="{{ "" | relLangURL }}">首页</a>
+    {{- if eq .Kind "term" }}
+    <span class="breadcrumb-sep">&gt;</span>
+    <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+    {{- end }}
+  </nav>
+  <h1>
+    {{- if eq .Kind "term" }}{{ .Title }}{{ else }}{{ .Title }}{{ end }}
+    {{- if and (or (eq .Kind "term") (eq .Kind "section")) (.Param "ShowRssButtonInSectionTermList") }}
+    {{- with .OutputFormats.Get "rss" }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="5" />
+      </svg>
+    </a>
+    {{- end }}
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages }}
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages 20 }}
+
+{{- range $index, $page := $paginator.Pages }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+      {{- if $page.Draft }}
+      <span class="entry-hint" title="草稿">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+      {{- end }}
+    </h2>
+    <div class="entry-meta">
+      <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "2006年01月02日" }}</time>
+      {{- with $page.Params.categories }}
+      <span class="entry-categories">
+        {{- range . }}
+        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="entry-category">{{ . }}</a>
+        {{- end }}
+      </span>
+      {{- end }}
+    </div>
+  </header>
+  {{- with $page.Description }}
+  <div class="entry-content">
+    <p>{{ . | plainify | htmlUnescape | truncate 160 }}</p>
+  </div>
+  {{- end }}
+  {{- with $page.Params.tags }}
+  <footer class="entry-footer">
+    <ul class="post-tags">
+      {{- range . }}
+      <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="文章链接: {{ $page.Title | plainify }}" href="{{ $page.Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">&laquo; 上一页</a>
+    {{- end }}
+    <span class="page-nums">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">下一页 &raquo;</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+<style>
+.post-entry {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 8px);
+  background: var(--entry);
+  transition: transform 0.1s, border-color 0.15s;
+}
+
+.post-entry:hover {
+  border-color: var(--primary);
+  transform: translateX(3px);
+}
+
+.entry-header h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.entry-header h2 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.entry-header h2 a:hover {
+  color: var(--link-hover, var(--primary));
+}
+
+.entry-meta {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.entry-category {
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: var(--tertiary);
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.entry-category:hover {
+  color: var(--primary);
+  background: var(--border);
+}
+
+.entry-content {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.entry-footer {
+  margin-top: 0.35rem;
+}
+
+.entry-link {
+  position: absolute;
+  inset: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+.page-nums {
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+@media (max-width: 680px) {
+  .post-entry {
+    padding: 1rem;
+  }
+  .entry-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+</style>
+{{- end }}

@@ -1,0 +1,12 @@
+with open('translate_titles_v2.py', 'r') as f:
+    content = f.read()
+pc = content.count('(')
+cc = content.count(')')
+pb = content.count('{')
+cb = content.count('}')
+ps = content.count('[')
+cs = content.count(']')
+print('Open parens:', pc, 'Close parens:', cc)
+print('Open braces:', pb, 'Close braces:', cb)
+print('Open brackets:', ps, 'Close brackets:', cs)
+print('Diff:', (pc+pb+ps) - (cc+cb+cs))

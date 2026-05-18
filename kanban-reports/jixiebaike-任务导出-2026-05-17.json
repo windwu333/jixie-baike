@@ -1,0 +1,440 @@
+[
+  {
+    "id": "T1",
+    "subject": "更新INDEX.md索引",
+    "status": "pending",
+    "description": "手动运行update_index.py --force重建技能索引，确认2个新skill被收录",
+    "created_at": "2026-05-17T01:52:18.607105",
+    "updated_at": "2026-05-17T11:13:43.563503",
+    "session": "jixiebaike"
+  },
+  {
+    "id": "T2",
+    "subject": "最终验证结晶管线完整性",
+    "status": "pending",
+    "description": "验证crystallization_log.json、pending队列、skill文件完整性",
+    "created_at": "2026-05-17T01:52:19.311436",
+    "updated_at": "2026-05-17T11:13:43.563503",
+    "session": "jixiebaike"
+  },
+  {
+    "id": "T3",
+    "subject": "创建COS Bucket",
+    "status": "pending",
+    "description": "广州ap-guangzhou，公有读私有写。对应 COS-001。10min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T4",
+    "subject": "配置COS静态网站托管",
+    "status": "pending",
+    "description": "索引文档=index.html，403→index.html。对应 COS-002。5min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T5",
+    "subject": "提交ICP备案申请",
+    "status": "pending",
+    "description": "用途个人博客/学习交流。5-20工作日审核。对应 INF-002。30min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T6",
+    "subject": "创建GitHub仓库 + 配置Actions Secrets",
+    "status": "pending",
+    "description": "4个Secrets。对应 CI-001。10min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T7",
+    "subject": "初始化Hugo项目 + 配置GitHub Actions YAML",
+    "status": "pending",
+    "description": "hugo new site + deploy.yml。对应 HUGO-001 + CI-002。30min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T8",
+    "subject": "配置CDN加速域名 + HTTPS + 缓存规则 + 带宽封顶",
+    "status": "pending",
+    "description": "带宽封顶必须配。对应 CDN-001~004。20min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T9",
+    "subject": "配置百度资源平台",
+    "status": "pending",
+    "description": "验证站点+提交sitemap。对应 BD-001+BD-002。15min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T10",
+    "subject": "配置百度快速收录API",
+    "status": "pending",
+    "description": "获取API token，GitHub Actions自动推送。对应 BD-003。10min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T11",
+    "subject": "开始建设GB/ISO标准对照表（前50组）",
+    "status": "pending",
+    "description": "前50组即可启动AI管线试跑。对应 KB-001。",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T12",
+    "subject": "写第一篇百科词条验证全流程",
+    "status": "pending",
+    "description": "手动Markdown → git push → CDN可见。对应 HUGO-002。30min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T13",
+    "subject": "注册微信公众号",
+    "status": "pending",
+    "description": "名称机械师大百科。对应 WX-001。30min+1-7天审核",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T14",
+    "subject": "注册企业微信",
+    "status": "pending",
+    "description": "绑定到公众号菜单。对应 WX-010。15min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T15",
+    "subject": "公众号基础配置完成",
+    "status": "pending",
+    "description": "菜单+自动回复+企微绑定。对应 WX-001/WX-010。15min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T16",
+    "subject": "完成GB/ISO标准对照表（300组）",
+    "status": "pending",
+    "description": "覆盖材料/工艺/热处理/焊接/检测。对应 KB-001。30-40h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T17",
+    "subject": "建立5000+条中文机械术语表",
+    "status": "pending",
+    "description": "YAML格式。对应 KB-002。10-15h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T18",
+    "subject": "建立单位换算字典",
+    "status": "pending",
+    "description": "10+组常用工程单位换算。对应 KB-003。2h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T19",
+    "subject": "搭建AI内容管线V1（含公众号分支）",
+    "status": "pending",
+    "description": "爬虫→LLM→GB映射→Markdown输出。对应 AI-001~006。15-20h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T20",
+    "subject": "写AI提示词模板（网站+公众号）",
+    "status": "pending",
+    "description": "S/A/B三级+公众号版。3-5h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T21",
+    "subject": "部署Hugo主题 + 页面模板（含引流组件）",
+    "status": "pending",
+    "description": "含公众号引流组件。对应 HUGO-002, PAGE-001~008。4-6h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T22",
+    "subject": "结构化数据Schema + sitemap + robots",
+    "status": "pending",
+    "description": "TechArticle JSON-LD。对应 SEO-001~003。2h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T23",
+    "subject": "百度统计接入",
+    "status": "pending",
+    "description": "嵌入Hugo模板底部。对应 BD-004。15min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T24",
+    "subject": "开发Markdown→公众号格式转换脚本",
+    "status": "pending",
+    "description": "Python脚本。对应 WX-020。3-5h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T25",
+    "subject": "企微资料包准备",
+    "status": "pending",
+    "description": "3-5个行业资料包。对应 WX-012。2-3h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T26",
+    "subject": "AI管线V1运行：网站日更5-7条",
+    "status": "pending",
+    "description": "AI生成→人工审核→git push→自动部署。20-25min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T27",
+    "subject": "公众号启动推送",
+    "status": "pending",
+    "description": "每日精选→转换→群发。对应 WX-020/WX-040。5-10min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T28",
+    "subject": "前200条严格人工审核 + 公众号前50篇严格审",
+    "status": "pending",
+    "description": "建立质量基线",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T29",
+    "subject": "Hub-and-Spoke结构搭建",
+    "status": "pending",
+    "description": "5个Hub页面。对应 TSEO-001。3-5h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T30",
+    "subject": "知乎账号启动",
+    "status": "pending",
+    "description": "每日0.5-1个回答。对应 TSEO-003。5-10min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T31",
+    "subject": "企微私域回复SOP落地",
+    "status": "pending",
+    "description": "FAQ模板+回复时段。对应 WX-013。初期5min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T32",
+    "subject": "内容覆盖扩展到铸造/热处理/机加工/焊接",
+    "status": "pending",
+    "description": "每2周新增子分类。30min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T33",
+    "subject": "加入对比词和采购词内容",
+    "status": "pending",
+    "description": "X vs Y对比词 + 多少钱采购词",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T34",
+    "subject": "外链建设",
+    "status": "pending",
+    "description": "机械论坛+标准站+行业目录。对应 TSEO-004。每周1-2h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T35",
+    "subject": "每周质量审计",
+    "status": "pending",
+    "description": "周抽10%评分。对应 WORK-002。每周30min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T36",
+    "subject": "企微标签系统搭建",
+    "status": "pending",
+    "description": "客户标签维度。对应 WX-011。1-2h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T37",
+    "subject": "公众号粉丝破200策略",
+    "status": "pending",
+    "description": "朋友圈+行业群+知乎+网站引流。5min/天",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T38",
+    "subject": "公众号流量主申请（500粉门槛）",
+    "status": "pending",
+    "description": "开通流量主，文末展示广告。1h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T39",
+    "subject": "付费PDF资料包上架",
+    "status": "pending",
+    "description": "¥5-20/份。对应 MON-003。3-5h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T40",
+    "subject": "百度排名审计 + 微信搜一搜审计",
+    "status": "pending",
+    "description": "核心关键词排名变化。每周30min",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T41",
+    "subject": "CPS供应商初次接触",
+    "status": "pending",
+    "description": "对应 MON-004。每月3-5h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T42",
+    "subject": "年度SEO+公众号全面审计",
+    "status": "pending",
+    "description": "内容质量/外链/排名/粉丝增长。4h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T43",
+    "subject": "私域1v1精准推送试点",
+    "status": "pending",
+    "description": "基于标签推送个性化内容。每月2-3h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  },
+  {
+    "id": "T44",
+    "subject": "全年复盘 + Phase 3启动决策",
+    "status": "pending",
+    "description": "决定是否全职投入 Phase 3。3h",
+    "session": "jixiebaike",
+    "order": 1,
+    "created_at": "2026-05-17T11:13:43.563503",
+    "updated_at": "2026-05-17T11:13:43.563503"
+  }
+]

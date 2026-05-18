@@ -1,0 +1,17 @@
+<nav class="main-nav" role="navigation" aria-label="主导航">
+  <a href="{{ "" | relLangURL }}" class="nav-brand">机械师大百科</a>
+  <ul class="nav-menu">
+    <li><a href="{{ "" | relLangURL }}">首页</a></li>
+    <li class="nav-dropdown">
+      <a href="{{ "/categories/" | relLangURL }}">分类</a>
+      <ul class="nav-dropdown-menu">
+        {{- range $name, $taxonomy := site.Taxonomies.categories }}
+        {{- $categoryPage := site.GetPage (printf "/categories/%s" $name) }}
+        <li><a href="{{ $categoryPage.RelPermalink }}">{{ $name }} ({{ len $taxonomy.Pages }})</a></li>
+        {{- end }}
+      </ul>
+    </li>
+    <li><a href="{{ "/tags/" | relLangURL }}">标签</a></li>
+    <li><a href="{{ "/about/" | relLangURL }}">关于</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,46 @@
+=== M3-P1-2: 标题翻译报告 ===
+
+纯英文标题翻译: 0 篇
+中英混杂标题处理: 37 篇
+翻译总数: 37 篇
+跳过(无需翻译): 2183 篇
+错误: 0 篇
+
+=== 翻译详情 ===
+2026-05-18-manufacturing-cnc-k1.md	CAM计算机辅助制造计算机辅助制造	→	CAM计算机辅助制造计算机辅助制造计算机辅助制造
+2026-05-18-measurement-dimension-t1.md	ISO标准标准9000质量管理体系	→	ISO标准标准标准9000质量管理体系
+2026-05-18-measurement-quality-k2-v.md	ISO标准9001质量管理体系—应用详解	→	ISO标准标准9001质量管理体系—应用详解
+2026-05-18-measurement-quality-k2.md	ISO标准9001质量管理体系	→	ISO标准标准9001质量管理体系
+2026-05-18-mechatronics-automation-k1-v.md	AGV自动导引车自动导引车—应用详解	→	AGV自动导引车自动导引车自动导引车—应用详解
+2026-05-18-mechatronics-automation-k1.md	AGV自动导引车自动导引车	→	AGV自动导引车自动导引车自动导引车
+2026-05-18-mechatronics-automation-k3-v.md	SCADA数据采集与监控系统数据采集与监控系统—应用详解	→	SCADA数据采集与监控系统数据采集与监控系统数据采集与监控系统—应用详解
+2026-05-18-mechatronics-automation-k3.md	SCADA数据采集与监控系统数据采集与监控系统	→	SCADA数据采集与监控系统数据采集与监控系统数据采集与监控系统
+2026-05-18-mechatronics-automation-k4-v.md	MES制造执行系统制造执行系统—应用详解	→	MES制造执行系统制造执行系统制造执行系统—应用详解
+2026-05-18-mechatronics-automation-k4.md	MES制造执行系统制造执行系统	→	MES制造执行系统制造执行系统制造执行系统
+2026-05-18-mechatronics-control-k1-v.md	PLC可编程逻辑控制器可编程逻辑控制器—应用详解	→	PLC可编程逻辑控制器可编程逻辑控制器可编程逻辑控制器—应用详解
+2026-05-18-mechatronics-control-k1.md	PLC可编程逻辑控制器可编程逻辑控制器	→	PLC可编程逻辑控制器可编程逻辑控制器可编程逻辑控制器
+2026-05-18-standards-ansi-k2-v.md	SAE标准标准—应用详解	→	SAE标准标准标准—应用详解
+2026-05-18-standards-ansi-k2.md	SAE标准标准	→	SAE标准标准标准
+2026-05-18-standards-ansi-k3-v.md	ANSI标准标准—应用详解	→	ANSI标准标准标准—应用详解
+2026-05-18-standards-ansi-k3.md	ANSI标准标准	→	ANSI标准标准标准
+2026-05-18-standards-ansi-k4-v.md	AWS标准标准—应用详解	→	AWS标准标准标准—应用详解
+2026-05-18-standards-ansi-k4.md	AWS标准标准	→	AWS标准标准标准
+2026-05-18-standards-ansi-t15-v.md	IEEE标准标准—应用详解	→	IEEE标准标准标准—应用详解
+2026-05-18-standards-ansi-t15.md	IEEE标准标准	→	IEEE标准标准标准
+2026-05-18-standards-ansi-t16-v.md	API标准标准—应用详解	→	API标准标准标准—应用详解
+2026-05-18-standards-ansi-t16.md	API标准标准	→	API标准标准标准
+2026-05-18-standards-ansi-t17-v.md	UL标准标准—应用详解	→	UL标准标准标准—应用详解
+2026-05-18-standards-ansi-t17.md	UL标准标准	→	UL标准标准标准
+2026-05-18-standards-din-k1-v.md	EN标准标准—应用详解	→	EN标准标准标准—应用详解
+2026-05-18-standards-din-k1.md	EN标准标准	→	EN标准标准标准
+2026-05-18-standards-din-k4-v.md	ATEX防爆认证防爆认证—应用详解	→	ATEX防爆认证防爆认证防爆认证—应用详解
+2026-05-18-standards-din-k4.md	ATEX防爆认证防爆认证	→	ATEX防爆认证防爆认证防爆认证
+2026-05-18-standards-din-t1-v.md	BS标准标准—应用详解	→	BS标准标准标准—应用详解
+2026-05-18-standards-din-t1.md	BS标准标准	→	BS标准标准标准
+2026-05-18-standards-din-t5-v.md	NACE标准标准—应用详解	→	NACE标准标准标准—应用详解
+2026-05-18-standards-din-t5.md	NACE标准标准	→	NACE标准标准标准
+2026-05-18-standards-din-t6-v.md	ISO标准9001质量管理体系—应用详解	→	ISO标准标准9001质量管理体系—应用详解
+2026-05-18-standards-din-t6.md	ISO标准9001质量管理体系	→	ISO标准标准9001质量管理体系
+2026-05-18-standards-din-t7-v.md	ISO标准14001环境管理体系—应用详解	→	ISO标准标准14001环境管理体系—应用详解
+2026-05-18-standards-din-t7.md	ISO标准14001环境管理体系	→	ISO标准标准14001环境管理体系
+2026-05-18-standards-gb-t6.md	ISO标准标准14000环境管理体系	→	ISO标准标准标准14000环境管理体系

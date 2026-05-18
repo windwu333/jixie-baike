@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Claude Kanban Board</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:#0b1120;color:#e2e8f0;min-height:100vh;
+    opacity:0;animation:fadeIn .4s ease-out forwards
+  }
+  @keyframes fadeIn{to{opacity:1}}
+  @keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  @keyframes countPop{0%{transform:scale(1)}50%{transform:scale(1.25)}100%{transform:scale(1)}}
+
+  /* ── Header ── */
+  .header{
+    background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);
+    padding:18px 32px;border-bottom:1px solid #1e3a5f;
+    display:flex;align-items:center;justify-content:space-between;
+    position:sticky;top:0;z-index:100;
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)
+  }
+  .header-left{display:flex;align-items:center;gap:14px}
+  .header-icon{width:32px;height:32px;border-radius:8px;
+    background:linear-gradient(135deg,#60a5fa,#a78bfa);
+    display:flex;align-items:center;justify-content:center;font-size:16px;
+    box-shadow:0 0 20px rgba(96,165,250,.25)
+  }
+  .header h1{font-size:18px;font-weight:700;letter-spacing:-.3px}
+  .header h1 span{background:linear-gradient(135deg,#60a5fa,#a78bfa);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .header-right{display:flex;align-items:center;gap:16px;font-size:12px;color:#64748b}
+  .live-dot{width:8px;height:8px;border-radius:50%;background:#34d399;
+    display:inline-block;animation:pulse 2s infinite;margin-right:6px}
+  .live-dot.off{background:#ef4444}
+  .countdown{font-variant-numeric:tabular-nums;min-width:28px;display:inline-block;text-align:right}
+  .header-total{font-size:11px;color:#475569;padding:2px 8px;border-radius:4px;background:rgba(71,85,105,.15)}
+
+  /* ── Session Tabs ── */
+  .session-tabs{
+    display:flex;gap:6px;padding:8px 32px;
+    background:#0f172a;border-bottom:1px solid #1e3a5f;
+    flex-wrap:wrap;align-items:center;
+    position:sticky;top:54px;z-index:99;
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)
+  }
+  .session-tab{
+    padding:4px 14px;border-radius:6px;font-size:12px;font-weight:500;
+    background:transparent;color:#64748b;border:1px solid #1e293b;
+    cursor:pointer;transition:all .2s;white-space:nowrap
+  }
+  .session-tab:hover{background:#1e293b;color:#e2e8f0}
+  .session-tab.active{background:#1e3a5f;color:#60a5fa;border-color:#60a5fa}
+  .session-tab .tab-count{font-size:10px;color:#475569;margin-left:4px}
+  .session-tab.active .tab-count{color:#60a5fa}
+
+  /* ── Stats Bar ── */
+  .stats-bar{
+    display:flex;gap:12px;padding:14px 32px;
+    background:#0f172a;border-bottom:1px solid #1e3a5f;
+    flex-wrap:wrap;align-items:center
+  }
+  .stat{
+    padding:6px 14px;border-radius:8px;font-size:13px;font-weight:600;
+    display:flex;align-items:center;gap:6px;
+    border:1px solid transparent;transition:all .2s
+  }
+  .stat:hover{transform:translateY(-1px)}
+  .stat-pending{background:rgba(251,191,36,.1);color:#fbbf24;border-color:rgba(251,191,36,.15)}
+  .stat-running{background:rgba(96,165,250,.1);color:#60a5fa;border-color:rgba(96,165,250,.15)}
+  .stat-done{background:rgba(52,211,153,.1);color:#34d399;border-color:rgba(52,211,153,.15)}
+  .stat-deleted{background:rgba(148,163,184,.1);color:#94a3b8;border-color:rgba(148,163,184,.15)}
+  .stat-num{font-size:16px}
+  .progress-wrap{flex:1;min-width:120px;display:flex;align-items:center;gap:10px}
+  .progress-bar{flex:1;height:6px;background:#1e293b;border-radius:3px;overflow:hidden}
+  .progress-fill{
+    height:100%;background:linear-gradient(90deg,#60a5fa,#34d399);
+    border-radius:3px;transition:width .6s cubic-bezier(.4,0,.2,1);
+    position:relative
+  }
+  .progress-fill::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+    animation:shimmer 2s infinite
+  }
+  @keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+  .progress-text{font-size:13px;font-weight:600;color:#94a3b8;min-width:36px;text-align:right}
+
+  /* ── Board ── */
+  .board{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+    padding:20px 32px 40px;min-height:500px
+  }
+
+  /* ── Column ── */
+  .column{
+    background:rgba(15,23,42,.6);border-radius:12px;padding:14px;
+    border:1px solid #1e293b;min-height:200px;
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    display:flex;flex-direction:column
+  }
+  .column-header{
+    font-size:13px;font-weight:600;margin-bottom:10px;
+    padding-bottom:10px;border-bottom:2px solid #1e293b;
+    display:flex;justify-content:space-between;align-items:center;
+    flex-shrink:0
+  }
+  .column-pending .column-header{border-color:#fbbf24}
+  .column-in_progress .column-header{border-color:#60a5fa}
+  .column-completed .column-header{border-color:#34d399}
+  .column-deleted .column-header{border-color:#64748b}
+  .col-label{display:flex;align-items:center;gap:6px}
+  .col-icon{font-size:15px}
+  .count-badge{
+    font-size:11px;font-weight:600;padding:2px 10px;border-radius:12px;
+    background:#1e293b;color:#94a3b8;transition:all .3s
+  }
+  .count-badge.pop{animation:countPop .3s ease}
+  .cards-wrap{flex:1;overflow-y:auto;min-height:60px}
+  .cards-wrap::-webkit-scrollbar{width:4px}
+  .cards-wrap::-webkit-scrollbar-track{background:transparent}
+  .cards-wrap::-webkit-scrollbar-thumb{background:#1e293b;border-radius:2px}
+
+  /* ── Card ── */
+  .card{
+    background:linear-gradient(135deg,#0f172a 0%,#131c31 100%);
+    border-radius:10px;padding:12px 14px;margin-bottom:8px;
+    border:1px solid #1e293b;
+    transition:all .25s cubic-bezier(.4,0,.2,1);
+    cursor:default;position:relative;overflow:hidden;
+    animation:slideUp .35s ease both
+  }
+  .card::before{
+    content:'';position:absolute;top:0;left:0;width:3px;height:100%;
+    border-radius:0 2px 2px 0;transition:all .25s
+  }
+  .card-status-pending::before{background:#fbbf24;box-shadow:0 0 8px rgba(251,191,36,.3)}
+  .card-status-in_progress::before{background:#60a5fa;box-shadow:0 0 8px rgba(96,165,250,.3)}
+  .card-status-completed::before{background:#34d399;box-shadow:0 0 8px rgba(52,211,153,.3)}
+  .card-status-deleted::before{background:#64748b}
+  .card:hover{
+    transform:translateY(-2px);border-color:#334155;
+    box-shadow:0 8px 24px rgba(0,0,0,.3)
+  }
+  .card-top{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+  .card-order{
+    font-size:10px;font-weight:700;color:#60a5fa;white-space:nowrap;
+    padding:0 6px;border-radius:3px;background:rgba(96,165,250,.1);
+    display:inline-flex;align-items:center;height:18px
+  }
+  .card-id{
+    font-size:10px;font-weight:600;color:#64748b;text-transform:uppercase;
+    letter-spacing:.5px;padding:1px 6px;border-radius:3px;background:rgba(100,116,139,.12);
+    display:inline-flex;align-items:center;height:18px
+  }
+  .card-session{
+    font-size:9px;color:#475569;margin-left:auto;
+    padding:0 5px;border-radius:2px;background:rgba(71,85,105,.15);
+    display:inline-flex;align-items:center;height:16px;white-space:nowrap
+  }
+  .card-title{font-size:13px;font-weight:500;color:#f1f5f9;line-height:1.4;margin-bottom:4px}
+  .card-desc{font-size:12px;color:#64748b;line-height:1.4;margin-top:4px}
+  .card-blocked{
+    font-size:11px;color:#f87171;margin-top:6px;
+    padding:4px 8px;background:rgba(248,113,113,.08);border-radius:4px;
+    display:inline-block
+  }
+  .card-progress{
+    font-size:10px;color:#64748b;margin-top:4px;
+    padding:2px 6px;background:rgba(100,116,139,.08);border-radius:3px;
+    display:inline-block
+  }
+  .card-time{font-size:10px;color:#475569;margin-top:6px}
+  .empty-col{
+    display:flex;align-items:center;justify-content:center;
+    height:80px;color:#334155;font-size:12px;font-style:italic
+  }
+  .card:nth-child(1){animation-delay:0s}
+  .card:nth-child(2){animation-delay:.04s}
+  .card:nth-child(3){animation-delay:.08s}
+  .card:nth-child(4){animation-delay:.12s}
+  .card:nth-child(5){animation-delay:.16s}
+  .card:nth-child(6){animation-delay:.2s}
+  .card:nth-child(7){animation-delay:.24s}
+  .card:nth-child(8){animation-delay:.28s}
+  .card:nth-child(9){animation-delay:.32s}
+  .card:nth-child(10){animation-delay:.36s}
+
+  /* ── Toast ── */
+  .toast{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    padding:8px 16px;border-radius:8px;font-size:12px;font-weight:500;
+    background:#1e293b;color:#94a3b8;border:1px solid #334155;
+    opacity:0;transition:opacity .3s;z-index:200;pointer-events:none;
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)
+  }
+  .toast.show{opacity:1}
+
+  /* ── Responsive ── */
+  @media(max-width:1100px){.board{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.board{grid-template-columns:1fr;padding:12px}
+    .header{padding:14px 16px;flex-direction:column;gap:8px;text-align:center}
+    .stats-bar{padding:10px 16px}
+    .session-tabs{padding:6px 16px;top:96px}
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="header-icon">&#9776;</div>
+    <h1><span>Claude Kanban</span></h1>
+  </div>
+  <div class="header-right">
+    <span class="header-total" id="headerTotal">87 total</span>
+    <span><span class="live-dot" id="liveDot"></span><span id="liveLabel">Live</span></span>
+    <span>&#8635; <span class="countdown" id="countdown">30</span>s</span>
+    <span id="genTime">2026-05-17 11:15</span>
+  </div>
+</div>
+
+<div class="session-tabs" id="sessionTabs"></div>
+
+<div class="stats-bar">
+  <div class="stat stat-pending">
+    <span>&#128187;</span>
+    <span class="stat-num" id="countPending">44</span>
+    <span>待办</span>
+  </div>
+  <div class="stat stat-running">
+    <span>&#128260;</span>
+    <span class="stat-num" id="countRunning">0</span>
+    <span>执行中</span>
+  </div>
+  <div class="stat stat-done">
+    <span>&#9989;</span>
+    <span class="stat-num" id="countDone">0</span>
+    <span>完成</span>
+  </div>
+  <div class="stat stat-deleted">
+    <span>&#10060;</span>
+    <span class="stat-num" id="countDeleted">0</span>
+    <span>取消</span>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <span class="progress-text" id="progressText">0%</span>
+  </div>
+</div>
+
+<div class="board" id="board"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ── Embedded task data (generated) ──
+window.__KANBAN_DATA__ = [{"id": "T3", "subject": "创建COS Bucket", "status": "pending", "description": "广州ap-guangzhou，公有读私有写。对应 COS-001。10min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T4", "subject": "配置COS静态网站托管", "status": "pending", "description": "索引文档=index.html，403→index.html。对应 COS-002。5min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T5", "subject": "提交ICP备案申请", "status": "pending", "description": "用途个人博客/学习交流。5-20工作日审核。对应 INF-002。30min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T6", "subject": "创建GitHub仓库 + 配置Actions Secrets", "status": "pending", "description": "4个Secrets。对应 CI-001。10min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T7", "subject": "初始化Hugo项目 + 配置GitHub Actions YAML", "status": "pending", "description": "hugo new site + deploy.yml。对应 HUGO-001 + CI-002。30min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T8", "subject": "配置CDN加速域名 + HTTPS + 缓存规则 + 带宽封顶", "status": "pending", "description": "带宽封顶必须配。对应 CDN-001~004。20min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T9", "subject": "配置百度资源平台", "status": "pending", "description": "验证站点+提交sitemap。对应 BD-001+BD-002。15min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T10", "subject": "配置百度快速收录API", "status": "pending", "description": "获取API token，GitHub Actions自动推送。对应 BD-003。10min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T11", "subject": "开始建设GB/ISO标准对照表（前50组）", "status": "pending", "description": "前50组即可启动AI管线试跑。对应 KB-001。", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T12", "subject": "写第一篇百科词条验证全流程", "status": "pending", "description": "手动Markdown → git push → CDN可见。对应 HUGO-002。30min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T13", "subject": "注册微信公众号", "status": "pending", "description": "名称机械师大百科。对应 WX-001。30min+1-7天审核", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T14", "subject": "注册企业微信", "status": "pending", "description": "绑定到公众号菜单。对应 WX-010。15min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T15", "subject": "公众号基础配置完成", "status": "pending", "description": "菜单+自动回复+企微绑定。对应 WX-001/WX-010。15min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T16", "subject": "完成GB/ISO标准对照表（300组）", "status": "pending", "description": "覆盖材料/工艺/热处理/焊接/检测。对应 KB-001。30-40h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T17", "subject": "建立5000+条中文机械术语表", "status": "pending", "description": "YAML格式。对应 KB-002。10-15h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T18", "subject": "建立单位换算字典", "status": "pending", "description": "10+组常用工程单位换算。对应 KB-003。2h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T19", "subject": "搭建AI内容管线V1（含公众号分支）", "status": "pending", "description": "爬虫→LLM→GB映射→Markdown输出。对应 AI-001~006。15-20h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T20", "subject": "写AI提示词模板（网站+公众号）", "status": "pending", "description": "S/A/B三级+公众号版。3-5h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T21", "subject": "部署Hugo主题 + 页面模板（含引流组件）", "status": "pending", "description": "含公众号引流组件。对应 HUGO-002, PAGE-001~008。4-6h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T22", "subject": "结构化数据Schema + sitemap + robots", "status": "pending", "description": "TechArticle JSON-LD。对应 SEO-001~003。2h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T23", "subject": "百度统计接入", "status": "pending", "description": "嵌入Hugo模板底部。对应 BD-004。15min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T24", "subject": "开发Markdown→公众号格式转换脚本", "status": "pending", "description": "Python脚本。对应 WX-020。3-5h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T25", "subject": "企微资料包准备", "status": "pending", "description": "3-5个行业资料包。对应 WX-012。2-3h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T26", "subject": "AI管线V1运行：网站日更5-7条", "status": "pending", "description": "AI生成→人工审核→git push→自动部署。20-25min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T27", "subject": "公众号启动推送", "status": "pending", "description": "每日精选→转换→群发。对应 WX-020/WX-040。5-10min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T28", "subject": "前200条严格人工审核 + 公众号前50篇严格审", "status": "pending", "description": "建立质量基线", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T29", "subject": "Hub-and-Spoke结构搭建", "status": "pending", "description": "5个Hub页面。对应 TSEO-001。3-5h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T30", "subject": "知乎账号启动", "status": "pending", "description": "每日0.5-1个回答。对应 TSEO-003。5-10min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T31", "subject": "企微私域回复SOP落地", "status": "pending", "description": "FAQ模板+回复时段。对应 WX-013。初期5min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T32", "subject": "内容覆盖扩展到铸造/热处理/机加工/焊接", "status": "pending", "description": "每2周新增子分类。30min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T33", "subject": "加入对比词和采购词内容", "status": "pending", "description": "X vs Y对比词 + 多少钱采购词", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T34", "subject": "外链建设", "status": "pending", "description": "机械论坛+标准站+行业目录。对应 TSEO-004。每周1-2h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T35", "subject": "每周质量审计", "status": "pending", "description": "周抽10%评分。对应 WORK-002。每周30min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T36", "subject": "企微标签系统搭建", "status": "pending", "description": "客户标签维度。对应 WX-011。1-2h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T37", "subject": "公众号粉丝破200策略", "status": "pending", "description": "朋友圈+行业群+知乎+网站引流。5min/天", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T38", "subject": "公众号流量主申请（500粉门槛）", "status": "pending", "description": "开通流量主，文末展示广告。1h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T39", "subject": "付费PDF资料包上架", "status": "pending", "description": "¥5-20/份。对应 MON-003。3-5h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T40", "subject": "百度排名审计 + 微信搜一搜审计", "status": "pending", "description": "核心关键词排名变化。每周30min", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T41", "subject": "CPS供应商初次接触", "status": "pending", "description": "对应 MON-004。每月3-5h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T42", "subject": "年度SEO+公众号全面审计", "status": "pending", "description": "内容质量/外链/排名/粉丝增长。4h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T43", "subject": "私域1v1精准推送试点", "status": "pending", "description": "基于标签推送个性化内容。每月2-3h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T44", "subject": "全年复盘 + Phase 3启动决策", "status": "pending", "description": "决定是否全职投入 Phase 3。3h", "session": "jixiebaike", "order": 1, "created_at": "2026-05-17T11:13:43.563503", "updated_at": "2026-05-17T11:13:43.563503"}, {"id": "T1", "subject": "更新INDEX.md索引", "status": "pending", "description": "手动运行update_index.py --force重建技能索引，确认2个新skill被收录", "created_at": "2026-05-17T01:52:18.607105", "updated_at": "2026-05-17T11:13:43.563503", "session": "jixiebaike"}, {"id": "T2", "subject": "最终验证结晶管线完整性", "status": "pending", "description": "验证crystallization_log.json、pending队列、skill文件完整性", "created_at": "2026-05-17T01:52:19.311436", "updated_at": "2026-05-17T11:13:43.563503", "session": "jixiebaike"}];
+window.__GEN_TIME__ = "2026-05-17 11:15";
+window.__SESSION_FILTER__ = "jixiebaike";
+window.__ALL_SESSIONS__ = ["default", "cron-audit", "jixiebaike", "test-session", "verify-session"];
+
+// ── Column config ──
+var COLUMNS = [
+  {key:"pending",    icon:"📋", label:"待办",     cls:"column-pending"},
+  {key:"in_progress",icon:"🔄", label:"进行中",  cls:"column-in_progress"},
+  {key:"completed",  icon:"✅", label:"已完成",   cls:"column-completed"},
+  {key:"deleted",    icon:"❌", label:"已取消",   cls:"column-deleted"},
+];
+
+function statusClass(s) {
+  return "card-status-" + (s || "pending");
+}
+
+function renderCard(t, taskStatus, sessionFilter) {
+  var tid = t.id || t.taskId || "?";
+  var subj = t.subject || t.content || "?";
+  var desc = t.description || t.body || "";
+  var blocked = (t.blockedBy || []).filter(function(b) {
+    return !taskStatus || taskStatus[b] !== "completed";
+  });
+  var created = t.created_at ? t.created_at.slice(0,10) : "";
+  var order = (t.order !== undefined && t.order !== null) ? t.order : null;
+  var session = t.session || "default";
+
+  var html = '<div class="card ' + statusClass(t.status) + '">';
+  html += '<div class="card-top">';
+  if (order !== null) {
+    html += '<div class="card-order">#' + order + '</div>';
+  }
+  html += '<div class="card-id">' + tid + '</div>';
+  // Show session badge only when filtering by a specific session (show others)
+  if (sessionFilter && session !== sessionFilter) {
+    html += '<div class="card-session">' + session + '</div>';
+  } else if (session && sessionFilter === "") {
+    // Only show session badge when in "All" view or when switching tabs
+  }
+  html += '</div>';
+  html += '<div class="card-title">' + subj + '</div>';
+  if (desc) html += '<div class="card-desc">' + desc.slice(0,120) + '</div>';
+
+  // Execution progress: step X / total in session
+  if (order !== null && sessionFilter) {
+    // Count total tasks in this session (from all data)
+    var sessionTotal = 0;
+    window.__KANBAN_DATA__.forEach(function(x) {
+      if ((x.session || "default") === sessionFilter) sessionTotal++;
+    });
+    if (sessionTotal > 1) {
+      html += '<div class="card-progress">&#128260; 步骤 ' + order + ' / ' + sessionTotal + '</div>';
+    }
+  }
+
+  if (blocked.length) html += '<div class="card-blocked">⛔ 阻塞: ' + blocked.join(", ") + '</div>';
+  if (created) html += '<div class="card-time">' + created + '</div>';
+  html += '</div>';
+  return html;
+}
+
+function renderBoard(data) {
+  // Apply session filter
+  var sessionFilter = window.__SESSION_FILTER__ || "";
+  var filtered = sessionFilter
+    ? data.filter(function(t) { return (t.session || "default") === sessionFilter; })
+    : data.slice(0);
+
+  var taskStatus = {};
+  data.forEach(function(t) { if (t.id) taskStatus[t.id] = t.status; });
+
+  var total = filtered.length;
+  var counts = {};
+  COLUMNS.forEach(function(c) { counts[c.key] = 0; });
+  filtered.forEach(function(t) { var s = t.status || "pending"; counts[s] = (counts[s]||0) + 1; });
+  var done = counts["completed"] || 0;
+  var pct = total ? Math.round(done / total * 100) : 0;
+
+  // Update stats
+  document.getElementById("countPending").textContent = counts["pending"] || 0;
+  document.getElementById("countRunning").textContent = counts["in_progress"] || 0;
+  document.getElementById("countDone").textContent = counts["completed"] || 0;
+  document.getElementById("countDeleted").textContent = counts["deleted"] || 0;
+  document.getElementById("progressFill").style.width = pct + "%";
+  document.getElementById("progressText").textContent = pct + "%";
+  document.getElementById("headerTotal").textContent = (sessionFilter ? data.length + " total, " + total + " shown" : total + " tasks");
+
+  // Render columns with order-sorted cards
+  var board = document.getElementById("board");
+  board.innerHTML = "";
+  COLUMNS.forEach(function(col) {
+    var cards = filtered.filter(function(t) { return (t.status || "pending") === col.key; });
+    // Sort by order ascending (tasks without order go to end)
+    cards.sort(function(a, b) {
+      var oa = (a.order !== undefined && a.order !== null) ? a.order : 9999;
+      var ob = (b.order !== undefined && b.order !== null) ? b.order : 9999;
+      if (oa !== ob) return oa - ob;
+      // Tie-break by created_at or id
+      var ca = a.created_at || a.id || "";
+      var cb = b.created_at || b.id || "";
+      return ca < cb ? -1 : ca > cb ? 1 : 0;
+    });
+    var div = document.createElement("div");
+    div.className = "column " + col.cls;
+    div.innerHTML =
+      '<div class="column-header">' +
+      '<span class="col-label"><span class="col-icon">' + col.icon + '</span>' + col.label + '</span>' +
+      '<span class="count-badge">' + cards.length + '</span></div>' +
+      '<div class="cards-wrap">' +
+      (cards.length
+        ? cards.map(function(t) { return renderCard(t, taskStatus, sessionFilter); }).join("")
+        : '<div class="empty-col">— 空 —</div>') +
+      '</div>';
+    board.appendChild(div);
+  });
+}
+
+function renderSessionTabs() {
+  var container = document.getElementById("sessionTabs");
+  if (!container) return;
+  var sessions = window.__ALL_SESSIONS__ || [];
+  var current = window.__SESSION_FILTER__ || "";
+  if (!current) current = "";
+
+  // Count tasks per session (from full data)
+  var sessionCounts = {};
+  (window.__KANBAN_DATA__ || []).forEach(function(t) {
+    var s = t.session || "default";
+    sessionCounts[s] = (sessionCounts[s] || 0) + 1;
+  });
+
+  var html = '<button class="session-tab' + (current === "" ? " active" : "") +
+    '" data-session="" onclick="onSessionChange('')">All</button>';
+  sessions.forEach(function(s) {
+    var count = sessionCounts[s] || 0;
+    var active = (current === s) ? " active" : "";
+    html += '<button class="session-tab' + active + '" data-session="' + s.replace(/"/g,"&quot;") +
+      '" onclick="onSessionChange('' + s.replace(/'/g,"\'") + '')">' + s +
+      ' <span class="tab-count">(' + count + ')</span></button>';
+  });
+  container.innerHTML = html;
+}
+
+function onSessionChange(sessionName) {
+  window.__SESSION_FILTER__ = sessionName;
+  renderSessionTabs();
+  renderBoard(window.__KANBAN_DATA__);
+  showToast("&#8635; 已切换: " + (sessionName || "全部会话"));
+}
+
+// ── Toast notification ──
+var toastTimer = null;
+function showToast(msg) {
+  var el = document.getElementById("toast");
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function() { el.classList.remove("show"); }, 2500);
+}
+
+// ── Countdown ──
+var countdownVal = 30;
+var countdownEl = document.getElementById("countdown");
+function updateCountdown() {
+  countdownVal--;
+  if (countdownVal < 0) countdownVal = 0;
+  countdownEl.textContent = countdownVal;
+}
+
+// ── AJAX polling (live updates without meta refresh) ──
+function pollData() {
+  var url = "kanban-data.json?_=" + Date.now();
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url, true);
+  xhr.timeout = 5000;
+  xhr.onload = function() {
+    if (xhr.status === 200 || xhr.status === 0) {
+      try {
+        var fresh = JSON.parse(xhr.responseText);
+        if (JSON.stringify(fresh) !== JSON.stringify(window.__KANBAN_DATA__)) {
+          window.__KANBAN_DATA__ = fresh;
+          renderSessionTabs();
+          renderBoard(fresh);
+          showToast("&#8635; 数据已自动更新");
+          document.getElementById("liveDot").className = "live-dot";
+          document.getElementById("liveLabel").textContent = "Live";
+        }
+      } catch(e) {}
+    }
+  };
+  xhr.onerror = function() {
+    // AJAX failed (likely file:// CORS) — fall back to meta refresh
+    document.getElementById("liveDot").className = "live-dot off";
+    document.getElementById("liveLabel").textContent = "Fallback";
+    if (countdownVal <= 0) {
+      // Save scroll position and reload
+      try { sessionStorage.setItem("kanbanScroll", window.scrollY); } catch(e) {}
+      location.reload();
+    }
+  };
+  xhr.send();
+}
+
+// ── Init ──
+renderSessionTabs();
+renderBoard(window.__KANBAN_DATA__);
+
+// Restore scroll position after meta refresh
+try {
+  var saved = sessionStorage.getItem("kanbanScroll");
+  if (saved) { window.scrollTo(0, parseInt(saved, 10)); sessionStorage.removeItem("kanbanScroll"); }
+} catch(e) {}
+
+// Poll interval — every second: update countdown, poll only on 0
+setInterval(function() {
+  updateCountdown();
+  if (countdownVal <= 0) {
+    pollData();
+    countdownVal = 30;
+    document.getElementById("genTime").textContent = new Date().toLocaleString("zh-CN", {
+      year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"
+    });
+  }
+}, 1000);
+
+// Also try on tab focus
+document.addEventListener("visibilitychange", function() {
+  if (!document.hidden) { countdownVal = 0; }
+});
+</script>
+</body>
+</html>

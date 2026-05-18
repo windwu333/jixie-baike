@@ -8,15 +8,23 @@ defaultContentLanguage = "zh"
 contentDir = "content/website"
 
 # Pagination
-paginate = 10
+paginate = 20
 
 enableEmoji = true
 hasCJKLanguage = true
+canonifyURLs = true
+enableRobotsTXT = false
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
   env = "production"
-  description = "机械工程百科全书 — Mechanical Engineering Encyclopedia"
-  keywords = ["机械工程", "机械设计", "制造工艺", "材料科学", "力学", "热工流体", "机电自动化"]
+  description = "系统化的机械工程知识平台 — Mechanical Engineering Encyclopedia"
+  keywords = ["机械工程", "机械设计", "制造工艺", "材料科学", "力学", "热工流体", "机电自动化", "工程知识", "工程师百科"]
+  author = "机械师大百科"
 
   # PaperMod theme config
   ShowShareButtons = true
@@ -27,13 +35,28 @@ hasCJKLanguage = true
   ShowToc = true
   TocOpen = true
 
-  # Home page
-  homeInfoParams = { Title = "机械师大百科", Content = "系统化的机械工程知识平台，涵盖机械设计、制造工艺、工程材料、力学强度、热工流体、机电自动化等领域。" }
+  # Favicon / Icons
+  # PaperMod assets (icon). Use faviconSVG for SVG favicons
+  assetsFavicon = "/favicon.ico"
+  assetsFaviconSVG = "/favicon.svg"
 
-  # Social
+  # Home page
+  homeInfoParams = { Title = "机械师大百科", Content = "系统化的机械工程知识平台，涵盖机械设计、制造工艺、工程材料、力学强度、热工流体、机电自动化等领域。", Subtitle = "从理论到实践 · 11大专业领域" }
+
+  # Social / SEO
   social = false
+  fediverse = "mastodon"
+  images = ["/favicon.svg"]
+
+  # PaperMod custom HTML before head closing
 
 [menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 5
+
   [[menu.main]]
     identifier = "categories"
     name = "分类"
@@ -47,6 +70,12 @@ hasCJKLanguage = true
     weight = 20
 
   [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 25
+
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
@@ -56,6 +85,16 @@ hasCJKLanguage = true
 [services]
   [services.baiduAnalytics]
     id = "UA-XXXXXXXX-X"
+
+# Search (Fuse.js via PaperMod)
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 2
+  keys = ["title", "permalink", "summary", "content"]
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

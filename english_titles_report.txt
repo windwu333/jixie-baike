@@ -1,0 +1,419 @@
+纯英文标题: 165 篇
+中英混杂标题: 247 篇
+需要翻译总数: 412 篇
+
+=== 纯英文标题 ===
+2026-05-18-measurement-gdt-k3.md	MMC
+2026-05-18-standards-ansi-k2.md	SAE
+2026-05-18-standards-din-t4.md	iec
+2026-05-18-mechanics-fatigue-t14.md	fatigue failure
+2026-05-18-cad-cae-t9.md	half section
+2026-05-18-mechatronics-automation-t8.md	scara robot
+2026-05-18-mechanics-vibration-t11.md	proof test
+2026-05-18-cad-software-t3.md	toolmakers microscope
+2026-05-18-mechatronics-embed-t12.md	shaft encoder
+2026-05-18-cad-software-k5.md	Inventor
+2026-05-18-mechanics-elasticity-t17.md	fracture toughness test
+2026-05-18-mechanics-fea-t2.md	fold test
+2026-05-18-cad-software-t11.md	torque wrench
+2026-05-18-mechanics-tribology-t15.md	galloseizing
+2026-05-18-standards-din-t0.md	ce
+2026-05-18-mechanics-fatigue-t10.md	scleroscope hardness test
+2026-05-18-mechatronics-embed-t16.md	low speed
+2026-05-18-standards-safety-t6.md	measurement system analysis
+2026-05-18-cad-software-t7.md	tensile testing machine
+2026-05-18-cad-cae-t13.md	removed section
+2026-05-18-mechanics-fea-t6.md	ring expansion test
+2026-05-18-mechanics-tribology-t11.md	fatigue crack
+2026-05-18-mechanics-fatigue-t9.md	mohs hardness
+2026-05-18-cad-software-k1.md	AutoCAD
+2026-05-18-standards-din-t1.md	bs
+2026-05-18-mechanics-fatigue-t11.md	scleroscope hardness
+2026-05-18-design-methodology-k0.md	DFMA
+2026-05-18-standards-safety-t7.md	gauge repeatability
+2026-05-18-mechatronics-embed-t17.md	rated speed
+2026-05-18-mechanics-vibration-t14.md	shock test
+2026-05-18-cad-software-t6.md	universal testing machine
+2026-05-18-mechanics-elasticity-t12.md	shear test
+2026-05-18-mechanics-fea-t7.md	weldability test
+2026-05-18-cad-software-t14.md	stroboscope
+2026-05-18-mechanics-tribology-t10.md	elastic deformation
+2026-05-18-mechanics-fatigue-t8.md	mohs hardness test
+2026-05-18-cad-software-k0.md	SolidWorks
+2026-05-18-standards-ansi-k3.md	ANSI
+2026-05-18-standards-din-t5.md	nace
+2026-05-18-cad-cae-t8.md	level gauge
+2026-05-18-mechanics-vibration-t10.md	pneumatic test
+2026-05-18-cad-software-t2.md	profile projector
+2026-05-18-mechatronics-embed-t13.md	hollow shaft encoder
+2026-05-18-cad-software-k4.md	Creo
+2026-05-18-mechanics-fea-t3.md	flattening test
+2026-05-18-mechanics-tribology-t14.md	rolling contact fatigue
+2026-05-18-cad-software-t10.md	weighing scale
+2026-05-18-cad-software-t9.md	scale
+2026-05-18-cad-cae-t3.md	thermistor
+2026-05-18-mechatronics-automation-t2.md	wankel engine
+2026-05-18-standards-safety-t8.md	gauge reproducibility
+2026-05-18-standards-ansi-t13.md	visual inspection
+2026-05-18-mechanics-vibration-t9.md	hydrostatic test
+2026-05-18-standards-safety-t16.md	foundation
+2026-05-18-mechanics-tribology-t1.md	liquid metal embrittlement
+2026-05-18-mechatronics-embed-t0.md	shape memory actuator
+2026-05-18-mechatronics-automation-k4.md	MES
+2026-05-18-standards-din-t14.md	kaizen
+2026-05-18-mechanics-fea-t8.md	jominy end quench test
+2026-05-18-mechatronics-automation-t17.md	thermal actuator
+2026-05-18-standards-ansi-t17.md	ul
+2026-05-18-cad-cae-t7.md	pitot tube
+2026-05-18-standards-safety-t12.md	quality system
+2026-05-18-mechanics-fea-t16.md	knoop hardness test
+2026-05-18-measurement-quality-k3.md	FMEA
+2026-05-18-mechanics-fatigue-t3.md	instrumented indentation hardness
+2026-05-18-standards-din-t10.md	statistical quality control
+2026-05-18-standards-ansi-t16.md	api
+2026-05-18-cad-cae-t6.md	venturi meter
+2026-05-18-standards-safety-t13.md	quality audit
+2026-05-18-mechanics-fea-t17.md	knoop hardness
+2026-05-18-mechatronics-embed-t5.md	rack and pinion actuator
+2026-05-18-measurement-quality-k2.md	ISO 9001
+2026-05-18-mechanics-fatigue-t2.md	instrumented indentation hardness test
+2026-05-18-mechatronics-automation-k1.md	AGV
+2026-05-18-cad-cae-t2.md	pyrometer
+2026-05-18-standards-safety-t9.md	gauge r and r
+2026-05-18-standards-ansi-t12.md	receiving inspection
+2026-05-18-mechanics-vibration-t8.md	pressure test
+2026-05-18-manufacturing-additive-k1.md	SLM
+2026-05-18-standards-safety-t17.md	footing
+2026-05-18-mechanics-tribology-t0.md	hydrogen embrittlement
+2026-05-18-manufacturing-cnc-k1.md	CAM
+2026-05-18-manufacturing-additive-t7.md	The American National Standards Institute
+2026-05-18-mechatronics-embed-t1.md	voice coil actuator
+2026-05-18-standards-din-t15.md	poka yoke
+2026-05-18-mechanics-fea-t9.md	hardenability test
+2026-05-18-standards-ansi-t15.md	ieee
+2026-05-18-mechatronics-automation-t15.md	piezoelectric actuator
+2026-05-18-cad-cae-t5.md	rotameter
+2026-05-18-standards-din-t8.md	ohsas 18001
+2026-05-18-mechanics-tribology-t7.md	rupture
+2026-05-18-standards-ansi-t8.md	ultrasonic inspection
+2026-05-18-design-connections-t7.md	CAD/CAM
+2026-05-18-mechanics-fatigue-t1.md	microhardness hardness
+2026-05-18-standards-din-t12.md	zero defect
+2026-05-18-cad-cae-t1.md	thermometer
+2026-05-18-mechanics-fea-t10.md	formability test
+2026-05-18-standards-safety-t14.md	quality plan
+2026-05-18-manufacturing-additive-k2.md	FDM
+2026-05-18-measurement-quality-k5.md	PPAP
+2026-05-18-mechanics-tribology-t3.md	spalling
+2026-05-18-mechatronics-embed-t2.md	motorized actuator
+2026-05-18-standards-din-t16.md	kanban
+2026-05-18-mechatronics-automation-t1.md	isolation transformer
+2026-05-18-standards-ansi-t10.md	functional inspection
+2026-05-18-mechatronics-automation-t10.md	parallel robot
+2026-05-18-standards-safety-t15.md	quality policy
+2026-05-18-manufacturing-additive-k3.md	SLA
+2026-05-18-measurement-quality-k4.md	APQP
+2026-05-18-mechanics-tribology-t2.md	fretting
+2026-05-18-mechatronics-embed-t3.md	piston actuator
+2026-05-18-standards-din-t17.md	just in time
+2026-05-18-mechanics-fatigue-t4.md	durometer hardness test
+2026-05-18-mechatronics-control-k1.md	PLC
+2026-05-18-mechatronics-automation-t14.md	solenoid actuator
+2026-05-18-cad-cae-t4.md	flow meter
+2026-05-18-mechanics-fea-t15.md	shore hardness
+2026-05-18-measurement-quality-k0.md	SPC
+2026-05-18-mechanics-tribology-t6.md	yielding
+2026-05-18-standards-ansi-t9.md	magnetic particle inspection
+2026-05-18-mechanics-fatigue-t0.md	microhardness hardness test
+2026-05-18-mechatronics-automation-k3.md	SCADA
+2026-05-18-standards-din-t2.md	gb
+2026-05-18-standards-ansi-k4.md	AWS
+2026-05-18-standards-safety-t4.md	pareto analysis
+2026-05-18-mechatronics-embed-t14.md	instrument panel
+2026-05-18-cad-software-t5.md	hardness tester
+2026-05-18-mechanics-elasticity-t11.md	torsion test
+2026-05-18-mechanics-fea-t4.md	flaring test
+2026-05-18-cad-software-k3.md	NX
+2026-05-18-standards-din-k4.md	ATEX
+2026-05-18-standards-ansi-k0.md	ASTM
+2026-05-18-standards-din-t6.md	iso 9001
+2026-05-18-cad-software-t1.md	optical comparator
+2026-05-18-manufacturing-surface-k2.md	PVD
+2026-05-18-mechanics-vibration-t13.md	vibration test
+2026-05-18-standards-safety-t0.md	5s
+2026-05-18-mechanics-tribology-t17.md	pitting
+2026-05-18-cad-software-t13.md	tachometer
+2026-05-18-mechanics-elasticity-t15.md	stress rupture test
+2026-05-18-mechanics-fea-t0.md	tensile impact test
+2026-05-18-mechanics-tribology-t9.md	plastic deformation
+2026-05-18-standards-din-k0.md	DIN
+2026-05-18-standards-ansi-k1.md	ASME
+2026-05-18-measurement-gdt-k0.md	GD&T
+2026-05-18-mechanics-vibration-t0.md	non destructive test
+2026-05-18-mechanics-fatigue-t17.md	stress corrosion cracking
+2026-05-18-standards-din-t7.md	iso 14001
+2026-05-18-manufacturing-surface-k3.md	CVD
+2026-05-18-standards-safety-t1.md	value stream mapping
+2026-05-18-mechatronics-embed-t11.md	inductive encoder
+2026-05-18-materials-ceramics-t8.md	Metals
+2026-05-18-cad-software-t12.md	torque meter
+2026-05-18-mechanics-tribology-t16.md	fretting corrosion
+2026-05-18-mechanics-tribology-t8.md	tearing
+2026-05-18-standards-din-k1.md	EN
+2026-05-18-mechanics-vibration-t4.md	dye penetrant test
+2026-05-18-standards-din-t3.md	en
+2026-05-18-measurement-gdt-k4.md	LMC
+2026-05-18-standards-safety-t5.md	process capability
+2026-05-18-cad-software-t4.md	surface roughness tester
+2026-05-18-cad-cae-t10.md	full section
+2026-05-18-mechanics-tribology-t12.md	thermal fatigue
+2026-05-18-cad-software-k2.md	CATIA
+
+=== 中英混杂标题 ===
+2026-05-18-materials-properties-t1.md	量规bearings
+2026-05-18-materials-ceramics-t10.md	aisi/钢identification编号
+2026-05-18-materials-testing-t14-v.md	galvanized钢—应用详解
+2026-05-18-thermofluid-pneumatic-t15.md	maximum应力
+2026-05-18-standards-safety-t14-v.md	quality plan—应用详解
+2026-05-18-thermofluid-pneumatic-t7.md	canadianmortgage计算器
+2026-05-18-manufacturing-forming-t11.md	centerless磨削机
+2026-05-18-standards-din-k0-v.md	DIN—应用详解
+2026-05-18-standards-iso-t17-v.md	ASTM标准—应用详解
+2026-05-18-materials-testing-t4.md	selecting应变量规four
+2026-05-18-mechanics-elasticity-t5-v.md	mist润滑—应用详解
+2026-05-18-thermofluid-pneumatic-t6-v.md	loan计算器this—应用详解
+2026-05-18-manufacturing-cnc-t5-v.md	dynamic制造网络—应用详解
+2026-05-18-mechatronics-control-t17.md	historyofthe射流发动机
+2026-05-18-powermachinery-engine-t4.md	horsepowerratings滚子
+2026-05-18-materials-testing-t12.md	coldrolled钢
+2026-05-18-cad-software-t9-v.md	scale—应用详解
+2026-05-18-standards-iso-k2-v.md	ISO机械安全—应用详解
+2026-05-18-standards-din-t1-v.md	bs—应用详解
+2026-05-18-mechatronics-robot-t13.md	welded气缸
+2026-05-18-manufacturing-cnc-t8.md	lcd制造
+2026-05-18-manufacturing-forming-t15.md	mig焊接
+2026-05-18-cad-software-t14-v.md	stroboscope—应用详解
+2026-05-18-mechanics-tribology-t6-v.md	yielding—应用详解
+2026-05-18-materials-properties-t1-v.md	量规bearings—应用详解
+2026-05-18-mechatronics-embed-t16-v.md	low speed—应用详解
+2026-05-18-materials-testing-t16.md	manganese钢
+2026-05-18-materials-ceramics-t6-v.md	Selecting—应用详解
+2026-05-18-cad-cae-t7-v.md	pitot tube—应用详解
+2026-05-18-manufacturing-cnc-t12.md	new制造economy
+2026-05-18-industry-automotive-t1.md	aerospaceapplications结构的
+2026-05-18-cad-software-k4-v.md	Creo—应用详解
+2026-05-18-standards-ansi-t0.md	DIN标准
+2026-05-18-standards-ansi-k4-v.md	AWS—应用详解
+2026-05-18-thermofluid-pneumatic-t2.md	compressibilityofa流体equationsand
+2026-05-18-manufacturing-forming-t14.md	tig焊接
+2026-05-18-materials-ceramics-t15.md	printing设计导向direct金属激光烧结
+2026-05-18-cad-software-k5-v.md	Inventor—应用详解
+2026-05-18-thermofluid-pneumatic-t10.md	currency计算器updated
+2026-05-18-mechatronics-embed-t17-v.md	rated speed—应用详解
+2026-05-18-materials-properties-t16.md	texture设计elementsribsboss计数器
+2026-05-18-mechatronics-sensors-t11.md	PID控制
+2026-05-18-manufacturing-cnc-t8-v.md	lcd制造—应用详解
+2026-05-18-powermachinery-engine-t1.md	convertingsound功率
+2026-05-18-thermofluid-hydraulic-t14-v.md	hvac系统—应用详解
+2026-05-18-mechatronics-control-t12.md	factory自动化infrastructure
+2026-05-18-materials-testing-t17.md	chromium钢
+2026-05-18-thermofluid-hydraulic-t14.md	hvac系统
+2026-05-18-mechanics-tribology-t7-v.md	rupture—应用详解
+2026-05-18-manufacturing-cnc-t13.md	open制造
+2026-05-18-standards-din-t12-v.md	zero defect—应用详解
+2026-05-18-manufacturing-additive-t9.md	ringsoverview设计guidelines
+2026-05-18-measurement-gdt-k0-v.md	GD&T—应用详解
+2026-05-18-materials-ceramics-t11.md	fiberglassreinforcedthermoplastics工程设计
+2026-05-18-design-connections-t7-v.md	CAD/CAM—应用详解
+2026-05-18-standards-din-t0-v.md	ce—应用详解
+2026-05-18-standards-iso-k3-v.md	ISO公差标准—应用详解
+2026-05-18-thermofluid-pneumatic-t14.md	principal应力need
+2026-05-18-thermofluid-pneumatic-t6.md	loan计算器this
+2026-05-18-manufacturing-cnc-t4-v.md	Downstream—应用详解
+2026-05-18-standards-din-k1-v.md	EN—应用详解
+2026-05-18-standards-iso-t16-v.md	ASME标准—应用详解
+2026-05-18-industry-automotive-t15.md	压力容器external
+2026-05-18-industry-automotive-t15-v.md	压力容器external—应用详解
+2026-05-18-manufacturing-cnc-t17.md	composites材料usage,设计
+2026-05-18-mechatronics-control-t16.md	Richard Jenkins（工程专家）
+2026-05-18-measurement-quality-k0-v.md	SPC—应用详解
+2026-05-18-materials-testing-t13.md	hotrolled钢
+2026-05-18-cad-cae-v.md	CAE仿真概述—应用详解
+2026-05-18-thermofluid-hydraulic-t9-v.md	Register—应用详解
+2026-05-18-standards-din-k3.md	CE认证
+2026-05-18-mechanics-elasticity-t6.md	forced润滑
+2026-05-18-standards-din-t15-v.md	poka yoke—应用详解
+2026-05-18-cad-software-t12-v.md	torque meter—应用详解
+2026-05-18-thermofluid-hydraulic-t0.md	frictional接触力学
+2026-05-18-measurement-dimension-t1.md	ISO 9000质量管理体系
+2026-05-18-mechatronics-robot-t3.md	level传感器
+2026-05-18-cad-cae-t1-v.md	thermometer—应用详解
+2026-05-18-manufacturing-surface-t4-v.md	forge焊接—应用详解
+2026-05-18-manufacturing-additive-t13-v.md	maximum材料条件—应用详解
+2026-05-18-cad-software-k2-v.md	CATIA—应用详解
+2026-05-18-cad-cae.md	CAE仿真概述
+2026-05-18-standards-ansi-k3-v.md	ANSI—应用详解
+2026-05-18-materials-testing-t12-v.md	coldrolled钢—应用详解
+2026-05-18-standards-gb-k0-v.md	GB标准—应用详解
+2026-05-18-mechanics-elasticity-t2.md	hole钻孔方法
+2026-05-18-mechatronics-automation-k1-v.md	AGV—应用详解
+2026-05-18-thermofluid-pneumatic-t9.md	计算器so
+2026-05-18-standards-ansi-t15-v.md	ieee—应用详解
+2026-05-18-manufacturing-additive-t3-v.md	Jigs—应用详解
+2026-05-18-thermofluid-hydraulic-t4.md	heating,ventilation,andair调节
+2026-05-18-mechanics-elasticity-t3-v.md	third介质接触方法—应用详解
+2026-05-18-manufacturing-cnc-t3-v.md	discrete制造—应用详解
+2026-05-18-mechatronics-control-t11-v.md	tesla自动化—应用详解
+2026-05-18-mechatronics-sensors-t11-v.md	PID控制—应用详解
+2026-05-18-mechanics-tribology-t15-v.md	galloseizing—应用详解
+2026-05-18-standards-iso-k1.md	IEC标准
+2026-05-18-materials-ceramics-t5.md	selectingcandidate制造工艺程序and
+2026-05-18-standards-din-t7-v.md	iso 14001—应用详解
+2026-05-18-standards-din-t6-v.md	iso 9001—应用详解
+2026-05-18-manufacturing-casting-t1.md	3D打印
+2026-05-18-mechanics-elasticity-t3.md	third介质接触方法
+2026-05-18-manufacturing-cnc-t3.md	discrete制造
+2026-05-18-thermofluid-pneumatic-t8.md	lease计算器leasing
+2026-05-18-cad-software.md	CAD软件概述
+2026-05-18-thermofluid-hydraulic-t5.md	ljungströmair预热器
+2026-05-18-mechanics-elasticity-t2-v.md	hole钻孔方法—应用详解
+2026-05-18-standards-gb-k1-v.md	JB标准—应用详解
+2026-05-18-mechanics-vibration-t11-v.md	proof test—应用详解
+2026-05-18-mechanics-strength-t17.md	5Why分析法
+2026-05-18-cad-software-v.md	CAD软件概述—应用详解
+2026-05-18-measurement-dimension-t9-v.md	线材仪表sizes—应用详解
+2026-05-18-standards-iso-k0.md	ISO标准
+2026-05-18-materials-ceramics-t4.md	poisson's比metalsmaterials
+2026-05-18-materials-testing-t13-v.md	hotrolled钢—应用详解
+2026-05-18-standards-ansi-k2-v.md	SAE—应用详解
+2026-05-18-manufacturing-additive-t13.md	maximum材料条件
+2026-05-18-thermofluid-pneumatic-t15-v.md	maximum应力—应用详解
+2026-05-18-mechanics-elasticity-t7.md	centralized润滑
+2026-05-18-cad-software-k3-v.md	NX—应用详解
+2026-05-18-mechanics-fatigue-k0.md	S-N曲线
+2026-05-18-powermachinery-engine-t10.md	timelineof喷射功率
+2026-05-18-manufacturing-cnc-t7.md	integrated制造database
+2026-05-18-mechanics-elasticity-t12-v.md	shear test—应用详解
+2026-05-18-mechatronics-robot-t13-v.md	welded气缸—应用详解
+2026-05-18-thermofluid-hydraulic-t1.md	statisticalassociating流体theory
+2026-05-18-cad-software-t13-v.md	tachometer—应用详解
+2026-05-18-mechanics-strength-t17-v.md	5Why分析法—应用详解
+2026-05-18-thermofluid-hydraulic-t3-v.md	feedwater加热器—应用详解
+2026-05-18-standards-din-t14-v.md	kaizen—应用详解
+2026-05-18-standards-ansi-k1-v.md	ASME—应用详解
+2026-05-18-cad-software-k0-v.md	SolidWorks—应用详解
+2026-05-18-cad-cae-t3-v.md	thermistor—应用详解
+2026-05-18-manufacturing-forming-t15-v.md	mig焊接—应用详解
+2026-05-18-standards-ansi-t0-v.md	DIN标准—应用详解
+2026-05-18-mechanics-elasticity-t11-v.md	torsion test—应用详解
+2026-05-18-mechatronics-robot-t10-v.md	telescopic气缸—应用详解
+2026-05-18-mechanics-tribology-t2-v.md	fretting—应用详解
+2026-05-18-design-methodology-k0-v.md	DFMA—应用详解
+2026-05-18-standards-din-t17-v.md	just in time—应用详解
+2026-05-18-standards-iso-k3.md	ISO公差标准
+2026-05-18-cad-cae-t10-v.md	full section—应用详解
+2026-05-18-materials-testing-t8.md	young’s模量of弹性
+2026-05-18-standards-din-t5-v.md	nace—应用详解
+2026-05-18-manufacturing-additive-t10.md	stdsizes化学阻力计算器径向
+2026-05-18-design-springs-k4.md	O型圈
+2026-05-18-mechanics-tribology-t17-v.md	pitting—应用详解
+2026-05-18-mechatronics-embed-k4.md	PCB设计
+2026-05-18-standards-din-k4-v.md	ATEX—应用详解
+2026-05-18-standards-ansi-t17-v.md	ul—应用详解
+2026-05-18-mechanics-fea-t4-v.md	flaring test—应用详解
+2026-05-18-measurement-quality-k5-v.md	PPAP—应用详解
+2026-05-18-mechatronics-automation-k3-v.md	SCADA—应用详解
+2026-05-18-manufacturing-additive-t4.md	sixsigmaforelectronics设计
+2026-05-18-materials-testing-t11-v.md	mild钢—应用详解
+2026-05-18-mechanics-elasticity-t5.md	mist润滑
+2026-05-18-manufacturing-additive-t11.md	end应力concentrationsconsider
+2026-05-18-standards-ansi-t16-v.md	api—应用详解
+2026-05-18-measurement-quality-k4-v.md	APQP—应用详解
+2026-05-18-thermofluid-hydraulic-t3.md	feedwater加热器
+2026-05-18-manufacturing-cnc-t5.md	dynamic制造网络
+2026-05-18-mechatronics-sensors-t12-v.md	RV减速器—应用详解
+2026-05-18-mechatronics-robot-t0.md	mathematicalbasisfor摩擦
+2026-05-18-mechatronics-robot-t3-v.md	level传感器—应用详解
+2026-05-18-standards-din-t4-v.md	iec—应用详解
+2026-05-18-measurement-gdt-k4-v.md	LMC—应用详解
+2026-05-18-mechanics-elasticity-t1.md	dunkerley's方法
+2026-05-18-standards-din-t16-v.md	kanban—应用详解
+2026-05-18-thermofluid-hydraulic-t7.md	multiphase热转移
+2026-05-18-mechanics-tribology-t3-v.md	spalling—应用详解
+2026-05-18-manufacturing-casting-t1-v.md	3D打印—应用详解
+2026-05-18-mechanics-fatigue-k0-v.md	S-N曲线—应用详解
+2026-05-18-materials-polymer-t10-v.md	ABS塑料—应用详解
+2026-05-18-thermofluid-hydraulic-t10-v.md	Cold—应用详解
+2026-05-18-manufacturing-forming-t14-v.md	tig焊接—应用详解
+2026-05-18-cad-cae-t2-v.md	pyrometer—应用详解
+2026-05-18-standards-iso-k2.md	ISO机械安全
+2026-05-18-powermachinery-engine-t9.md	工作台chart功率
+2026-05-18-cad-software-k1-v.md	AutoCAD—应用详解
+2026-05-18-standards-din-t8-v.md	ohsas 18001—应用详解
+2026-05-18-standards-ansi-k0-v.md	ASTM—应用详解
+2026-05-18-thermofluid-pneumatic-t1.md	workingpressures重duty液压connectors
+2026-05-18-standards-din-t3-v.md	en—应用详解
+2026-05-18-standards-iso-k0-v.md	ISO标准—应用详解
+2026-05-18-standards-gb-k0.md	GB标准
+2026-05-18-materials-ceramics-t8-v.md	Metals—应用详解
+2026-05-18-industry-automotive-t12.md	materials压力容器
+2026-05-18-cad-cae-t9-v.md	half section—应用详解
+2026-05-18-mechatronics-control-t15-v.md	Hiroshi Tada—应用详解
+2026-05-18-mechatronics-sensors-t12.md	RV减速器
+2026-05-18-materials-properties-t15.md	publications注射成型设计导向导向
+2026-05-18-materials-testing-t14.md	galvanized钢
+2026-05-18-mechatronics-control-t11.md	tesla自动化
+2026-05-18-mechanics-fea-t2-v.md	fold test—应用详解
+2026-05-18-measurement-quality-k3-v.md	FMEA—应用详解
+2026-05-18-mechanics-tribology-t8-v.md	tearing—应用详解
+2026-05-18-powermachinery-engine-t9-v.md	工作台chart功率—应用详解
+2026-05-18-standards-safety-t16-v.md	foundation—应用详解
+2026-05-18-mechanics-vibration-t14-v.md	shock test—应用详解
+2026-05-18-standards-iso-t16.md	ASME标准
+2026-05-18-standards-gb-t6.md	ISO 14000环境管理体系
+2026-05-18-materials-testing-t16-v.md	manganese钢—应用详解
+2026-05-18-materials-properties-t3.md	processes机加工
+2026-05-18-design-springs-k4-v.md	O型圈—应用详解
+2026-05-18-thermofluid-hydraulic-t8.md	near-fieldradiative热转移
+2026-05-18-cad-cae-t5-v.md	rotameter—应用详解
+2026-05-18-industry-automotive-t16.md	压力容器external压力calculations
+2026-05-18-thermofluid-hydraulic-t17-v.md	Shell-MIT—应用详解
+2026-05-18-materials-properties-t3-v.md	processes机加工—应用详解
+2026-05-18-manufacturing-surface-t4.md	forge焊接
+2026-05-18-powermachinery-engine-t6.md	horsepowerratings工作台
+2026-05-18-mechatronics-control-t15.md	Hiroshi Tada（日本学者）
+2026-05-18-manufacturing-cnc-t13-v.md	open制造—应用详解
+2026-05-18-measurement-dimension-t9.md	线材仪表sizes
+2026-05-18-mechatronics-automation-t8-v.md	scara robot—应用详解
+2026-05-18-measurement-gdt-k3-v.md	MMC—应用详解
+2026-05-18-industry-automotive-t7.md	calculator压力容器
+2026-05-18-materials-properties-t2.md	formulas力学
+2026-05-18-materials-ceramics-t13.md	fibrouscomposites设计and
+2026-05-18-thermofluid-pneumatic-t4.md	steady-stateindoorair质量formulaeand
+2026-05-18-manufacturing-cnc-t12-v.md	new制造economy—应用详解
+2026-05-18-mechatronics-control-k1-v.md	PLC—应用详解
+2026-05-18-materials-properties-t2-v.md	formulas力学—应用详解
+2026-05-18-thermofluid-pneumatic-t9-v.md	计算器so—应用详解
+2026-05-18-manufacturing-cnc-t15.md	nasa工程拉深standards
+2026-05-18-materials-testing-t11.md	mild钢
+2026-05-18-cad-cae-t4-v.md	flow meter—应用详解
+2026-05-18-measurement-dimension-t8.md	gdt包络principlerulesimulator
+2026-05-18-thermofluid-pneumatic-t0.md	swamee-jain摩擦factor方程and
+2026-05-18-materials-testing-t17-v.md	chromium钢—应用详解
+2026-05-18-manufacturing-forming-t16.md	submergedarc焊接
+2026-05-18-mechatronics-robot-t10.md	telescopic气缸
+2026-05-18-materials-polymer-t10.md	ABS塑料
+2026-05-18-standards-safety-t17-v.md	footing—应用详解
+2026-05-18-thermofluid-pneumatic-t12.md	fraction计算器设计
+2026-05-18-standards-gb-k1.md	JB标准
+2026-05-18-mechatronics-automation-k4-v.md	MES—应用详解
+2026-05-18-measurement-quality-k2-v.md	ISO 9001—应用详解
+2026-05-18-thermofluid-hydraulic-t16.md	churchill摩擦factorformulaeand
+2026-05-18-standards-din-k3-v.md	CE认证—应用详解
+2026-05-18-mechatronics-embed-k4-v.md	PCB设计—应用详解
+2026-05-18-mechanics-elasticity-t6-v.md	forced润滑—应用详解
+2026-05-18-cad-cae-t8-v.md	level gauge—应用详解
+2026-05-18-standards-safety-t0-v.md	5s—应用详解
+2026-05-18-standards-iso-t17.md	ASTM标准
+2026-05-18-standards-iso-k1-v.md	IEC标准—应用详解
+2026-05-18-standards-din-t2-v.md	gb—应用详解

@@ -1,0 +1,97 @@
+{{- define "main" }}
+<header class="page-header">
+  {{- if (or (.Param "ShowBreadCrumbs") site.Params.ShowBreadCrumbs) }}
+  <nav class="breadcrumbs" role="navigation" aria-label="面包屑导航">
+    <a href="{{ "" | relLangURL }}">首页</a>
+    <span class="breadcrumb-sep">&gt;</span>
+  </nav>
+  {{- end }}
+  <h1>{{ .Title | default "全部分类" }}</h1>
+</header>
+
+<div class="categories-grid">
+  {{- range .Data.Terms.Alphabetical }}
+    {{- $catName := .Name }}
+    {{- $count := .Count }}
+    {{- $catPage := site.GetPage (printf "/categories/%s" ($catName | urlize)) }}
+    <a href="{{ $catPage.RelPermalink }}" class="category-card-link">
+      <article class="category-card">
+        <h2 class="category-name">{{ $catName }}</h2>
+        <p class="category-count">{{ $count }} 篇文章</p>
+        <p class="category-desc">
+          {{- if eq $catName "机械设计" }}零部件的设计原理、计算方法与选型指南
+          {{- else if eq $catName "制造工艺" }}铸造、锻造、焊接、切削、增材制造等工艺技术
+          {{- else if eq $catName "工程材料" }}金属、高分子、复合材料、陶瓷的性能与应用
+          {{- else if eq $catName "机械电子与自动化" }}传感器、执行器、控制系统、工业机器人
+          {{- else if eq $catName "热工与流体" }}热力学、传热学、流体力学、液压与气动
+          {{- else if eq $catName "标准与规范" }}国际标准、行业标准、质量体系、检测方法
+          {{- else if eq $catName "力学与强度分析" }}理论力学、材料力学、有限元、疲劳与断裂
+          {{- else if eq $catName "机械制图与CAD" }}工程图学、CAD/CAE/CAM、GD&T公差
+          {{- else if eq $catName "测量与质量控制" }}尺寸测量、无损检测、统计过程控制
+          {{- else if eq $catName "行业应用" }}工程机械、汽车、航空航天、模具等
+          {{- else if eq $catName "动力机械与能源" }}发动机、涡轮机、压缩机、能源转换设备
+          {{- else }}点击浏览分类内容
+          {{- end }}
+        </p>
+      </article>
+    </a>
+  {{- end }}
+</div>
+
+<style>
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  padding: 1rem 0;
+}
+
+.category-card-link {
+  text-decoration: none;
+}
+
+.category-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 12px);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  background: var(--entry);
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary);
+}
+
+.category-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+  color: var(--primary);
+}
+
+.category-count {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  background: var(--tertiary);
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  margin-bottom: 0.5rem;
+}
+
+.category-desc {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+{{- end }}

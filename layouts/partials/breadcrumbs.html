@@ -1,0 +1,13 @@
+<nav class="breadcrumbs" role="navigation" aria-label="面包屑导航">
+  <a href="{{ "" | relLangURL }}">首页</a>
+  <!-- kind={{ .Kind }} cats={{ .Params.categories }} -->
+  {{- if eq .Kind "page" }}
+    {{- $cats := .Params.categories }}
+    <!-- has_cats={{ if $cats }}true{{ else }}false{{ end }} cats_len={{ len $cats }} -->
+    {{- range $cats }}
+    <span class="breadcrumb-sep">&gt;</span>
+    <!-- cat_name={{ . }} -->
+    <a href="/categories/{{ . }}">{{ . }}</a>
+    {{- end }}
+  {{- end }}
+</nav>

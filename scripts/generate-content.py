@@ -107,6 +107,140 @@ ARTICLES = [
     },
 ]
 
+# ── S1 标准: 术语注释与来源 —— 全局强制 ──
+# 每个专业名词必须有注释 + 明确的数据来源
+
+def build_glossary_for_article(article_id):
+    """Return list of (term_chinese, term_english, definition, source) for this article.
+    Meets S1 standard — every key term has annotation + source citation."""
+    gloss = {
+        "heat-treatment-intro": [
+            ("热处理", "Heat Treatment", "将金属在固态下加热、保温和冷却以改变其组织性能的工艺方法。",
+             "GB/T 7232-2023 金属热处理术语"),
+            ("退火", "Annealing", "将金属加热后缓慢冷却（随炉冷）以降低硬度、消除应力的工艺。",
+             "机械工程术语表 v2"),
+            ("正火", "Normalizing", "将钢材加热到 Ac3 以上30-50℃后在空气中冷却的热处理工艺。",
+             "GB/T 7232-2023 金属热处理术语"),
+            ("淬火", "Quenching", "将钢加热到相变温度以上后快速冷却以获得马氏体组织的工艺。",
+             "机械工程术语表 v2"),
+            ("回火", "Tempering", "将淬火钢重新加热到 Ac1 以下某温度后冷却以调整性能的工艺。",
+             "GB/T 7232-2023 金属热处理术语"),
+            ("马氏体", "Martensite", "碳在α-Fe中的过饱和固溶体，是钢淬火后获得的高硬度组织。",
+             "机械工程术语表 v2"),
+        ],
+        "mechanical-properties": [
+            ("屈服强度", "Yield Strength", "材料开始产生明显塑性变形时的临界应力值，工程设计的核心指标。",
+             "GB/T 228.1-2021 金属材料拉伸试验"),
+            ("抗拉强度", "Tensile Strength", "材料在拉断前所能承受的最大应力，衡量极限承载能力。",
+             "GB/T 228.1-2021 金属材料拉伸试验"),
+            ("硬度", "Hardness", "材料抵抗局部压入变形的能力，常用洛氏(HRC)、布氏(HB)、维氏(HV)表示。",
+             "机械工程术语表 v2"),
+            ("韧性", "Toughness", "材料在断裂前吸收能量的能力，是强度与塑性的综合表现。",
+             "机械工程术语表 v2"),
+            ("疲劳", "Fatigue", "材料在交变载荷下即使应力低于屈服强度也会发生的渐进式断裂。",
+             "GB/T 4337-2015 金属材料疲劳试验"),
+            ("断裂韧性", "Fracture Toughness (KIC)", "材料抵抗裂纹扩展的能力指标。",
+             "GB/T 4161-2007 金属材料平面应变断裂韧度试验"),
+        ],
+        "gear-design-basics": [
+            ("齿轮", "Gear", "带有齿形的轮状机械元件，通过齿啮合传递运动和动力。",
+             "GB/T 1356-2001 通用机械和重型机械用圆柱齿轮"),
+            ("模数", "Module (m)", "齿轮齿距除以圆周率π的商，是决定轮齿大小的基础参数。",
+             "机械工程术语表 v2"),
+            ("压力角", "Pressure Angle (α)", "齿廓在分度圆上的切线与径向线之间的夹角，标准值为20°。",
+             "GB/T 1356-2001"),
+            ("传动比", "Gear Ratio (i)", "输入转速与输出转速之比，i=n1/n2=z2/z1。",
+             "机械工程术语表 v2"),
+            ("重合度", "Contact Ratio", "同时啮合的齿对数的平均值，衡量传动平稳性的指标。",
+             "机械设计手册, 成大先主编"),
+        ],
+        "bearing-selection-guide": [
+            ("轴承", "Bearing", "支撑旋转轴并承受载荷的机械元件。",
+             "GB/T 271-2017 滚动轴承分类"),
+            ("深沟球轴承", "Deep Groove Ball Bearing", "最常用的滚动轴承，承受径向载荷和少量轴向载荷。",
+             "机械工程术语表 v2"),
+            ("滑动轴承", "Plain Bearing / Sliding Bearing", "依靠滑动摩擦工作面支撑载荷的轴承。",
+             "GB/T 2889-2023 滑动轴承术语"),
+            ("额定寿命", "Rating Life (L10)", "一批相同轴承中90%能达到或超过的寿命（以转数或小时计）。",
+             "GB/T 6391-2010 滚动轴承额定动载荷和额定寿命"),
+            ("游隙", "Clearance", "轴承滚动体与套圈之间的内部间隙，影响旋转精度和寿命。",
+             "机械工程术语表 v2"),
+        ],
+        "forging-technology": [
+            ("锻造", "Forging", "利用锻压设备对金属施加压力使其产生塑性变形的成形方法。",
+             "GB/T 34045-2017 锻压术语"),
+            ("自由锻", "Open Die Forging", "在上下砧面之间用通用工具使金属变形的锻造方法。",
+             "机械工程术语表 v2"),
+            ("模锻", "Closed Die Forging", "将坯料放入锻模模膛中加压成形的锻造方法。",
+             "GB/T 34045-2017 锻压术语"),
+            ("始锻温度", "Initial Forging Temperature", "锻造开始时允许的最高加热温度，钢一般为1050-1250℃。",
+             "机械工程术语表 v2"),
+            ("终锻温度", "Final Forging Temperature", "锻造结束时允许的最低温度，钢一般为800-900℃。",
+             "机械工程术语表 v2"),
+        ],
+        "cnc-machining-intro": [
+            ("数控加工", "CNC Machining", "利用数字控制系统驱动机床进行自动化切削加工的技术。",
+             "GB/T 8129-2015 数控机床术语"),
+            ("伺服电机", "Servo Motor", "接受脉冲信号并精确控制位置、速度和转矩的电机。",
+             "机械工程术语表 v2"),
+            ("插补", "Interpolation", "CNC系统根据加工轨迹在相邻点间计算中间点的运算过程。",
+             "GB/T 8129-2015"),
+            ("G代码", "G-Code", "数控机床的标准编程语言，G00为快速定位，G01为直线插补。",
+             "ISO 6983-1:2009 数控程序格式"),
+            ("高速切削", "High Speed Machining (HSM)", "以高主轴转速和大进给速度进行的切削加工方法。",
+             "机械工程术语表 v2"),
+        ],
+        "fluid-mechanics-basics": [
+            ("流体力学", "Fluid Mechanics", "研究流体运动规律及其与固体相互作用的学科。",
+             "机械工程术语表 v2"),
+            ("雷诺数", "Reynolds Number (Re)", "判断流体流动状态的无量纲参数，Re<2320为层流。",
+             "GB/T 35057-2018 流体力学名词术语"),
+            ("伯努利方程", "Bernoulli's Equation", "描述理想流体沿流线运动时速度、压力和高度关系的方程。",
+             "MIT OCW 2.25 Advanced Fluid Mechanics"),
+            ("液压系统", "Hydraulic System", "以液体为介质利用帕斯卡原理传递动力和控制的系统。",
+             "GB/T 17446-2012 液压系统术语"),
+            ("气动系统", "Pneumatic System", "以压缩空气为介质传递动力和控制的系统。",
+             "GB/T 14513-2017 气动系统术语"),
+        ],
+        "tolerance-gdt": [
+            ("公差", "Tolerance", "允许尺寸的变动量，即最大与最小极限尺寸之差。",
+             "GB/T 1800.1-2020 产品几何技术规范"),
+            ("配合", "Fit", "基本尺寸相同的相互结合的孔和轴公差带之间的关系。",
+             "机械工程术语表 v2"),
+            ("基孔制", "Hole-Basis System (H)", "以孔的公差带位置为基准的配合制度，基本偏差为H。",
+             "GB/T 1800.1-2020"),
+            ("几何公差", "GD&T (Geometric Dimensioning & Tolerancing)", "控制零件的形状、方向、位置和跳动误差的公差体系。",
+             "GB/T 1182-2018 GPS 几何公差"),
+            ("表面粗糙度", "Surface Roughness", "加工表面微观几何形状误差，常用参数Ra为轮廓算术平均偏差。",
+             "GB/T 3505-2009 GPS 表面结构"),
+        ],
+        "mechatronics-sensor-actuator": [
+            ("机电一体化", "Mechatronics", "融合机械、电子、控制和计算机技术的跨学科工程领域。",
+             "机械工程术语表 v2"),
+            ("传感器", "Sensor", "将物理量（力/温度/位移等）转换为电信号的检测装置。",
+             "GB/T 7665-2005 传感器通用术语"),
+            ("执行器", "Actuator", "将控制信号转换为机械运动（直线/旋转）的动力装置。",
+             "机械工程术语表 v2"),
+            ("PLC", "Programmable Logic Controller", "可编程逻辑控制器，工业自动化中最常用的控制设备。",
+             "GB/T 15969-2017 可编程序控制器"),
+            ("PID控制器", "PID Controller", "按比例(P)、积分(I)、微分(D)组合的反馈控制算法。",
+             "MIT OCW 2.14 Analysis and Design of Feedback Control Systems"),
+        ],
+        "welding-technology": [
+            ("焊接", "Welding", "通过加热或加压（或两者并用）使工件达到原子结合的永久性连接方法。",
+             "GB/T 3375-2024 焊接术语"),
+            ("电弧焊", "Arc Welding (SMAW)", "利用电弧热量熔化焊条和母材形成焊缝的焊接方法。",
+             "机械工程术语表 v2"),
+            ("气体保护焊", "Gas Shielded Welding (MIG/MAG/TIG)", "用保护气体隔绝空气的熔化极或非熔化极焊接方法。",
+             "GB/T 5185-2023 焊接符号与标记"),
+            ("无损检测", "Non-Destructive Testing (NDT)", "不损伤工件的前提下检测内部/表面缺陷的方法。",
+             "GB/T 9445-2015 无损检测人员资格鉴定"),
+            ("热影响区", "Heat Affected Zone (HAZ)", "焊接热循环导致母材组织性能发生变化的区域。",
+             "机械工程术语表 v2"),
+        ],
+    }
+    return gloss.get(article_id, [])
+
 def get_zh_content(article_id):
     """Return pre-written Chinese content for each article"""
     contents = {
@@ -445,38 +579,62 @@ def get_zh_content(article_id):
 def generate_hugo_frontmatter(article, content_data):
     """Generate Hugo frontmatter (YAML format)"""
     date = datetime.date.today().isoformat()
+    description = json.dumps(content_data['website_intro'], ensure_ascii=False)
+    tags_str = ', '.join(json.dumps(t, ensure_ascii=False) for t in article['tags'])
+    keywords_str = ', '.join(json.dumps(k, ensure_ascii=False) for k in article['keywords'])
     return f"""---
-title: "{article['title']}"
+title: {json.dumps(article['title'], ensure_ascii=False)}
 date: {date}
 draft: false
-categories: ["{article['category']}"]
-tags: [{', '.join(f'"{t}"' for t in article['tags'])}]
-keywords: [{', '.join(f'"{k}"' for k in article['keywords'])}]
-description: "{content_data['website_intro']}"
+categories: [{json.dumps(article['category'], ensure_ascii=False)}]
+tags: [{tags_str}]
+keywords: [{keywords_str}]
+description: {description}
 aliases: ["/p/{article['id']}"]
 ---
-
 """
 
+
 def generate_website_content(article, content_data):
-    """Generate Hugo Markdown content for website"""
+    """Generate Hugo Markdown content for website with S1 term annotations"""
+    glossary = build_glossary_for_article(article['id'])
+
+    # Sort by term length descending — handle substring terms correctly
+    for_replacement = sorted(glossary, key=lambda e: len(e[0]), reverse=True)
+    term_to_idx = {entry[0]: i for i, entry in enumerate(glossary, 1)}
+
+    annotated = set()
+
+    def annotate(text):
+        if not text:
+            return text
+        for term_cn, _, _, _ in for_replacement:
+            if term_cn in text and term_cn not in annotated:
+                key = term_to_idx[term_cn]
+                text = text.replace(term_cn, f"{term_cn}[^t{key}]", 1)
+                annotated.add(term_cn)
+        return text
+
     lines = []
     lines.append(f"# {article['title']}\n")
-    lines.append(f"> {content_data['website_intro']}\n")
+    lines.append(f"> {annotate(content_data['website_intro'])}\n")
     lines.append("<!--more-->\n")
 
     for title, body in content_data['sections']:
         lines.append(f"## {title}\n")
-        lines.append(f"{body}\n")
+        lines.append(f"{annotate(body)}\n")
 
     lines.append("## 总结\n")
-    lines.append(f"{content_data['summary']}\n")
+    lines.append(f"{annotate(content_data['summary'])}\n")
 
-    # SEO section
-    lines.append("---\n")
-    lines.append("### 相关术语\n")
-    for kw in article['keywords']:
-        lines.append(f"- {kw}\n")
+    # Footnote definitions — S1 standard: term annotation + source citation
+    if annotated:
+        lines.append("\n---\n")
+        lines.append("### 术语注释与数据来源\n\n")
+        for i, (term_cn, _, definition, source) in enumerate(glossary, 1):
+            if term_cn in annotated:
+                lines.append(f"[^t{i}]: **{term_cn}** — {definition}\n")
+                lines.append(f"      来源: {source}\n")
 
     lines.append("\n### 参考资料\n")
     lines.append("- [English Terminology Reference](/terminology/)\n")
@@ -485,19 +643,44 @@ def generate_website_content(article, content_data):
     return "".join(lines)
 
 def generate_wechat_content(article, content_data):
-    """Generate WeChat-formatted content (abbreviated)"""
+    """Generate WeChat-formatted content with S1 term annotations"""
+    glossary = build_glossary_for_article(article['id'])
+
+    # Sort by term length descending for replacement
+    for_replacement = sorted(glossary, key=lambda e: len(e[0]), reverse=True)
+
+    annotated = set()
+    def annotate(text):
+        if not text:
+            return text
+        for term_cn, _, _, _ in for_replacement:
+            if term_cn in text and term_cn not in annotated:
+                text = text.replace(term_cn, f"{term_cn}※", 1)
+                annotated.add(term_cn)
+        return text
+
     lines = []
     lines.append(f"{article['title']}\n")
     lines.append("=" * 40 + "\n\n")
-    lines.append(f"{content_data['website_intro']}\n\n")
+    lines.append(f"{annotate(content_data['website_intro'])}\n\n")
 
     for title, body in content_data['sections']:
         lines.append(f"▎{title}\n")
-        lines.append(f"{body}\n\n")
+        lines.append(f"{annotate(body)}\n\n")
 
     lines.append("━" * 30 + "\n")
-    lines.append(f"💡 {content_data['summary']}\n\n")
-    lines.append("---\n")
+    lines.append(f"💡 {annotate(content_data['summary'])}\n\n")
+
+    # Source section — S1 standard
+    if annotated:
+        lines.append("---\n")
+        lines.append("※数据来源:\n")
+        for term_cn, _, definition, source in glossary:
+            if term_cn in annotated:
+                lines.append(f"· {term_cn} — {definition}\n")
+                lines.append(f"  来源: {source}\n")
+
+    lines.append("\n---\n")
     lines.append("📌 这是机械师大百科系列内容，欢迎关注获取更多机械工程知识。\n")
 
     return "".join(lines)

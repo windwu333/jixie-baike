@@ -1,0 +1,66 @@
+=== M3-P1-2 标题翻译报告 ===
+翻译: 60
+无需变更: 42
+错误: 310
+
+=== 翻译详情 ===
+2026-05-18-industry-automotive-t12.md	materials压力容器	→	压力容器材料
+2026-05-18-industry-automotive-t16.md	压力容器external压力calculations	→	压力容器外部压力计算
+2026-05-18-industry-automotive-t7.md	calculator压力容器	→	压力容器计算器
+2026-05-18-manufacturing-cnc-k1.md	CAM	→	CAM计算机辅助制造
+2026-05-18-materials-ceramics-t6-v.md	Selecting—应用详解	→	—应用详解
+2026-05-18-measurement-dimension-t1.md	ISO 9000质量管理体系	→	ISO标准9000质量管理体系
+2026-05-18-measurement-quality-k2-v.md	ISO 9001—应用详解	→	ISO 9001质量管理体系—应用详解
+2026-05-18-measurement-quality-k2.md	ISO 9001	→	ISO 9001质量管理体系
+2026-05-18-mechatronics-automation-k1-v.md	AGV—应用详解	→	AGV自动导引车—应用详解
+2026-05-18-mechatronics-automation-k1.md	AGV	→	AGV自动导引车
+2026-05-18-mechatronics-automation-k3-v.md	SCADA—应用详解	→	SCADA数据采集与监控系统—应用详解
+2026-05-18-mechatronics-automation-k3.md	SCADA	→	SCADA数据采集与监控系统
+2026-05-18-mechatronics-automation-k4-v.md	MES—应用详解	→	MES制造执行系统—应用详解
+2026-05-18-mechatronics-automation-k4.md	MES	→	MES制造执行系统
+2026-05-18-mechatronics-control-k1-v.md	PLC—应用详解	→	PLC可编程逻辑控制器—应用详解
+2026-05-18-mechatronics-control-k1.md	PLC	→	PLC可编程逻辑控制器
+2026-05-18-mechatronics-control-t15-v.md	Hiroshi Tada—应用详解	→	Hiroshi Tada（田博史）—应用详解
+2026-05-18-mechatronics-control-t15.md	Hiroshi Tada（日本学者）	→	Hiroshi Tada（田博史）
+2026-05-18-mechatronics-control-t16.md	Richard Jenkins（工程专家）	→	Richard Jenkins（理查德·詹金斯）
+2026-05-18-standards-ansi-k2-v.md	SAE—应用详解	→	SAE标准—应用详解
+2026-05-18-standards-ansi-k2.md	SAE	→	SAE标准
+2026-05-18-standards-ansi-k3-v.md	ANSI—应用详解	→	ANSI标准—应用详解
+2026-05-18-standards-ansi-k3.md	ANSI	→	ANSI标准
+2026-05-18-standards-ansi-k4-v.md	AWS—应用详解	→	AWS标准—应用详解
+2026-05-18-standards-ansi-k4.md	AWS	→	AWS标准
+2026-05-18-standards-ansi-t0-v.md	DIN标准—应用详解	→	DIN标准标准—应用详解
+2026-05-18-standards-ansi-t0.md	DIN标准	→	DIN标准标准
+2026-05-18-standards-ansi-t15-v.md	ieee—应用详解	→	IEEE标准—应用详解
+2026-05-18-standards-ansi-t15.md	ieee	→	IEEE标准
+2026-05-18-standards-ansi-t16-v.md	api—应用详解	→	API标准—应用详解
+2026-05-18-standards-ansi-t16.md	api	→	API标准
+2026-05-18-standards-ansi-t17-v.md	ul—应用详解	→	UL标准—应用详解
+2026-05-18-standards-ansi-t17.md	ul	→	UL标准
+2026-05-18-standards-din-k1-v.md	EN—应用详解	→	EN标准—应用详解
+2026-05-18-standards-din-k1.md	EN	→	EN标准
+2026-05-18-standards-din-k4-v.md	ATEX—应用详解	→	ATEX防爆认证—应用详解
+2026-05-18-standards-din-k4.md	ATEX	→	ATEX防爆认证
+2026-05-18-standards-din-t0-v.md	ce—应用详解	→	CE认证—应用详解
+2026-05-18-standards-din-t0.md	ce	→	CE认证
+2026-05-18-standards-din-t1-v.md	bs—应用详解	→	BS标准—应用详解
+2026-05-18-standards-din-t1.md	bs	→	BS标准
+2026-05-18-standards-din-t5-v.md	nace—应用详解	→	NACE标准—应用详解
+2026-05-18-standards-din-t5.md	nace	→	NACE标准
+2026-05-18-standards-din-t6-v.md	iso 9001—应用详解	→	ISO 9001质量管理体系—应用详解
+2026-05-18-standards-din-t6.md	iso 9001	→	ISO 9001质量管理体系
+2026-05-18-standards-din-t7-v.md	iso 14001—应用详解	→	ISO 14001环境管理体系—应用详解
+2026-05-18-standards-din-t7.md	iso 14001	→	ISO 14001环境管理体系
+2026-05-18-standards-din-t8-v.md	ohsas 18001—应用详解	→	OHSAS 18001职业健康安全管理体系—应用详解
+2026-05-18-standards-din-t8.md	ohsas 18001	→	OHSAS 18001职业健康安全管理体系
+2026-05-18-standards-gb-k0-v.md	GB标准—应用详解	→	GB标准标准—应用详解
+2026-05-18-standards-gb-k0.md	GB标准	→	GB标准标准
+2026-05-18-standards-gb-t6.md	ISO 14000环境管理体系	→	ISO标准14000环境管理体系
+2026-05-18-standards-iso-k0-v.md	ISO标准—应用详解	→	ISO标准标准—应用详解
+2026-05-18-standards-iso-k0.md	ISO标准	→	ISO标准标准
+2026-05-18-standards-iso-k1-v.md	IEC标准—应用详解	→	IEC标准标准—应用详解
+2026-05-18-standards-iso-k1.md	IEC标准	→	IEC标准标准
+2026-05-18-standards-iso-t16-v.md	ASME标准—应用详解	→	ASME标准标准—应用详解
+2026-05-18-standards-iso-t16.md	ASME标准	→	ASME标准标准
+2026-05-18-standards-iso-t17-v.md	ASTM标准—应用详解	→	ASTM标准标准—应用详解
+2026-05-18-standards-iso-t17.md	ASTM标准	→	ASTM标准标准

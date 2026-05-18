@@ -1,0 +1,28 @@
+{{- $page := . }}
+{{- with .Params.categories }}
+{{- $cat := index . 0 }}
+{{- $allPages := (index site.Taxonomies.categories $cat).Pages }}
+{{- $related := slice }}
+{{- range $allPages }}
+  {{- if ne .File.UniqueID $page.File.UniqueID }}
+    {{- $related = $related | append . }}
+  {{- end }}
+{{- end }}
+{{- $relatedCount := len $related }}
+{{- if gt $relatedCount 0 }}
+<section class="related-articles">
+  <hr class="related-divider">
+  <h3 class="related-title">相关文章</h3>
+  <ul class="related-list">
+    {{- range first 5 $related }}
+    <li>
+      <a href="{{ .RelPermalink }}" class="related-link">
+        <span class="related-article-title">{{ .Title }}</span>
+        <span class="related-article-date">{{ .Date.Format "2006-01-02" }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{- end }}

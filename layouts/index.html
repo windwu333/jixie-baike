@@ -1,0 +1,404 @@
+{{ define "main" }}
+<div class="encyclopedia-home">
+  {{/* ── Hero Section ── */}}
+  <header class="home-hero">
+    <div class="hero-icon">
+      <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+        <g transform="translate(32,32)">
+          <path d="M0,-26 L4,-22 L6,-22.5 L9,-28 L15,-25 L13.5,-19 L14.5,-17 L20.5,-14 L18.5,-8 L13,-7.5 L12,-6 L15,0 L9,4 L7.5,2.5 L2,6 L-2,0 L-2.5,-2 L-8,-5 L-12,-1 L-11,5 L-17,7 L-19,1 L-18,-1 L-24,-4 L-22,-10 L-16,-10.5 L-15,-12 L-14,-19 L-8,-18 L-6,-19 L-4,-26 Z"
+                fill="var(--primary)" stroke="var(--primary)" stroke-width="0.5"/>
+          <circle cx="0" cy="0" r="8" fill="var(--theme)"/>
+          <circle cx="0" cy="0" r="5" fill="var(--primary)"/>
+          <circle cx="0" cy="0" r="2.5" fill="var(--theme)"/>
+        </g>
+      </svg>
+    </div>
+    <h1>机械师大百科</h1>
+    <p class="hero-subtitle">系统化的机械工程知识平台，助力工程师成长</p>
+    <p class="hero-stats">{{ len site.RegularPages }} 篇文章 · 11 个专业领域</p>
+    <form class="hero-search" action="{{ "search/" | relLangURL }}" method="get" role="search">
+      <input type="search" name="q" placeholder="搜索机械工程师知识..." aria-label="搜索机械工程知识">
+      <button type="submit">搜索</button>
+    </form>
+  </header>
+
+  {{/* ── Featured Articles ── */}}
+  <section class="featured-section">
+    <h2 class="section-title">🌟 精选文章</h2>
+    <div class="featured-grid">
+      {{- $featured := where site.RegularPages "Params.quality" "in" (slice "Featured" "featured") -}}
+      {{- if lt (len $featured) 3 -}}
+        {{- $featured = first 6 site.RegularPages.ByDate.Reverse -}}
+      {{- end -}}
+      {{- range first 3 $featured -}}
+      <article class="featured-card">
+        <a href="{{ .RelPermalink }}" class="featured-link">
+          <div class="featured-category">{{ range first 1 .Params.categories }}{{ . }}{{ end }}</div>
+          <h3 class="featured-title">{{ .Title }}</h3>
+          {{- with .Params.description }}
+          <p class="featured-desc">{{ . | truncate 120 }}</p>
+          {{- end }}
+          <div class="featured-meta">
+            <span>{{ .ReadingTime }} 分钟阅读</span>
+            <span class="featured-arrow">→</span>
+          </div>
+        </a>
+      </article>
+      {{- end -}}
+    </div>
+  </section>
+
+  {{/* ── Category Navigation Cards ── */}}
+  <section class="categories-section">
+    <h2 class="section-title">📂 分类导航</h2>
+    <div class="category-grid-enhanced">
+      {{- range $name, $taxonomy := site.Taxonomies.categories -}}
+        {{- $count := len $taxonomy.Pages -}}
+        {{- $catPage := site.GetPage (printf "/categories/%s" $name) -}}
+        {{- $desc := "" -}}
+        {{- $emoji := "📐" -}}
+        {{- $accent := "#3B82F6" -}}
+        {{- if eq $name "机械设计" }}{{ $desc = "零部件设计原理、计算方法与选型指南" }}{{ $emoji = "⚙️" }}{{ $accent = "#2563EB" -}}
+        {{- else if eq $name "制造工艺" }}{{ $desc = "铸造、锻造、焊接、切削、增材制造等" }}{{ $emoji = "🔧" }}{{ $accent = "#DC2626" -}}
+        {{- else if eq $name "工程材料" }}{{ $desc = "金属、高分子、复合材料、陶瓷的性能与应用" }}{{ $emoji = "🧪" }}{{ $accent = "#059669" -}}
+        {{- else if eq $name "机械电子与自动化" }}{{ $desc = "传感器、执行器、控制系统、工业机器人" }}{{ $emoji = "🤖" }}{{ $accent = "#7C3AED" -}}
+        {{- else if eq $name "热工与流体" }}{{ $desc = "热力学、传热学、流体力学、液压与气动" }}{{ $emoji = "🔥" }}{{ $accent = "#EA580C" -}}
+        {{- else if eq $name "标准与规范" }}{{ $desc = "国际标准、行业标准、质量体系" }}{{ $emoji = "📏" }}{{ $accent = "#0891B2" -}}
+        {{- else if eq $name "力学与强度分析" }}{{ $desc = "理论力学、材料力学、有限元、疲劳与断裂" }}{{ $emoji = "📊" }}{{ $accent = "#4F46E5" -}}
+        {{- else if eq $name "机械制图与CAD" }}{{ $desc = "工程图学、CAD/CAE/CAM、GD&T公差" }}{{ $emoji = "✏️" }}{{ $accent = "#0D9488" -}}
+        {{- else if eq $name "测量与质量控制" }}{{ $desc = "尺寸测量、无损检测、统计过程控制" }}{{ $emoji = "📐" }}{{ $accent = "#9333EA" -}}
+        {{- else if eq $name "行业应用" }}{{ $desc = "工程机械、汽车、航空航天、模具等" }}{{ $emoji = "🏭" }}{{ $accent = "#0F766E" -}}
+        {{- else if eq $name "动力机械与能源" }}{{ $desc = "发动机、涡轮机、压缩机、能源转换" }}{{ $emoji = "⚡" }}{{ $accent = "#B45309" -}}
+        {{- end -}}
+      <a href="{{ $catPage.RelPermalink }}" class="category-card-enhanced" style="--accent: {{ $accent }}">
+        <div class="card-emoji">{{ $emoji }}</div>
+        <div class="card-content">
+          <h3 class="card-name">{{ $name }}</h3>
+          <p class="card-desc">{{ $desc }}</p>
+          <span class="card-count">{{ $count }} 篇文章</span>
+        </div>
+        <div class="card-indicator"></div>
+      </a>
+      {{- end -}}
+    </div>
+  </section>
+
+  {{/* ── Latest Articles ── */}}
+  <section class="recent-section">
+    <h2 class="section-title">📝 最新文章</h2>
+    <div class="recent-list">
+      {{ range first 8 site.RegularPages.ByDate.Reverse }}
+      <article class="recent-entry">
+        <a href="{{ .RelPermalink }}">
+          <div class="recent-info">
+            <span class="recent-cat">{{ range first 1 .Params.categories }}{{ . }}{{ end }}</span>
+            <span class="recent-title">{{ .Title }}</span>
+          </div>
+          <span class="recent-meta">{{ .ReadingTime }} min · {{ .Date.Format "01-02" }}</span>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+    <div class="recent-footer">
+      <a href="{{ "categories/" | relLangURL }}" class="btn-all">浏览全部分类 →</a>
+      <a href="{{ "tags/" | relLangURL }}" class="btn-all">浏览全部标签 →</a>
+    </div>
+  </section>
+</div>
+
+<style>
+/* ── Hero Section ── */
+.home-hero {
+  text-align: center;
+  padding: 2.5rem 1rem 3rem;
+  background: linear-gradient(180deg, var(--entry) 0%, transparent 100%);
+  border-radius: var(--radius, 16px);
+  margin-bottom: 2.5rem;
+}
+.hero-icon { margin-bottom: 0.75rem; }
+.hero-icon svg { width: 56px; height: 56px; }
+.home-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 0.4rem;
+  background: linear-gradient(135deg, var(--primary), #1E40AF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-subtitle { color: var(--secondary); font-size: 1.05rem; margin: 0 0 0.3rem; }
+.hero-stats { color: var(--tertiary); font-size: 0.85rem; margin: 0 0 1.5rem; }
+.hero-search {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--theme);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.hero-search:focus-within {
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+  border-color: var(--primary);
+}
+.hero-search input {
+  flex: 1;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  background: transparent;
+  color: var(--content);
+  outline: none;
+}
+.hero-search button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: filter 0.15s;
+}
+.hero-search button:hover { filter: brightness(1.1); }
+
+/* ── Section Title ── */
+.section-title {
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ── Featured Articles ── */
+.featured-section { margin-bottom: 2.5rem; }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.featured-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 12px);
+  background: var(--entry);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.featured-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #60A5FA);
+}
+.featured-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.featured-link {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+.featured-category {
+  font-size: 0.75rem;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  padding: 0.15rem 0.6rem;
+  border-radius: 99px;
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.featured-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  color: var(--content);
+  line-height: 1.4;
+}
+.featured-desc {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  line-height: 1.5;
+  margin: 0 0 auto;
+  flex: 1;
+}
+.featured-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--tertiary);
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+.featured-arrow { transition: transform 0.2s; }
+.featured-card:hover .featured-arrow { transform: translateX(4px); }
+
+/* ── Enhanced Category Cards ── */
+.categories-section { margin-bottom: 2.5rem; }
+.category-grid-enhanced {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.875rem;
+}
+.category-card-enhanced {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 12px);
+  text-decoration: none;
+  background: var(--entry);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.category-card-enhanced::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--accent, var(--primary));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.category-card-enhanced:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border-color: var(--accent, var(--primary));
+}
+.category-card-enhanced:hover::after { opacity: 1; }
+.card-emoji {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent, var(--primary)) 10%, transparent);
+}
+.card-content { flex: 1; min-width: 0; }
+.card-name {
+  font-size: 1rem;
+  margin: 0 0 0.2rem;
+  color: var(--content);
+  font-weight: 600;
+}
+.card-desc {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  margin: 0 0 0.3rem;
+  line-height: 1.4;
+}
+.card-count {
+  font-size: 0.75rem;
+  color: var(--tertiary);
+  background: var(--theme);
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  display: inline-block;
+}
+
+/* ── Recent Articles ── */
+.recent-section { margin-bottom: 2rem; }
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+.recent-entry a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s;
+  gap: 1rem;
+}
+.recent-entry a:hover { background: var(--entry); }
+.recent-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.recent-cat {
+  font-size: 0.7rem;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.recent-title {
+  color: var(--content);
+  font-size: 0.92rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recent-meta {
+  color: var(--tertiary);
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+.recent-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-all {
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  transition: all 0.15s;
+}
+.btn-all:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .home-hero h1 { font-size: 1.7rem; }
+  .hero-subtitle { font-size: 0.9rem; }
+  .featured-grid { grid-template-columns: 1fr; }
+  .category-grid-enhanced { grid-template-columns: 1fr; }
+  .recent-info { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .recent-title { white-space: normal; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+}
+@media (max-width: 480px) {
+  .home-hero { padding: 1.5rem 1rem 2rem; }
+  .section-title { font-size: 1.1rem; }
+  .featured-card { padding: 0; }
+  .featured-link { padding: 1rem; }
+  .card-emoji { width: 36px; height: 36px; font-size: 1.3rem; }
+  .category-card-enhanced { padding: 1rem; }
+}
+</style>
+{{ end }}

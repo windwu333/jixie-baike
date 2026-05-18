@@ -1,0 +1,89 @@
+{
+  "n": 2271,
+  "checks": {
+    "lead_definition": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "lead_1_4_paras": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "no_personal_pronouns": {
+      "passed": 1961,
+      "pct": 86.3
+    },
+    "has_references": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "no_heading_jumps": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "proper_bold_usage": {
+      "passed": 0,
+      "pct": 0.0
+    },
+    "has_quality": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "has_category": {
+      "passed": 2271,
+      "pct": 100.0
+    },
+    "reasonable_section_length": {
+      "passed": 2271,
+      "pct": 100.0
+    }
+  },
+  "quality_distribution": {
+    "\"Start\"": 1044,
+    "\"C\"": 316,
+    "\"Draft\"": 905,
+    "\"B\"": 6
+  },
+  "ref_histogram": {
+    "5": 47,
+    "6": 2,
+    "7": 1,
+    "9": 330,
+    "10": 23,
+    "11": 1696,
+    "12": 32,
+    "13": 78,
+    "14": 9,
+    "15": 8,
+    "16": 22,
+    "18": 2,
+    "19": 2,
+    "20": 19
+  },
+  "lead_para_issues": 0,
+  "personal_pronoun_issues": 310,
+  "heading_jump_issues": 0,
+  "bold_issues": 20,
+  "sample_articles": [
+    "2026-05-17-cad-3d-k2-v.md",
+    "2026-05-17-cad-drawing-t2-v.md",
+    "2026-05-17-design-jigs-k4-v.md",
+    "2026-05-17-design-methodology-t17-v.md",
+    "2026-05-17-design-transmission-k3.md",
+    "2026-05-17-manufacturing-additive-k3.md",
+    "2026-05-17-manufacturing-cnc-t7.md",
+    "2026-05-17-manufacturing-machining-t15-v.md",
+    "2026-05-17-manufacturing-welding.md",
+    "2026-05-17-materials-heat-treatment-t17.md",
+    "2026-05-17-materials-properties-t10.md",
+    "2026-05-17-measurement-gdt-k1-v.md",
+    "2026-05-17-mechanics-fea-t13.md",
+    "2026-05-17-mechanics-theoretical-t8-v.md",
+    "2026-05-17-mechatronics-actuators.md",
+    "2026-05-17-mechatronics-embed.md",
+    "2026-05-17-powermachinery-engine-t8-v.md",
+    "2026-05-17-standards-gb-k2.md",
+    "2026-05-17-standards-safety-t3.md",
+    "2026-05-17-thermofluid-hydraulic-t14.md"
+  ]
+}
